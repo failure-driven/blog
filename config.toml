@@ -13,6 +13,7 @@ enableRobotsTXT = true
 
 [params]
   description = "Let failure drive you to success"
+  mainSections = "posts" # to not post inprogress
   facebook = ""
   twitter = "https://twitter.com/selenasmall88"
   twitter_2 = "https://twitter.com/saramic"
