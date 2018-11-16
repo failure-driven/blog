@@ -6,6 +6,8 @@ theme = "ananke"
 googleAnalytics = "UA-129344129-1"
 enableRobotsTXT = true
 
+copyright = "Selena Small & Michael Milewski"
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
