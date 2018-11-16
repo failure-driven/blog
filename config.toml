@@ -2,3 +2,24 @@ baseURL = "https://failure-driven.com/"
 languageCode = "en-us"
 title = "Failure Driven"
 theme = "ananke"
+
+googleAnalytics = "UA-129344129-1"
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  description = "Let failure drive you to success"
+  facebook = ""
+  twitter = "https://twitter.com/selenasmall88"
+  twitter_2 = "https://twitter.com/saramic"
+  instagram = ""
+  youtube = ""
+  github = ""
+  gitlab = ""
+  linkedin = ""
+  background_color_class = "bg-black"
+  featured_image = ""
