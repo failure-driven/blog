@@ -1,8 +1,29 @@
 {{ $featured_image := .Param "featured_image"}}
+{{ $featured_image_m := .Param "featured_image_m"}}
+{{ $featured_image_s := .Param "featured_image_s"}}
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   {{ $featured_image := (trim $featured_image "/") | absURL }}
-  <header class="cover bg-top" style="background-image: url('{{ $featured_image }}');">
+  {{ $featured_image_m := (trim $featured_image_m "/") | absURL }}
+  {{ $featured_image_s := (trim $featured_image_s "/") | absURL }}
+<style>
+  @media(min-width: 1201px) {
+    #header-image {
+      background-image: url('{{ $featured_image }}');
+    }
+  }
+  @media (max-width: 1200px) {
+    #header-image {
+      background-image: url('{{ $featured_image_m }}');
+    }
+  }
+  @media (max-width: 600px) {
+    #header-image {
+      background-image: url('{{ $featured_image_s }}');
+    }
+  }
+</style>
+  <header class="cover bg-top" id="header-image">
     <div class="{{ .Site.Params.cover_dimming_class | default "bg-black-60" }}">
       {{ partial "site-navigation.html" .}}
       <div class="tc-l pv4 pv6-l ph3 ph4-ns">
