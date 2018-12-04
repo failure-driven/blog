@@ -1,17 +1,10 @@
 ---
 ---
 
-### Feature testing modern apps
+### Listen to our latest tech talks
 
-Recent talk from [#RORO
-Melbourne](https://www.meetup.com/Ruby-On-Rails-Oceania-Melbourne/) about multi
-layer Behavioural Driven Development (BDD).
-
-Will be taking another look at some aspects of this in a short form talk at the
-[November Melbourne React 
-meetup](https://www.meetup.com/React-Melbourne/events/255823040/)
-
-Join us!
+Hear about feature testing modern apps with multi layer Behavioural Driven Development (BDD).
+[#RORO Melbourne](https://www.meetup.com/Ruby-On-Rails-Oceania-Melbourne/)
 
 {{< youtube p72EPNXbjiU >}}
 
@@ -22,6 +15,9 @@ Join us!
 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
+
+### Be the first to know about our latest endeavours
+
 <div id="mc_embed_signup">
 <form action="https://failure-driven.us19.list-manage.com/subscribe/post?u=7206c4a51341123e351195246&amp;id=ec5d157e17" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
