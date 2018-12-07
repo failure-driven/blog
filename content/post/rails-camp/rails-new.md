@@ -133,6 +133,8 @@ Oh and yes the camera was rolling to capture the emotion straight after almost 2
 ![initial commit](https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_01_jess_brown_85e0a9dde4d.gif)
 
 
-https://github.com/noiselessdwindle
+<img src="//github.com/noiselessdwindle.png" style="display: inline; width: 88px;" height="88"
+/> https://github.com/noiselessdwindle
 
-[@NoiselessDwindl](https://twitter.com/NoiselessDwindl)
+<img src="//avatars.io/twitter/NoiselessDwindl" style="display: inline; width: 88px;" height="88"
+/> [@NoiselessDwindl](https://twitter.com/NoiselessDwindl)
