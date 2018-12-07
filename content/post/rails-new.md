@@ -15,7 +15,7 @@ As seasoned Rails developers, we all know that the first step in building any st
 One of the cool things about Rails camp though, is that it brings together people of all different experience levels and backgrounds.
 And who better to ask for help in spinning up a new Rails app than someone who'd never done it before?!
 
-Jess works on the help desk at the university of Sydney and a friend had recently got her into coding. She'd started just a week before Rails Camp, installing ruby.
+Jess works on the help desk at a university and a friend had recently got her into coding. She'd started just a week before Rails Camp, installing ruby.
 Excited to get started, and very quickly we got snagged in various discussions around all the things going on.
 
 ### What's a Git?
@@ -28,14 +28,18 @@ Gogs (https://gogs.io/) a self hosted git service maintained by the organisers o
 
 Now also on Github: [f6d9b9d11923758c36a0793f26d8392ea0cba397](https://github.com/failure-driven/railscamp-search-term/commit/f6d9b9d11923758c36a0793f26d8392ea0cba397)
 
-    Author: Michael Milewski <saramic@gmail.com>
+<img src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
+<img src="//github.com/noiselessdwindle.png" style="display: inline; width: 88px;" height="88" />
+<img src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
+
+    Author: Michael Milewski <sara...@gmail.com>
     Date:   Sat Nov 24 11:52:19 2018 +1100
 
     Initial Commit
 
-    Co-authored-by: Jess Brown <noiselessdwindle@gmail.com>
-    Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
-    Signed-off-by: Selena Small <selenawiththetattoo@gmail.com>
+    Co-authored-by: Jess Brown <nois...@gmail.com>
+    Co-authored-by: Selena Small <selena...@gmail.com>
+    Signed-off-by: Selena Small <selena...@gmail.com>
 
 The real eye opener for Jess though, was when we pulled a copy of the commit on another machine!
 
