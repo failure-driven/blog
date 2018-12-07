@@ -1,13 +1,18 @@
 ---
 title: "Rails New"
 date: 2018-12-04T15:00:00+11:00
-featured_image: '/images/commit_01_jess_brown_85e0a9dde4d_still.jpg'
+excerpt: "As seasoned Rails developers, we all know that the first step in
+  building any standard Rails application, is to open the command line and run
+  'rails new [app_name]' One of the cool things about Rails camp though, is
+  that it brings together people of all different experience levels and
+  backgrounds. And who better to ask for help in spinning up a new Rails app
+  than someone who'd never done it before?!"
+featured_image: 'https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_01_jess_brown_85e0a9dde4d.gif'
 images:
- - '/images/commit_01_jess_brown_85e0a9dde4d_still.jpg'
+ - '/images/rails-camp/commit_01_jess_brown_85e0a9dde4d_still.jpg'
  - '/images/failure-driven_square.jpg'
 draft: true
 ---
-
 
 As seasoned Rails developers, we all know that the first step in building any standard Rails application, is to open the command line and run:
 
