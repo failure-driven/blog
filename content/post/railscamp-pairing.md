@@ -5,6 +5,7 @@ excerpt: "Selena and Michael just got back home from RailsCampAU #24 in Tasmania
 featured_image: '/images/selena_keith_point_junior_dev_hands_on_the_keyboard.jpg'
 images:
  - '/images/selena_keith_point_junior_dev_hands_on_the_keyboard.jpg'
+ - '/images/failure-driven_square.jpg'
 ---
 
 Selena and Michael just got back home from [RailsCampAU #24](https://railscamp24.wordpress.com/) in Tasmania and it was an epic weekend!  An intensive but fun trip filled with learning and laughs.

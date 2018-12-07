@@ -4,6 +4,7 @@ date: 2018-12-04T15:00:00+11:00
 featured_image: '/images/commit_01_jess_brown_85e0a9dde4d_still.jpg'
 images:
  - '/images/commit_01_jess_brown_85e0a9dde4d_still.jpg'
+ - '/images/failure-driven_square.jpg'
 draft: true
 ---
 
