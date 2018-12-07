@@ -3,6 +3,7 @@ title: "Rails Camp Pairing"
 date: 2018-11-28T09:28:33+11:00
 excerpt: "Selena and Michael just got back home from RailsCampAU #24 in Tasmania and it was an epic weekend!  An intensive but fun trip filled with learning and laughs."
 featured_image: '/images/selena_keith_point_junior_dev_hands_on_the_keyboard.jpg'
+cover_dimming_class: 'bg-black-20'
 images:
  - '/images/selena_keith_point_junior_dev_hands_on_the_keyboard.jpg'
  - '/images/failure-driven_square.jpg'
