@@ -7,6 +7,8 @@ excerpt: "As seasoned Rails developers, we all know that the first step in
   that it brings together people of all different experience levels and
   backgrounds. And who better to ask for help in spinning up a new Rails app
   than someone who'd never done it before?!"
+cover_padding_class: 'pv7-l'
+cover_dimming_class: 'none'
 featured_image: 'https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_01_jess_brown_85e0a9dde4d.gif'
 images:
  - '/images/rails-camp/commit_01_jess_brown_85e0a9dde4d_still.jpg'
