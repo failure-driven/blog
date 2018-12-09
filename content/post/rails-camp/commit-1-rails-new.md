@@ -13,7 +13,6 @@ featured_image: 'https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/rai
 images:
  - '/images/rails-camp/commit_01_jess_brown_85e0a9dde4d_still.jpg'
  - '/images/failure-driven_square.jpg'
-draft: true
 ---
 
 As seasoned Rails developers, we all know that the first step in building any standard Rails application, is to open the command line and run:
