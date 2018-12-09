@@ -34,11 +34,9 @@ Very quickly Jess was creating directories, git initializing them, putting files
 Finally understanding why we use git, Jess pushed her first ever commit! Since we were off line in the wilds of Tasmania she pushed her changes to the local server running
 Gogs (https://gogs.io/) a self hosted git service maintained by the organisers of RailsCamp.
 
-Now also on Github: [f6d9b9d11923758c36a0793f26d8392ea0cba397](https://github.com/failure-driven/railscamp-search-term/commit/f6d9b9d11923758c36a0793f26d8392ea0cba397)
-
-<img src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
-<img src="//github.com/noiselessdwindle.png" style="display: inline; width: 88px;" height="88" />
-<img src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
+<img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
+<img alt="@NoislessDwindle" src="//github.com/noiselessdwindle.png" style="display: inline; width: 88px;" height="88" />
+<img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 
     Author: Michael Milewski <sara...@gmail.com>
     Date:   Sat Nov 24 11:52:19 2018 +1100
@@ -135,8 +133,6 @@ Oh and yes the camera was rolling to capture the emotion straight after almost 2
 ![initial commit](https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_01_jess_brown_85e0a9dde4d.gif)
 
 
-<img src="//github.com/noiselessdwindle.png" style="display: inline; width: 88px;" height="88"
-/> https://github.com/noiselessdwindle
+#### Authored By:
 
-<img src="//avatars.io/twitter/NoiselessDwindl" style="display: inline; width: 88px;" height="88"
-/> [@NoiselessDwindl](https://twitter.com/NoiselessDwindl)
+Selena Small & Michael Milewski
