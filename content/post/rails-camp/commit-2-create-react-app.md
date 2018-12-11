@@ -99,14 +99,23 @@ Export const Heading (
 
 ### What did we learn?
 
-Michael: 
-Learning for all “npx” Michael had vaguely registered it’s a thing and when he said it there was some trepidation in 
-the pair, did you not mean npn?, but a quick `man npx` and we all got a quick lesson in this helper method. Given the 
-pace this industry moves it is an important skill to learn and impart on others that if you don’t know a thing there 
-will be a relatively straight forward way to search for an answer through help or other manuals. Teaching people to 
-teach themsleves is very scalable.
+Michael: "Try `npx`"
 
-Kristen has run a session and found??? (she ran a rails girls session? Or took part in one?)
+Selena: "Don't you mean `npn`?"
+
+Michael: "I think `npx` is a thing?"
+
+Kirsten: "I have no idea"
+
+Michael: "We can find out by running `man npx`"
+
+Given the pace our industry moves, it is an important skill to learn and impart on others that if you don’t know 
+something, there will be a relatively straight forward way to search for an answer through help or other manuals. 
+
+Teaching people to teach themselves is very scalable.
+
+And we discovered that `npx` is a thing and by default, npx will check whether <command> exists in $PATH, or in the 
+local project binaries, and execute that. *[ref](https://www.npmjs.com/package/npx)
 
 ### 5 minutes with Kirsten
 
