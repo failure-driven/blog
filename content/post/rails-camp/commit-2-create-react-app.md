@@ -1,15 +1,15 @@
 ---
 title: "Create React App"
 date: 2018-12-10T15:00:00+11:00
-excerpt: ""
+excerpt: "Although there seems to not be too much in creating a new react app,
+  simply typing `npx create-react-app new-app` and firing up the react demo app
+  with `npm start` there is actually a whole lot going on here!"
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
 featured_image: 'https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_02_kirsten_comandich_de721fedc80.gif'
 images:
  - '/images/rails-camp/commit_02_kirsten_comandich_de721fedc80_still.jpg'
  - '/images/failure-driven_square.jpg'
-draft: true
-
 ---
 
 <img alt="@kcomandich" src="//github.com/kcomandich.png" style="display: inline; width: 88px;" height="88" />
