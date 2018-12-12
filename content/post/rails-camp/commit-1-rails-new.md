@@ -37,12 +37,12 @@ Gogs (https://gogs.io/) a self hosted git service maintained by the organisers o
 <img alt="@NoislessDwindle" src="//github.com/noiselessdwindle.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 
-    Author: Michael Milewski <sara...@gmail.com>
+    Author: Jess Brown <nois...@gmail.com>
     Date:   Sat Nov 24 11:52:19 2018 +1100
 
     Initial Commit
 
-    Co-authored-by: Jess Brown <nois...@gmail.com>
+    Co-authored-by: Michael Milewski <sara...@gmail.com>
     Co-authored-by: Selena Small <selena...@gmail.com>
     Signed-off-by: Selena Small <selena...@gmail.com>
 
