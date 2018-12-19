@@ -15,110 +15,109 @@ draft: true
 
 1. Start an interactive rebase from the very first commit `--root`
 
-    ```
-    git rebase --interactive --root
-    ```
+	  {{< highlight bash >}}
+git rebase --interactive --root
+{{< / highlight >}}
 
 1. In the list of commits change any commits where you want to change the
    author
 
     from `pick`
 
-    ```
-    1 pick f6d9b9d Initial Commit
-    2 pick de721fe Created React client
-    3 pick 0f515e5 Procfile to run client and server together
-    ```
+	  {{< highlight bash >}}
+1 pick f6d9b9d Initial Commit
+2 pick de721fe Created React client
+3 pick 0f515e5 Procfile to run client and server together
+{{< / highlight >}}
 
     to `edit`
 
-    ```
-    1 edit f6d9b9d Initial Commit
-    2 edit de721fe Created React client
-    3 pick 0f515e5 Procfile to run client and server together
-    ```
+	  {{< highlight bash "hl_lines=1-2">}}
+1 edit f6d9b9d Initial Commit
+2 edit de721fe Created React client
+3 pick 0f515e5 Procfile to run client and server together
+{{< / highlight >}}
 
 1. Upon editing the the interactive rebase you will be taken to the first
    commit to `edit`, at this time you can amend the author from the command
    line
 
-    ```
-    git commit --amend  --author='Jess Brown <noiselessdwindle@users.noreply.github.com>'
-    ```
+	  {{< highlight bash >}}
+git commit --amend  --author='Jess Brown <noiselessdwindle@users.noreply.github.com>'
+{{< / highlight >}}
 
 1. This will also allow you to change the commit message and any
    `Co-authored-by:`, unless you already have your email publicly attached to
    your github account as is the case for us
 
-    ```
-    Initial Commit
+	  {{< highlight bash "hl_lines=7">}}
+Initial Commit
 
-    Co-authored-by: Michael Milewski <saramic@gmail.com>
-    Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
-    minor edit of the author
+Co-authored-by: Michael Milewski <saramic@gmail.com>
+Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
+minor edit of the author
 
-    # Author:    Jess Brown <noiselessdwindle@users.noreply.github.com>
-    # Date:      Sat Nov 24 11:52:19 2018 +1100
-    #
-    # On branch master
-
-    ```
+# Author:    Jess Brown <noiselessdwindle@users.noreply.github.com>
+# Date:      Sat Nov 24 11:52:19 2018 +1100
+#
+# On branch master
+{{< / highlight >}}
 
 1. Note this will change the SHA, _the git SHA-1 checksum of the
    content and header_, of the commit. Our commit now becomes
-   https://github.com/failure-driven/railscamp-search-term/commit/289b8422201f3d8c5f960e18c6e700dc5318f51c
+   [289b8422201](https://github.com/failure-driven/railscamp-search-term/commit/289b8422201f3d8c5f960e18c6e700dc5318f51c)
 
 1. When all is good force push it to master
 
-    ```
-    git push --force
-    ```
+	  {{< highlight bash >}}
+git push --force
+{{< / highlight >}}
 
 1. But the original commit is still there, just orphaned. This means that in
    time git should garbage collect it.
 
     [Original commit 32 - 6d1e4b0](https://github.com/failure-driven/railscamp-search-term/commit/6d1e4b0db1f232728bf7da6769c50f8dc0315985)
 
-    ```
-    commit 6d1e4b0db1f232728bf7da6769c50f8dc0315985
-    Author: Michael Milewski <saramic@gmail.com>
-    Date:   Sun Nov 25 20:36:35 2018 +1100
+	  {{< highlight bash >}}
+commit 6d1e4b0db1f232728bf7da6769c50f8dc0315985
+Author: Michael Milewski <saramic@gmail.com>
+Date:   Sun Nov 25 20:36:35 2018 +1100
 
-    page fragments
+page fragments
 
-    Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
-    ```
+Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
+{{< / highlight >}}
 
     [Amended commit 32 - 0a5196b](https://github.com/failure-driven/railscamp-search-term/commit/0a5196b510e3f47b5e8a31f31b4a03346d6bbd93)
 
-    ```
-    commit 0a5196b510e3f47b5e8a31f31b4a03346d6bbd93
-    Author: Selena Small <selenawiththetattoo@gmail.com>
-    Date:   Sun Nov 25 20:36:35 2018 +1100
+	  {{< highlight bash >}}
+commit 0a5196b510e3f47b5e8a31f31b4a03346d6bbd93
+Author: Selena Small <selenawiththetattoo@gmail.com>
+Date:   Sun Nov 25 20:36:35 2018 +1100
 
-    page fragments
+page fragments
 
-    Co-authored-by: Michael Milewski <saramic@gmail.com>
-    ```
+Co-authored-by: Michael Milewski <saramic@gmail.com>
+{{< / highlight >}}
 
     We have attempted a number of things to remove these commits but a lot of
     the garbage collection (`git-gc`) only works on the local file system. ie
     looking at the local git file structure `.git/objects/`
 
-    ```
-    find .git/objects/
+	  {{< highlight bash >}}
+find .git/objects/
 
-    ...
-    .git/objects/0a
-    .git/objects/0a/5196b510e3f47b5e8a31f31b4a03346d6bbd93
-    ...
-    ```
+...
+.git/objects/0a
+.git/objects/0a/5196b510e3f47b5e8a31f31b4a03346d6bbd93
+...
+{{< / highlight >}}
 
     Shows our commits and pruning them
 
-    ```
-    git gc --prune=now --aggressive
-    ```
+	  {{< highlight bash >}}
+git gc --prune=now --aggressive
+{{< / highlight >}}
 
     get's rid of them locally but no amount of force pushing them up to github
     will remove them. We welcome any feedback on how to do this beyond deleting
@@ -195,23 +194,23 @@ start a git interactive rebase from the first commit
 
 usually a
 
-```
+{{< highlight bash >}}
 git rebase --interactive HEAD~3
 git rebase -i HEAD~3
-```
+{{< / highlight >}}
 
 would allow you to interactively rebase the last 3 commits. This method does
 not seem to work with numbers with more then 2 digits, after all who in their
 right mind would want to re-do 43 commits? Well we did so we used the SHA
 instead
 
-```
+{{< highlight bash >}}
 git rebase --interactive f6d9b9d11923758c36a0793f26d8392ea0cba397
-```
+{{< / highlight >}}
 
 now in an editor we get all the commits
 
-```
+{{< highlight bash >}}
   1 pick de721fe Created React client
   2 pick 0f515e5 Procfile to run client and server together
   3 pick 22212c2 Add rspec to gemfile and initialize
@@ -222,7 +221,7 @@ now in an editor we get all the commits
  40 pick b95d142 Get rid of the werewolves.
  41 pick e44837b Unfuck textarea
  42 pick 9a0d062 Fixed css to make things pretty
-```
+{{< / highlight >}}
 
 if we were just re-wording the commit changing the pick to reword would have
 been enough but in this case we wanted to amend the author so we need to change
@@ -232,7 +231,7 @@ but oh oh this only takes us to the first commit after the initial commit.
 Although there were ways around this in the past, modern versions of git allow
 you to use the --root option
 
-```
+{{< highlight bash >}}
 git rebase --interactive --root
 
   1 pick f6d9b9d Initial Commit
@@ -246,17 +245,17 @@ git rebase --interactive --root
  41 pick b95d142 Get rid of the werewolves.
  42 pick e44837b Unfuck textarea
  43 pick 9a0d062 Fixed css to make things pretty
-```
+{{< / highlight >}}
 
 then
 
-```
+{{< highlight bash >}}
 git commit --amend  --author='Jess Brown <noiselessdwindle@users.noreply.github.com>'
-```
+{{< / highlight >}}
 
 and then it is just a manual run that looks like this
 
-```
+{{< highlight bash >}}
 48099  git status
 48100  git rebase --interactive f6d9b9d11923758c36a0793f26d8392ea0cba397^
 48101  git rebase --interactive ^f6d9b9d11923758c36a0793f26d8392ea0cba397
@@ -367,16 +366,16 @@ and then it is just a manual run that looks like this
 48206  history | tail -50
 48207  history | tail -100
 48208  history | tail -110 | pbcopy
-```
+{{< / highlight >}}
 
 mid way ofcourse I thought there must be an easier way, write a script, doh too
 late its done
 
 finally
 
-```
+{{< highlight bash >}}
 git push --force
-```
+{{< / highlight >}}
 
 and all the commit sha's have changed so the lol commits won't match up - too bad
 
@@ -397,7 +396,6 @@ TODO - sha is still there lolcommits never lie
 
 The lol commit will never lie
  ![commit 32 Selena Small & Michael Milewski](https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_32_selena_small_6d1e4b0db1f.gif)
-
 
 ### Resources
 
