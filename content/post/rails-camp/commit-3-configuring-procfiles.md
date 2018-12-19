@@ -4,9 +4,9 @@ date: 2018-12-19T15:00:00+11:00
 excerpt: ""
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
-featured_image: 'https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_03_isikyus_0f515e5ecc.gif'
+featured_image: 'http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_03_edward_0f515e5ecc3.gif'
 images:
- - '/images/rails-camp/commit_02_kirsten_comandich_de721fedc80_still.jpg'
+ - '/images/rails-camp/commit_03_edward_0f515e5ecc3_still.jpg'
  - '/images/failure-driven_square.jpg'
 draft: true
 ---
@@ -15,23 +15,24 @@ draft: true
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
 
-    Author: Isikyus <isikyus@users.noreply.github.com>
-    Date:   Sat Nov 24 12:53:05 2018 +1100
+{{< highlight bash >}}
+Author: Isikyus <isikyus@users.noreply.github.com>
+Date:   Sat Nov 24 12:53:05 2018 +1100
 
-    Procfile to run client and server together
+Procfile to run client and server together
 
-    Co-authored-by: Selena Small <selena...@gmail.com>
-    Co-authored-by: Michael Milewski <sara...@gmail.com>
+Co-authored-by: Selena Small <selena...@gmail.com>
+Co-authored-by: Michael Milewski <sara...@gmail.com>
+{{< / highlight >}}
 
-
-[commit](https://github.com/failure-driven/railscamp-search-term/graphs/contributors)
+commit [a8a752f](https://github.com/failure-driven/railscamp-search-term/commit/a8a752f2cf2d3be7f204ee028a5ff52d51e7dda7)
 
 Although a large proportion of rails developers use Macs, it is certainly not mandatory and people 
 can effectively code using Windows or a flavour of linux. This was the case with Edward who although 
 was proud of his own setup using ubuntu, was quick to get his hands on the keyboard and just as quick 
 to voice his frustration with the differences with the Mac. 
 
-“There is no caps lock, this sucks” 
+> “There is no caps lock, this sucks” 
 
 In this case, the MacBook Pro being used had the `caps lock` maped to `esc` because of the fancy but 
 rather inconvenient touch bar. Who needs a caps lock key anyway? Well, Edward and people who are used 
@@ -49,8 +50,8 @@ but in a short period of time we needed to create a high performance team in our
 which meant finding a way to deal with those differences and ultimately create a level of psychological 
 safety. As a friend of ours recently tweeted
 
-[https://twitter.com/MelissaKaulfuss/status/1070563864721293312](https://twitter.com/MelissaKaulfuss/status/1070563864721293312)
-    “The number one thing that is central to high performing teams is psychological safety ...”
+> “The number one thing that is central to high performing teams is psychological safety"
+> {{< tweet 1070563864721293312 >}}
 
 If you’ve read this far, you’re probably wondering if we even wrote any code with Isikyus. What we 
 wanted him to help us with was coming up with a straightforward way to use the [Foreman](https://github.com/ddollar/foreman) 
@@ -73,16 +74,17 @@ us that by default, Foreman sets PORT for the first line in your procfile to 500
 Finally, with a deep exploration of Foreman’s inner workings and a bit of help from some other developers 
 nearby, we figured out that we just needed to export an environment variable with a slightly different name.
 
-```
+{{< highlight bash >}}
 export PUBLIC_PORT=$PORT
-```
+{{< / highlight >}}
 
 ### lolcommit
 
 In the end we had a great time together, solved the problem and the camera was rolling to capture the commit.
 
-![initial commit](https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_03_isikyus_0f515e5ecc.gif)
+![initial commit](http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_03_edward_0f515e5ecc3.gif)
 
 #### Authored By:
 
 Selena Small & Michael Milewski
+
