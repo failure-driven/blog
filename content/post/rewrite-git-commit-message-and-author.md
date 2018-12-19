@@ -1,6 +1,10 @@
 ---
 title: "Rewrite git commit messages and authors"
 date: 2018-12-17T06:13:56+11:00
+excerpt: ""
+images:
+ - '/images/railscamp-search-term-1-contributor.png'
+ - '/images/railscamp-search-term-33-contributors.png'
 draft: true
 ---
 
@@ -119,6 +123,24 @@ draft: true
     get's rid of them locally but no amount of force pushing them up to github
     will remove them. We welcome any feedback on how to do this beyond deleting
     the git repo in github and uploading a completely new copy.
+
+1. Ultimately the commit author amend changed the git contribution
+
+    from 1 contributor
+
+    ![railscamp search term 1 contributor](/images/railscamp-search-term-1-contributor.png)
+
+    to 33 contributors
+
+    ![railscamp search term 33 contributors](/images/railscamp-search-term-33-contributors.png)
+
+    interestingly this took a while for github to update the contributors and
+    looking at the repository there are actually [38
+    contributors](https://github.com/failure-driven/railscamp-search-term/graphs/contributors)
+    so maybe over time this number will go up? maybe something else is going on
+    here?
+
+    ![railscamp search term contributors](/images/railscamp-search-term-contributors-top-bottom.png)
 
 ## Why rewrite commit messages and authors?
 
