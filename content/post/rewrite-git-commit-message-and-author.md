@@ -202,12 +202,12 @@ As already mentioned at the beginning we assume
     write the best quality code.
   * you want to acknowledge your pair with a `Co-authored-by:` commit message
     which GitHub will show as a commit with joint authors
-  * you happen to use the users email address associated with thier GitHub
+  * you happen to use the users email address associated with their GitHub
     account
   * only to work out they are not necessarily too comfortable having their
     email out in a public repo
   * and ultimately some of the time the actual `author` of the commit is not
-    the person who owned the machine so you may want to retrospectivley change
+    the person who owned the machine so you may want to retrospectively change
     the author to give them due credit.
 
 Our general view is that git is a history aligned with a certain oint in time
@@ -215,8 +215,8 @@ and should stay that way, not be altered in the past, just roll forward with
 new changes. In this case we would make and exception for peoples well being
 and our stats of the number of actual authors on our combined project.
 
-We thank the inspiration of our 3rd commiter in our project **isikyus** who
-wanted to be anonymised and brought our attention to (Article coming soon :).
+We thank the inspiration of our 3rd committer in our project **isikyus**, blog
+coming soon, who wanted to be anonymised and brought our attention to:
 
 > **[GitHub username]@users.noreply.github.com**
 
@@ -231,7 +231,7 @@ it was still a fair bit of work to
 - meticulously prepare the alteration of commit messages in a separate file,
 - find we missed a committer first time around for **Co-authored-by** had a type in the commit
 message
-- backup the git repo just incase
+- backup the git repo just in case
 - and then finally manually run through the changes
 
 {{< highlight bash >}}
@@ -255,12 +255,13 @@ git rebase --continue
 
 And an hour later all was good in the git repo.
 
-Well appart from:
+Well apart from:
 
-- the orphaned commits,
+- the orphaned commits - although everyone from railscamp is ultimately ok with
+  the original commit messages,
 - and the force push changes the time of the last update to the repository,
 - and the SHAs don't match up with the lolcommits
-- and a minor note on the above example, we never actually anonimized Selena's
+- and a minor note on the above example, we never actually anonymized Selena's
   email address in commit 0a5196b
 
 And of course mid way we thought there must be a script or an easier way! but
