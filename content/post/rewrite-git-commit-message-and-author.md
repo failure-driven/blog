@@ -1,6 +1,6 @@
 ---
 title: "Rewrite git commit messages and authors"
-date: 2018-12-17T06:13:56+11:00
+date: 2018-12-20T14:19:19+11:00
 excerpt: "You are pairing to get developers in your team across the code base
   and to write the best quality code. You only realise after some number of
   commits that for the acknowledgment of the Author and the stats of you
