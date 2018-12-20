@@ -15,6 +15,8 @@ draft: true
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
 
+Commit [a8a752f](https://github.com/failure-driven/railscamp-search-term/commit/a8a752f2cf2d3be7f204ee028a5ff52d51e7dda7)
+
 {{< highlight bash >}}
 Author: Isikyus <isikyus@users.noreply.github.com>
 Date:   Sat Nov 24 12:53:05 2018 +1100
@@ -24,8 +26,6 @@ Procfile to run client and server together
 Co-authored-by: Selena Small <selena...@gmail.com>
 Co-authored-by: Michael Milewski <sara...@gmail.com>
 {{< / highlight >}}
-
-commit [a8a752f](https://github.com/failure-driven/railscamp-search-term/commit/a8a752f2cf2d3be7f204ee028a5ff52d51e7dda7)
 
 Although a large proportion of rails developers use Macs, it is certainly not mandatory and people 
 can effectively code using Windows or a flavour of linux. This was the case with Edward who although 
