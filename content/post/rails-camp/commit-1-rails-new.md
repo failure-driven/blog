@@ -17,7 +17,9 @@ images:
 
 As seasoned Rails developers, we all know that the first step in building any standard Rails application, is to open the command line and run:
 
-    rails new [app_name]
+{{< highlight bash >}}
+rails new [app_name]
+{{< / highlight >}}
 
 One of the cool things about Rails camp though, is that it brings together people of all different experience levels and backgrounds.
 And who better to ask for help in spinning up a new Rails app than someone who'd never done it before?!
@@ -33,18 +35,22 @@ Very quickly Jess was creating directories, git initializing them, putting files
 Finally understanding why we use git, Jess pushed her first ever commit! Since we were off line in the wilds of Tasmania she pushed her changes to the local server running
 Gogs (https://gogs.io/) a self hosted git service maintained by the organisers of RailsCamp.
 
-<img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@NoislessDwindle" src="//github.com/noiselessdwindle.png" style="display: inline; width: 88px;" height="88" />
+<img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 
-    Author: Jess Brown <nois...@gmail.com>
-    Date:   Sat Nov 24 11:52:19 2018 +1100
+Commit [289b842](https://github.com/failure-driven/railscamp-search-term/commit/289b8422201f3d8c5f960e18c6e700dc5318f51c)
 
-    Initial Commit
+{{< highlight bash >}}
+Author: Jess Brown <noiselessdwindle@users.noreply.github.com>
+Date:   Sat Nov 24 11:52:19 2018 +1100
 
-    Co-authored-by: Michael Milewski <sara...@gmail.com>
-    Co-authored-by: Selena Small <selena...@gmail.com>
-    Signed-off-by: Selena Small <selena...@gmail.com>
+Initial Commit
+
+Co-authored-by: Michael Milewski <saramic@users.noreply.github.com>
+Co-authored-by: Selena Small <SelenaSmall@users.noreply.github.com>
+Signed-off-by: Selena Small <SelenaSmall@users.noreply.github.com>
+{{< / highlight >}}
 
 The real eye opener for Jess though, was when we pulled a copy of the commit on another machine!
 
@@ -80,11 +86,13 @@ hoping to show Jess that the code she helped create, was the blueprint for these
 Having never fired up the same rails app multiple times on the same computer (because why would you?), it became a little
 disconcerting to be greeted on
 
-    rails server --port 3001
+{{< highlight bash >}}
+rails server --port 3001
+{{< / highlight >}}
 
 with an error message:
 
-    A server is already running. Check pid. Exiting
+> `A server is already running. Check pid. Exiting`
 
 Not wanting to dig too deep into PID files and processes with someone who is already learning so much, we hoped for a smooth exit strategy.
 
@@ -94,16 +102,22 @@ Throwing it back at Jess in the hopes of buying more time to magically think up 
 
 Thankfully Jess was there to help us help her! We got her to type
 
-    rails server --help
+{{< highlight bash >}}
+rails server --help
+{{< / highlight >}}
 
 which quickly found the way forward using
 
-    --pid
+{{< highlight bash >}}
+--pid
+{{< / highlight >}}
 
 to specify a pid file for each server
 
-    rails server --port 3001 --pid=tmp/pids/server_1.pid
-    rails server --port 3002 --pid=tmp/pids/server_2.pid
+{{< highlight bash >}}
+rails server --port 3001 --pid=tmp/pids/server_1.pid
+rails server --port 3002 --pid=tmp/pids/server_2.pid
+{{< / highlight >}}
 
 ### Have you ever had Impostor Syndrome?
 
@@ -131,7 +145,7 @@ Oh and yes the camera was rolling to capture the emotion straight after almost 2
 
 ![initial commit](https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_01_jess_brown_85e0a9dde4d.gif)
 
-
 #### Authored By:
 
 Selena Small & Michael Milewski
+

@@ -1,6 +1,6 @@
 ---
 title: "Configuring procfiles"
-date: 2018-12-19T15:00:00+11:00
+date: 2018-12-21T09:30:00+11:00
 excerpt: ""
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
@@ -12,19 +12,19 @@ draft: true
 ---
 
 <img alt="@isikyus" src="//github.com/isikyus.png" style="display: inline; width: 88px;" height="88" />
-<img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
+<img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 
 Commit [a8a752f](https://github.com/failure-driven/railscamp-search-term/commit/a8a752f2cf2d3be7f204ee028a5ff52d51e7dda7)
 
 {{< highlight bash >}}
 Author: Isikyus <isikyus@users.noreply.github.com>
-Date:   Sat Nov 24 12:53:05 2018 +1100
+Date:   Sat Nov 24 14:48:43 2018 +1100
 
 Procfile to run client and server together
 
-Co-authored-by: Selena Small <selena...@gmail.com>
-Co-authored-by: Michael Milewski <sara...@gmail.com>
+Co-authored-by: Michael Milewski <saramic@gmail.com>
+Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
 
 Although a large proportion of rails developers use Macs, it is certainly not mandatory and people 

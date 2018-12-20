@@ -16,19 +16,21 @@ images:
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
 
+Commit [79170f2](https://github.com/failure-driven/railscamp-search-term/commit/79170f2d4b9f4051f7086a23f14282734c163b24)
+
 {{< highlight bash >}}
-Author: Kirsten Comandich <kcom...@gmail.com>
+Author: Kirsten Comandich <kcomandich@users.noreply.github.com>
 Date:   Sat Nov 24 12:53:05 2018 +1100
 
 Created React client
 
 Used npx create-react-app client
 
-Co-authored-by: Selena Small <selena...@gmail.com>
-Co-authored-by: Michael Milewski <sara...@gmail.com>
+Co-authored-by: Selena Small <SelenaSmall@users.noreply.github.com>
+Co-authored-by: Michael Milewski <saramic@users.noreply.github.com>
 {{< / highlight >}}
 
-[commit](https://github.com/failure-driven/railscamp-search-term/graphs/contributors)
+[all contributors](https://github.com/failure-driven/railscamp-search-term/graphs/contributors)
 
 Although there seems to not be too much in creating a new react app, simply typing
 
