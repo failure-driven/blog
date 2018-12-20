@@ -99,9 +99,9 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
    checksum of the content and header.
 
      So from our original
-   [0a5196b](https://github.com/failure-driven/railscamp-search-term/commit/0a5196b510e3f47b5e8a31f31b4a03346d6bbd93)
+   [6d1e4b0](https://github.com/failure-driven/railscamp-search-term/commit/6d1e4b0db1f232728bf7da6769c50f8dc0315985)
    Our commit now becomes
-   [6a166c](https://github.com/failure-driven/railscamp-search-term/commit/6a166cb9e0233f42580a36b5b581c72f63a916ad)
+   [0a5196b](https://github.com/failure-driven/railscamp-search-term/commit/0a5196b510e3f47b5e8a31f31b4a03346d6bbd93)
 
 1. When all is good force push it to master
 
@@ -119,7 +119,6 @@ git push --force
     **Original** commit 32 -
     [6d1e4b0](https://github.com/failure-driven/railscamp-search-term/commit/6d1e4b0db1f232728bf7da6769c50f8dc0315985)
     **Author Michael**
-
 
 	  {{< highlight bash "hl_lines=2" >}}
 commit 6d1e4b0db1f232728bf7da6769c50f8dc0315985
