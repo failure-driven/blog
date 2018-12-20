@@ -179,11 +179,9 @@ git gc --prune=now --aggressive
 
     from **1 contributor**
 
-    ![railscamp search term 1 contributor](/images/railscamp-search-term-1-contributor.png)
-
     to **33 contributors**
 
-    ![railscamp search term 33 contributors](/images/railscamp-search-term-33-contributors.png)
+    ![railscamp search term from 1 to 33 contributors](/images/railscamp-search-term-1-to-33-contributors.jpg)
 
     interestingly this took a while for GitHub to update the contributors and
     looking at the repository there are actually [38
