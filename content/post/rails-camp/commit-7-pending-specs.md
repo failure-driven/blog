@@ -14,8 +14,8 @@ draft: true
 Brenton Annan, The Brenton
 
 <img alt="@brentonannan" src="//github.com/brentonannan.png" style="display: inline; width: 88px;" height="88" />
-<img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
+<img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 
 Commit [44b8532](https://github.com/failure-driven/railscamp-search-term/commit/44b853282c57cda6ecc2046f978dc86d199a7271)
 

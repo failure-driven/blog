@@ -12,8 +12,8 @@ draft: true
 ---
 
 <img alt="@jonleighton" src="//github.com/jonleighton.png" style="display: inline; width: 88px;" height="88" />
-<img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
+<img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 
 Commit [79cb3dd](https://github.com/failure-driven/railscamp-search-term/commit/79cb3dd3bbe62e58826b3ce9b79eae68e4ef76f9)
 
