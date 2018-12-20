@@ -6,11 +6,10 @@ excerpt: "You are pairing to get developers in your team across the code base
   commits that for the acknowledgment of the Author and the stats of you
   project you need to rewrite your commit messages and authors history! here is
   how ..."
-NOT_featured_image: 'https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_32_selena_small_6d1e4b0db1f.gif'
+featured_image: '/images/railscamp-search-term-1-to-33-contributors.jpg'
 images:
  - '/images/railscamp-search-term-1-contributor.png'
  - '/images/railscamp-search-term-33-contributors.png'
-draft: true
 ---
 
 1. Given this commit message
