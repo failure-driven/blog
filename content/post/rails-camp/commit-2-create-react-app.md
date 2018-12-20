@@ -16,46 +16,47 @@ images:
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
 
-    Author: Kirsten Comandich <kcom...@gmail.com>
-    Date:   Sat Nov 24 12:53:05 2018 +1100
+{{< highlight bash >}}
+Author: Kirsten Comandich <kcom...@gmail.com>
+Date:   Sat Nov 24 12:53:05 2018 +1100
 
-    Created React client
+Created React client
 
-    Used npx create-react-app client
+Used npx create-react-app client
 
-    Co-authored-by: Selena Small <selena...@gmail.com>
-    Co-authored-by: Michael Milewski <sara...@gmail.com>
-
+Co-authored-by: Selena Small <selena...@gmail.com>
+Co-authored-by: Michael Milewski <sara...@gmail.com>
+{{< / highlight >}}
 
 [commit](https://github.com/failure-driven/railscamp-search-term/graphs/contributors)
 
 Although there seems to not be too much in creating a new react app, simply typing
 
-```
+{{< highlight bash >}}
 $ npx create-react-app client
-```
+{{< / highlight >}}
 
 or if planning to use npm
 
-```
+{{< highlight bash >}}
 $ npx create-react-app client --use-npm
-```
+{{< / highlight >}}
 
 which generates everything in a directory called client, to be able to simply fire up the react demo app with
 
-```
+{{< highlight bash >}}
 $ cd client
 $ npm start
-```
+{{< / highlight >}}
 
 there is actually a whole lot going on here! Especially for someone like Kirsten, who'd never generated a new react app.
 Since this was something new for her, we got her to create her first component.
 
-```
+{{< highlight html >}}
 <div className="heading">
   <h1>Welcome</h1>
 </div>
-```
+{{< / highlight >}}
 
 At which stage she thought
 
@@ -69,7 +70,7 @@ Why do we even use JSX then?
 
 JSX is a lot simpler to read and write, for example the following JS code is exactly the same as the JSX code above.
 
-```
+{{< highlight javascript >}}
 React.createElement(
     'div',
     {className: "heading"},
@@ -79,7 +80,7 @@ React.createElement(
         "Welcome"
     )
 )
-```
+{{< / highlight >}}
 
 As you can see, the `createElement` function takes three positional parameters: `type`, `props`, `children`
 
@@ -99,7 +100,7 @@ to
 After a short explanation and an "aha" moment or two, we then helped Kirsten to modify her new component and extract
 a smaller sub component.
 
-```
+{{< highlight javascript >}}
 const Heading = (props) => (
     <h1>{props.text}</h1>
 )
@@ -107,19 +108,19 @@ const Heading = (props) => (
 <div className="heading">
     <Heading text="Welcome" />
 </div>
-```
+{{< / highlight >}}
 
 or by destructuring the props
 
-```
+{{< highlight javascript >}}
 const Heading = ( { text } ) => (
     <h1>{text}</h1>
 )
-```
+{{< / highlight >}}
 
 so in all your `src/App.js` file would look like
 
-```
+{{< highlight javascript >}}
 import React, { Component } from 'react';
 
 const Heading = ({text}) => (
@@ -135,7 +136,7 @@ class App extends Component {
         )
     }
 }
-```
+{{< / highlight >}}
 
 ### What did we learn?
 
@@ -204,3 +205,4 @@ Oh and yes the camera was rolling to capture the commit.
 #### Authored By:
 
 Selena Small & Michael Milewski
+
