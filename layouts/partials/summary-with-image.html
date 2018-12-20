@@ -17,6 +17,9 @@
             {{ .Title }}
             </a>
         </h1>
+        <time class="f6 mv2 dib tracked" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+          {{- .Date.Format "January 2, 2006" -}}
+        </time>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
           {{ .Params.excerpt }}
         </div>

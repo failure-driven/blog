@@ -8,8 +8,11 @@
       {{ end }}
       <div class="w-100{{ if .Params.featured_image }} w-60-ns pl3-ns{{ end }}">
         <h1 class="f3 fw1 athelas mt0 lh-title">{{ .Title }}</h1>
+        <time class="f6 mv2 dib tracked" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+          {{- .Date.Format "January 2, 2006" -}}
+        </time>
         <div class="f6 f5-l lh-copy nested-copy-line-height">
-          {{ .Summary }}
+          {{ .Params.excerpt }}
         </div>
         {{/* TODO: add author
         <p class="f6 lh-copy mv0">By {{ .Author }}</p> */}}
