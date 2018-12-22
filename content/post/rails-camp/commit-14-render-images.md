@@ -41,15 +41,17 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
   have seen it
 
   I did a memorial for a mother - strength, hope and courage and I miss splet it
-  strentgh after 2 hours she put it on facebook before anyone realised
+  strength after 2 hours she put it on facebook before anyone realised
 
   Fucking up tattoos and then covering them up to pass - test driven tattooing
 
-  after the fuck up I paid for lazer removal and fix it
+  after the fuck up I paid for laser removal and fix it
 
-  I tattoed her a few times before the accident, pretty close as tattooer and
+  I tattooed her a few times before the accident, pretty close as tattooer and
   client. It was pretty shitty, and it is shitty for her, she was cool about it,
   it still sux,
+
+## Lolcommit
 
 ![commit 14 Eathan Langford](http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_14_eathan_langford_2b21d630629.gif)
 
