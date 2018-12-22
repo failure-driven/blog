@@ -11,6 +11,14 @@ images:
 draft: true
 ---
 
+The whole point of our code with everyone at [rails camp Hobart]({{<
+ref "/post/railscamp-pairing" >}}) project was to code with, well
+everyone but sometimes you just need to stick it out with the core
+team. In this case we knew we needed to add React Router to allow
+multipage navigation and helping someone else understand React
+Router and test drive it's insertion just sounded like a bit much at
+9:30pm on a Saturday night.
+
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 
@@ -24,6 +32,10 @@ bring in react router for welcome to round transition
 
 Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
+
+**TODO**
+
+add something about react router here?
 
 ![commit 11 Selena and Michael](https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_11_selena_small_d94e2cc3f89.gif)
 
