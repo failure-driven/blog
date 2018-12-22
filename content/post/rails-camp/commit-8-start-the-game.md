@@ -11,6 +11,14 @@ images:
 draft: true
 ---
 
+Rob Jacoby joined us to bring in the first frontend component assertion in
+ReactJS as part of our code with everyone at [rails camp Hobart]({{< ref
+"/post/railscamp-pairing" >}}) project. In the last episode Brenton had to push
+a [pending commit]({{< ref "/post/rails-camp/commit-7-pending-specs" >}}) due
+to iminent risk of fire. Fortunately it was a false alarm so we managed to
+bring Rob upto date with our code base and testing approach and gave him an
+opportunity to write some react.
+
 <img alt="@robjacoby" src="//github.com/robjacoby.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
@@ -27,20 +35,65 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 Co-authored-by: Michael Milewski <saramic@gmail.com>
 {{< / highlight >}}
 
-mostly a reviewer than a coder, wrote the backbone and not the feature work
+In contrast to snapshot testing, we used the shallow render of the component to
+test against. In this case checking that a button exists, as it is the first
+and only button we need we can opt to just find a button, any button for the
+time being.
 
-work with traditional feature branches and QA and really interested with XP
-work like you guys - great takeaway,
+{{< highlight react "hl_lines=4" >}}
+it('renders a button', () => {
+  const wrapper = shallow(<App />);
+  const button = <button>Start Game</button>;
+  expect(wrapper.contains(button)).toEqual(true);
+}); 
+{{< / highlight >}}
+
+and the button to implement what the test asks for
+
+{{< highlight react >}}
+<button>
+  Start Game
+</button>
+{{< / highlight >}}
+
+again we are taking small steps here. Obviously bringing new people onto the
+project and up to speed with the technology requires the ability to bring it to
+a level where everyone is comfortable. In our case the newest member of the
+team, Rob in this case, is the designated "junior" of the code base. In pairing
+you want to encourage the "junior" to drive as much as possible, "junior dev
+hands on the keboard". Obviously "junior" is in respect to the context of the
+task at hand. Getting anyeone to write a their first bit of Test Driven React
+is challenging but we managed.
+
+### 5 minutes with Rob
+
+> **Selena** "Rob have you written any React recently? what does your job
+> involve these days?"
+
+> **Rob** "Not really, I am mostly a reviewer these days, more so than a coder.
+> I have also been more involved in writing backbone of applications, core
+> architectural parts and have not really done much feature work"
+
+> **Selena** "You seemed a little surprised that we would be coding directly on
+> master, how do you usually work?"
+
+> **Rob** "We work with traditional feature branches and pass work over to QA
+> (Quality Assurance) for further testing. That said I am really interested
+> with the XP (Extreme Programming) work like you guys have shown me today. I
+> have had some great takeaways"
+
+> **Selena** "how did you find the pairing experience with us?"
 
 > **Rob** "The facade API you two have provided is that you are nice people!"
 
 > **Selena** "yeah the backend is a mess"
 
-### Lolcommit
+### Lolcommits
 
-**TODO** next to each other
-![test lolcommit 1](https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_08_rob_jacoby__test_1_db0eb0f8b2e.gif)
-![test lolcommit 2](https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_08_rob_jacoby__test_2_441db8c1dee.gif)
+<div style="display: flex;">
+  <img alt="test lolcommit 1" src="https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_08_rob_jacoby__test_1_db0eb0f8b2e.gif" />
+  <img alt="test lolcommit 2" src="https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_08_rob_jacoby__test_2_441db8c1dee.gif" />
+</div>
 
 Finally with practic we had another go
 
