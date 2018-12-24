@@ -1,7 +1,7 @@
 ---
 title: "Configuring procfiles"
 date: 2018-12-21T09:30:00+11:00
-excerpt: ""
+excerpt: "Although a large proportion of rails developers use Macs, it is certainly not mandatory and people can effectively code using Windows or a flavour of linux. This was the case with Isikyus who although was proud of his own setup using ubuntu, was quick to get his hands on the keyboard and just as quick to voice his frustration with the differences with the Mac. "
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
 featured_image: 'http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_03_edward_0f515e5ecc3.gif'
@@ -28,14 +28,14 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
 
 Although a large proportion of rails developers use Macs, it is certainly not mandatory and people 
-can effectively code using Windows or a flavour of linux. This was the case with Edward who although 
+can effectively code using Windows or a flavour of linux. This was the case with Isikyus who although 
 was proud of his own setup using ubuntu, was quick to get his hands on the keyboard and just as quick 
 to voice his frustration with the differences with the Mac. 
 
 > “There is no caps lock, this sucks” 
 
 In this case, the MacBook Pro being used had the `caps lock` maped to `esc` because of the fancy but 
-rather inconvenient touch bar. Who needs a caps lock key anyway? Well, Edward and people who are used 
+rather inconvenient touch bar. Who needs a caps lock key anyway? Well, Isikyus and people who are used 
 to using it, of course.
 
 By the time we got to Isikyus, we already had rails server running and a react app set up, so there 
