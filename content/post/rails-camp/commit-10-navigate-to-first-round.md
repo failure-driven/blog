@@ -1,7 +1,7 @@
 ---
 title: "Commit 10 Navigate to First Round"
 date: 2019-01-21T09:30:00+11:00
-excerpt: ""
+excerpt: "Tim is next up in our series of "code with everyone at rails camp Hobart project". As is part of the process in TDD, we were now ready for some green refactoring."
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
 featured_image: 'https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_10_tim_lucas_41ca4d41985.gif'
@@ -12,12 +12,17 @@ draft: true
 ---
 
 Tim is next up in our series of "code with everyone at [rails camp
-Hobart]({{< ref "/post/railscamp-pairing" >}}) project". We were now
-starting to revist previously made short term decissions and wire up
-buttons to actually take users to places we wanted them to be in.
-That is all within the design of Test Driven Development. We have
-been making steps to **Red** write failing tests and **Green** make
-them pass, now finally we were starting to do some **Refactoring**.
+Hobart]({{< ref "/post/railscamp-pairing" >}}) project". 
+
+As is part of the process in TDD, we were now ready for some `green` refactoring. 
+
+> **RED**
+
+> **GREEN**
+
+> **REFACTOR**
+
+As we revisted buttons that had temporarily been wired up to get tests passing, we knew moving forward we would need them to work more effectively in order to actually take users to places we wanted them to be in.
 
 <img alt="@toolmantim" src="//github.com/toolmantim.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
@@ -35,15 +40,20 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 Co-authored-by: Michael Milewski <saramic@gmail.com>
 {{< / highlight >}}
 
-The refactor in this case was to remove the reliance of the button being an
-actual button. After all an anchor tag, a link, can take you just as well to a
-new location as a button. We were starting to rely on a few too many things
-hard coded in our test and implementation. The first fix for this was to use
-`data-` attribute to find the element that would trigger the actoin to go to
-round 1. This meant that we be independent of the implementation be it button
-or link as long as the data attribute was there.
+Ten commits in and we were starting to rely on a few too many things hard coded in our tests and implementation. 
 
-From the button to the link
+The refactor we needed was to change the button to be a link and to do this, we would use the `data-` attribute to find the element which triggers the actoin "go to round 1."
+
+In doing this, integration tests would be independant of fine grained implementation. For example, we could switch between buttons, links and any other element as long as it had the specified data attribute associated to it - as long as the test can find that data attribute when it expects to, the test wouldn't be broken.
+
+The updated test:
+
+{{< highlight diff >}}
+- page.find('button').click
++ page.find('[data-start-button]').click
+{{< / highlight >}}
+
+Changing the button to be a link:
 
 {{< highlight diff >}}
 - <button>
@@ -57,75 +67,59 @@ From the button to the link
 + </a>
 {{< / highlight >}}
 
-and the test
+There is clearly another abstraction that could happen here since our integration tests still rely on knowing that a particular link will have a particular data attribute.
 
-{{< highlight diff >}}
-- page.find('button').click
-+ page.find('[data-start-button]').click
-{{< / highlight >}}
-
-There seems still a bit of reliance in the integration spec knowing
-that a particular link will have a particular data attribute. There
-is clearly another abstraction needed here. After all the outside
-layer of our BDD, the integration spec, is from the Behaviour of the
-user. No user will know what data attribute is on a button. In fact
-we may even strip these data attributes out by the time that they
-get used in production. As we are modelling user behaviour our
-writing of the specs should be modeled the same way. There is an
-abstraction here but we will wait to really need it to add it then.
+These data attributes are really only there for the purpose of testing and no user will even know that any data attribute is even on a button. In fact we may even strip these data attributes out by the time that they get used in production. 
 
 ### 5 minutes with Tim
 
-> **Selena** "what did you think of pairing with us"
+> **Q:** "What did you think of pairing with us?"
 
-> **Tim** "yeah it was fun, I like the different things you learn when working
-> with others. In this case it was fun using a new IDE"
+> **A:** "Yeah it was fun, I like the different things you learn when working
+> with others. In this case it was fun using a new IDE [RubyMine](link/to/rubymine).
+> Not being sarcastic or anything."
 
-> **Tim** "not being sarcastic or anything"
+> **Selena** "It is interesting that a lot of developers have a love hate
+> relationship with our pairing IDE of choice. We find that it comes with the 
+> most of the defaults that we need working in ruby. In a pairing environment 
+> where you need to be able to switch machines easily, it allows people to
+> be more productive in the shortest period of time."
 
-> **Selena** "Yeah it is interesting that a lot of developers have a love hate
-> relationship with our pairing IDE of choice RubyMine. We find that it comes
-> with the most sane defaults and is quite powerfull. Especially in a pairing
-> environment where you end up using someone elses machine it allows people to
-> be super productive in the shortest period of time."
+> **Q:** "You mentioned learning by pairing with us, do you pair at your
+> work?"
 
-> **Selena** "You mentioned learning by pairing with us, do you pair at your
-> work? how do you learn and cross polinate ideas?"
-
-> **Tim** "I force demo time on the team every thursday. It give the
+> **A:** "I force demo time on the team every Thursday. It gives the
 > opportunity for developers to show what they have been working on, what
-> problems the have solved and are stuck on. Amongst other things the show it
+> problems the have solved and are stuck on. Amongst other things they get to show it
 > all in their terminal and IDE of choice. The whole team gets to quickly
-> experience new stuff and how people work, what short cuts they use. Have you
-> guys learnt anything from pairing with me?"
+> experience new stuff and how people work, what short cuts they use. 
 
-> **Selena** "Yeah that was cool how you just typed"
+> **Tim** "It was interesting working with jest unit testing in `--watch` mode
+> so it auto runs the test everytime a file is modified."
 
-> {{< highlight bash >}}
+{{< highlight bash >}}
+npm run test --watch
+{{< / highlight >}}
+
+### Learning goes both ways
+
+We also thought it was pretty cool when Tim just typed
+
+{{< highlight bash >}}
 git commit -va
 {{< / highlight >}}
 
-> "and saw all the changes come up, I am guessing that the -v is verbose? let's
-> try it, the `-a` is for for staging `--all` files"
+and all the changes showed up in the terminal, the `-v` flag is `verbose` and the `-a` is for for staging `--all` files. The command can also be written in long hand like this:
 
 > {{< highlight bash >}}
 git commit --verbose --all
 {{< / highlight >}}
 
-> "nice now we can review all the changes in the editor window rather than
-> first diffing them."
-
-> **Tim** "it was interesting working with jest unit testing in `--watch` mode
-> so it auto runs the test everytime a file is modified."
-
-> {{< highlight bash >}}
-npm run test --watch
-{{< / highlight >}}
-
-> **Tim** "Let's get this
-> Lolcommit with the fireplace in it"
+It shows all staged changes in the editor window rather than having to diff them first. This is why we love pairing! You're always sharing knowledge, even if it's something as seemingly small as a new shortcut for the tools you use every day.
 
 ### Lolcommit
+
+> **Tim** "Let's get this Lolcommit with the fireplace in it"
 
 Disappointingly we did not get the fireplace in the shot first time around.
 
@@ -138,4 +132,3 @@ So a quick `git commit --amend` and a tilt of the laptopt sorted that out.
 #### Authored By:
 
 Selena Small & Michael Milewski
-
