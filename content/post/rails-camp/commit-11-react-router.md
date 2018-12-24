@@ -1,7 +1,8 @@
 ---
 title: "Commit 11 React Router"
 date: 2019-01-23T09:30:00+11:00
-excerpt: ""
+excerpt: "The whole point of our code with everyone at rails camp Hobart project was to code with, well everyone but sometimes you just need to stick it out with the core
+team."
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
 featured_image: 'http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_11_selena_small_d94e2cc3f89.gif'
