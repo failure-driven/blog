@@ -1,7 +1,9 @@
 ---
 title: "Commit 9 Round 1"
 date: 2019-01-14T09:30:00+11:00
-excerpt: ""
+excerpt: "Rails camp brings together Ruby and Ruby on Rails develoeprs and everything
+that they are interested in. Among the varied interests are board games and for
+our pair in this episode of, "code with everyone at rails camp Hobart project", was Paul Douglas. For Paul games means Dungeons and Dragons (D&D)."
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
 featured_image: 'http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_09_paul_douglas_62b614eb49a.gif'
@@ -17,10 +19,7 @@ our pair in this episode of, "code with everyone at [rails camp Hobart]({{< ref
 "/post/railscamp-pairing" >}}) project", was Paul Douglas. For Paul games means
 Dungeons and Dragons (D&D).
 
-Paul was quick to pick up that his task was going to be relatively simple
-writing a high level integration spec to test that the user is on the first
-round of the game. This meant he had more time tomshow off his D&D figurines
-for the camp and discuss D&D a bit further.
+Quick to grab the keyboard and write a relatively simple integration test ensuring users end up on the first round of the game when they click the "Start Game" button, Paul then had plenty of time to show off the D&D figurines he brought for the camp and tell us a little more about the game (since we're a little naive when it comes to D&D).
 
 <img alt="@pdouglasssi" src="//github.com/pdouglasssi.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
@@ -40,31 +39,31 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 
 ### 5 minutes with Paul
 
-> **Selena** "How did you find it?"
+> **Q:** "How did you find the experience pairing with us?"
 
-> **Paul** "I enjoyed it, the pairing, seeing how you work but most of all how
+> **A:** "I enjoyed it, the pairing, seeing how you work but most of all how
 > we incorporated the figurines in the animated lolcommit gif"
 
-> **Selena** "how familiar are you with the way we work?"
+> **Q:** "How familiar are you with pairing, TDD and working on master?"
 
-> **Paul** "There were a lot of new things here for me, I have never used RSpec
+> **A:** "There were a lot of new things here for me, I have never used RSpec
 > nor the React enzyme snapshot testing framework. I do some coding but it is
 > not the main part of my job. I write a lot of batch files. There is a lot of
 > stuff that you can do with batch files. There are things you would not expect
 > to be able to do with batch files."
 
-> **Selena** "What do you mostly do in your job?"
+> **Q:** "What do you mostly do in your job?"
 
-> **Paul** "Not so much web apps. Currently I am changing a client over from
+> **A:** "Not so much web apps. Currently I am changing a client over from
 > Google Suite to Office 365. The reason is that government clients want data
 > soverenigty. They put everything in unencrypted emails but as long as it is
 > in Australia then it is OK"
 
-> **Selena** "given all the technology and the various MMOs (massively
+> **Q** "Given all the technology and the various MMOs (massively
 > multiplayer online game) why is it that you choose to play D&D without
 > computers?
 
-> **Paul** "I feel there is more freedom playing D&D with a human as a backend,
+> **A:** "I feel there is more freedom playing D&D with a human as a backend,
 > as opposed to computer game play. It is like a "mechanical turk". For example
 > in the layout we have here at Rails Camp there is a mountain that is not part
 > of the game play. If you wanted to climb the mountain in a computer game you
@@ -83,4 +82,3 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 #### Authored By:
 
 Selena Small & Michael Milewski
-
