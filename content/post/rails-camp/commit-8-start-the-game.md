@@ -1,7 +1,8 @@
 ---
 title: "Commit 8 Start the Game"
 date: 2019-01-09T09:30:00+11:00
-excerpt: ""
+excerpt: "Next to join us for our rails camp Hobart project was Rob Jacoby. 
+After Brenton was taught how to push a pending commit that would be allowed to not pass in a CI set up, we wanted to Rob to help us bring in the first front end component."
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
 featured_image: 'http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_08_rob_jacoby_5f2f45c6243.gif'
@@ -11,13 +12,11 @@ images:
 draft: true
 ---
 
-Rob Jacoby joined us to bring in the first frontend component assertion in
-ReactJS as part of our code with everyone at [rails camp Hobart]({{< ref
-"/post/railscamp-pairing" >}}) project. In the last episode Brenton had to push
-a [pending commit]({{< ref "/post/rails-camp/commit-7-pending-specs" >}}) due
-to iminent risk of fire. Fortunately it was a false alarm so we managed to
-bring Rob upto date with our code base and testing approach and gave him an
-opportunity to write some react.
+Next to join us for our [rails camp Hobart]({{< ref"/post/railscamp-pairing" >}}) project was Rob Jacoby. 
+
+After Brenton was taught how to push a [pending commit]({{< ref "/post/rails-camp/commit-7-pending-specs" >}}) that would be allowed to _not pass_ in a CI set up, we wanted to Rob to help us bring in the first front end component.
+
+Quickly bringing Rob up to speed with our code base and testing approach, we gave him an opportunity to write some react.
 
 <img alt="@robjacoby" src="//github.com/robjacoby.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
@@ -35,10 +34,7 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 Co-authored-by: Michael Milewski <saramic@gmail.com>
 {{< / highlight >}}
 
-In contrast to snapshot testing, we used the shallow render of the component to
-test against. In this case checking that a button exists, as it is the first
-and only button we need we can opt to just find a button, any button for the
-time being.
+Since it's still early days in building this project, we don't have any complexity yet or any components for that matter. Brenton's test is looking for a button on the page, any button, and to get this test passing for the time being all we need to do is add a button.
 
 {{< highlight react "hl_lines=4" >}}
 it('renders a button', () => {
@@ -48,7 +44,7 @@ it('renders a button', () => {
 }); 
 {{< / highlight >}}
 
-and the button to implement what the test asks for
+and for the button to contain the text "Start Game", like what the test asks for.
 
 {{< highlight react >}}
 <button>
@@ -56,37 +52,31 @@ and the button to implement what the test asks for
 </button>
 {{< / highlight >}}
 
-again we are taking small steps here. Obviously bringing new people onto the
-project and up to speed with the technology requires the ability to bring it to
-a level where everyone is comfortable. In our case the newest member of the
-team, Rob in this case, is the designated "junior" of the code base. In pairing
-you want to encourage the "junior" to drive as much as possible, "junior dev
-hands on the keboard". Obviously "junior" is in respect to the context of the
-task at hand. Getting anyeone to write a their first bit of Test Driven React
-is challenging but we managed.
+We took an extremely small step here but the reality is that building out new features can sometimes feel like a series of unbeleivably small steps - especially when you're not quite sure where you're going yet.
+
+In respect to the context of the task at one hand, someone is always going to be less knowledgable and may even be refered to at times as the "junior" in that particular situation. 
+
+For this commit, Rob is the designated "junior" and in a good pairing environment, you want to encourage the "junior" to drive as much as possible. Since we're not so far beyond "junior" ourselves in test driving React, getting anyone else to write a their first bit of Test Driven React is certainly a challenge but we managed in the end!
 
 ### 5 minutes with Rob
 
-> **Selena** "Rob have you written any React recently? what does your job
+> **Q:** "Rob have you written any React recently? what does your job
 > involve these days?"
 
-> **Rob** "Not really, I am mostly a reviewer these days, more so than a coder.
-> I have also been more involved in writing backbone of applications, core
-> architectural parts and have not really done much feature work"
+> **A:** "Not really, I am mostly a reviewer these days, more so than a coder.
+> I have also been more involved in writing the backbone of applications, core
+> architectural parts and haven't really done much feature work"
 
-> **Selena** "You seemed a little surprised that we would be coding directly on
+> **Q:** "You seemed a little surprised that we would be coding directly on
 > master, how do you usually work?"
 
-> **Rob** "We work with traditional feature branches and pass work over to QA
-> (Quality Assurance) for further testing. That said I am really interested
-> with the XP (Extreme Programming) work like you guys have shown me today. I
-> have had some great takeaways"
+> **A:** "We work with traditional feature branches and pass work over to QA
+> (Quality Assurance) for further testing. Although I am really interested
+> with the XP (Extreme Programming) work like you guys have shown me today"
 
-> **Selena** "how did you find the pairing experience with us?"
+> **Q:** "How did you find the pairing experience with us?"
 
-> **Rob** "The facade API you two have provided is that you are nice people!"
-
-> **Selena** "yeah the backend is a mess"
+> **A:** "The facade API you two have provided is that you are nice people!"
 
 ### Lolcommits
 
