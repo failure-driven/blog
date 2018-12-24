@@ -14,10 +14,11 @@ draft: true
 The whole point of our code with everyone at [rails camp Hobart]({{<
 ref "/post/railscamp-pairing" >}}) project was to code with, well
 everyone but sometimes you just need to stick it out with the core
-team. In this case we knew we needed to add React Router to allow
-multipage navigation and helping someone else understand React
-Router and test drive it's insertion just sounded like a bit much at
-9:30pm on a Saturday night.
+team. 
+
+We knew we would need to add React Router to be able to allow multipage navigation. We only knew that because we've done it before but even then it wasn't easy to understand all the moving parts. 
+
+Helping someone else understand React Router and test drive it's implementation just sounded like a bit much at 9:30pm on a Saturday night, so we had to go this one as a duo.
 
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
@@ -42,4 +43,3 @@ add something about react router here?
 #### Authored By:
 
 Selena Small & Michael Milewski
-
