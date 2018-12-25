@@ -1,7 +1,7 @@
 ---
 title: "Commit 10 Navigate to First Round"
 date: 2019-01-21T09:30:00+11:00
-excerpt: "Tim is next up in our series of "code with everyone at rails camp Hobart project". As is part of the process in TDD, we were now ready for some green refactoring."
+excerpt: "Tim is next up in our series of 'code with everyone at rails camp Hobart project'. As is part of the process in TDD, we were now ready for some green refactoring."
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
 featured_image: 'https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_10_tim_lucas_41ca4d41985.gif'
