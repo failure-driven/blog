@@ -1,24 +1,36 @@
 {{ define "main" }}
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    {{ .Content }}
-  </article>
+  
 
   <div class="row">
-    <!-- begin rails-camp section -->
-    {{ $section := where .Site.RegularPages "Section" "in" "rails-camp" }}
+    <div class="col-md-7">
+      <!-- begin top section -->
+      <div class="relative w-100 mb4 nested-copy-line-height">
+        <div class="mb3 pa4 overflow-hidden">
+          <h1>Hear about feature testing</h1>
 
-    {{ $section_count := len $section }}
-    {{ if ge $section_count 1 }}
-      {{ $section_name := "rails-camp" }}
+          <p>Hear about feature testing modern apps with multi layer Behavioural Driven Development (BDD).
+          <a href="https://www.meetup.com/Ruby-On-Rails-Oceania-Melbourne/">#RORO Meblourne</a></p>
+            
+          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe src="https://www.youtube.com/embed/p72EPNXbjiU" style="position: absolute;  width: 100%; height: 100%; border:0; margin: auto;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube Video"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- end top section -->
 
-      <div class="col-md-7">
+      <!-- begin rails-camp section -->
+      {{ $section := where .Site.RegularPages "Section" "in" "rails-camp" }}
+
+      {{ $section_count := len $section }}
+      {{ if ge $section_count 1 }}
+        {{ $section_name := "rails-camp" }}
         <div class="relative w-100 mb4 bg-white nested-copy-line-height">
           <div class="bg-white mb3 pa4 gray overflow-hidden">
             {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
             {{ with .Site.GetPage "section" $section_name }}
               <h4 class="flex-none w-80 mw8 center text-center">
-                Featured
-              </h2>
+                Featured Series
+              </h4>
 
               <h2 class="flex-none w-80 mw8 center text-center">
                 {{ .Title }}
@@ -70,18 +82,38 @@
             {{ end }}
           </div>
         </div>
+      {{ end }}
+      <!-- end rails-camp section -->
+    </div>
+
+    <div class="col-md-5">
+      <!-- Begin Mailchimp Signup Form -->
+      <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+
+      <div id="mc_embed_signup" class="mt0 mb5 pt2 pb2 ">
+      <form action="https://failure-driven.us19.list-manage.com/subscribe/post?u=7206c4a51341123e351195246&amp;id=ec5d157e17" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+        <label for="mce-EMAIL">Join our mailing list</label>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7206c4a51341123e351195246_ec5d157e17" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+      </form>
       </div>
-    {{ end }}
-    <!-- end rails-camp section -->
+      <!--End mc_embed_signup-->
 
-    <!-- begin post section -->
-    {{ $section := where .Site.RegularPages "Section" "in" "post" }}
+      <!-- begin post section -->
+      {{ $section := where .Site.RegularPages "Section" "in" "post" }}
 
-    {{ $section_count := len $section }}
-    {{ if ge $section_count 1 }}
-      {{ $section_name := "post" }}
-      
-      <div class="col-md-5">
+      {{ $section_count := len $section }}
+      {{ if ge $section_count 1 }}
+        {{ $section_name := "post" }}
         <div class="relative w-100 mb4 nested-copy-line-height">
           <div class="mb3 pa4 gray overflow-hidden">
             {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
@@ -112,8 +144,8 @@
             {{ end }}
           </div>
         </div>
-      </div>
-    {{ end }}
-    <!-- end post section -->
+      {{ end }}
+      <!-- end post section -->
+    </div>
   </div>
 {{ end }}
