@@ -12,6 +12,9 @@ author: Selena Small & Michael Milewski
 draft: true
 ---
 
+**TODO** what do we write to introduce this? it is just another simple JS test
+and implementation
+
 <img alt="@LDibs" src="//github.com/LDibs.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
@@ -28,27 +31,48 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 Co-authored-by: Michael Milewski <saramic@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+### 5 minutes with Laurence
 
-how did you find it?  fun interesting?
-I would do it again, it was good insight to features I have not seen before
-and I could possibly use,
-found it useful
+> **Q:** how did you find it? was it fun? interesting?
 
-I was good with pair programming and quite like it. there were a few things I
-havenlt done much rails moving to JS learning a new thing and rails not yet
-solifidifed - forgot some rails - didln't knoww what you want me to do but
-made sens in the end
+> **A:** It was great, I would definitely do it again. It was great to have
+> insights into features I have not seen before. Having the 2 of you guide me
+> through and being on hand to ask questions immediately was great, I found it
+> useful.
 
-pretty much none testing CO have used binding.pry but al testing ismanually
-clicking.
+> **Q:** so what do you think about pairing?
 
-very hard to write tests if you don't know how to code Selena
+> **A:** I was good with pair programming and I quite like it.
 
-Lauracen no idea how to write test but I paired with Ss anddmm andstill no
-idea how towrite a test
+> **Q:** Did you learn anything new?
 
-"Thank you, if I had to settle on smehtning that was interests"
+> **A:** There were a few things. I haven't done much Rails and I have just
+> moved onto doing some more Javascript learning as part of my Coder Academy
+> course. It is hard to learn a new thing when I have not really solidified my
+> knoweledge of Rails yet. In fact I am starting to forget some Rails. I didn't
+> know what you would get me to do. I was a little woried that I would go blank
+> but it all made sense in the end and your approach allowed me to easily bring
+> my former knowledge out and contribute.
+
+> **Q:** have you done any testing yet?
+
+> **A:** pretty much none, no testing yet with Coder Accademy. I have used
+> `binding.pry` and it was cool how with it we could execute line by line and
+> work out why our test was not working. As far as testing goes, I have done
+> that all manually by clicking around up to this point.
+
+> **Q:** we can imagine from our own learning experiences that it is very hard
+> to write tests if you don't know yet know how to code all that much. It is
+> hard for us to write tests for certain things that we are not sure how they
+> will work, do you think you are at a level you can write some tests?
+
+> **A:** I had no idea how to write tests. Now that I have paired with Selena
+> and Michael I still have no idea how to wrte a test. I amsure the expereince
+> has helped and at some stage I will get the Aha moment and work it out
+
+**TODO** what the fuck was this?
+
+> "Thank you, if I had to settle on smehtning that was interests"
 
 ## Lolcommit
 
