@@ -12,6 +12,8 @@ author: Selena Small & Michael Milewski
 draft: true
 ---
 
+**TODO** the beginnings of trying to get autofocus working
+
 <img alt="@jmartelletti" src="//github.com/jmartelletti.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
@@ -28,47 +30,61 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
 Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+### 5 minutes with James
 
-how was the exeprience? what was the level of bullying
+> **Q:** how was the exeprience? You jokingly mentioned we were going to bully
+> you into taking part at some stage, what was the level of bullying?
 
-I am not usaully a pari programmer - been a while . I do spikes here and
-there, cowboy coder, not straight on the server but I have doen pelenty of
-that in my time
+> **A:** You see I am not usaully a pair programmer. It's been a while. I
+> mostly do spikes here and there, I think I am a bit of a cowboy coder. I
+> amnot like straight on the server or anything, but yeah I have done plenty of
+> that in my time
 
-I have the luxury of not performing all the correct TDD things
-The value of tests come from having valuable tests, a lot of code
-prototytpeing and seeing how things work and if you speed to see how it works
-to impoment later on a spiek concept does not need tests. break probelm down
-for feasability
+> **Q:** so what kind of coding do you do in your role? do you test drive much?
 
-when build propery test and mob
+> **A:** I have the luxury of not performing all the correct TDD (Test Driven
+> Development) things, I suppose you guys are looking at me as if that is not a
+> luxury but some kind of disease. I think the value of tests come from having
+> valuable tests, I do a lot of code prototyping, seeing how things work and if
+> you value speed to see how things works to be able to feed into an
+> implemetation later on. A spike concept does not need tests. I help break
+> down the problem for feasability.
 
-but not first, not the way I like it.
+> **Q:** do you every pair or test?
 
-you can write code first
+> **A:** when we build properly we will test and even mob program but not test
+> first, not the way I like it. You can write the code first you know.
 
-SS you wan tot drive your development throght tests
-it slows me down a frustrating amount I am in a position that I can get away
-with it, working on the edges not the essential core of the business
+> **Selena:** You can totaly drive your development through your tests first.
 
-Not a test first never have been never will be not a pair programmer
+> **A:** I feel it slows me down a frustrating amount. I am in a position that
+> I can get away with it, working on the edges of the business and not the
+> essential core of the business
 
-you have not changed
+> **Q:** You are not a test first guy?
 
-You had a terrible time <silence> not a terrible time but forced into
-situations
-I see the value
+> **A:** Not a test first guy, never have been never will be not a pair
+> programmer
 
-I don't enforce TDD but definitye stuff should be covered with testing
-my mehthod of working is very ADD
-not much time to focus on pair programming kind of work
-I find pair programing frustrated
+> **Q:** This experience has not changed you? You had a terrible time?
 
-How do you get your team to work the way you want them to work
-I work at higher architercture level
+> [silence]
 
-how thing integrate
+> **A:** not a terrible time but I was forced into this situation. Look I do
+> see the value.
+
+> **Q:** would you enforce testing at work?
+
+> **A:** I don't enforce TDD but definitye stuff should be covered with
+> testing. My mehthod of working is very ADD Not much time to focus on pair
+> programming kind of work. I find pair programing frustrating.
+
+> **Q:** How do you get your team to work the way you want them to work?
+
+> **A:** I work at higher architercture level. How thing integrate together
+> that kind of thing.
+
+**TODO** continue from here on
 
 product: Harbour what AWS env looks like
 "put it this wway I have a lot of access to a lot of pepoles envoirments"
