@@ -7,6 +7,7 @@ cover_dimming_class: 'bg-black-20'
 images:
  - '/images/selena_keith_point_junior_dev_hands_on_the_keyboard.jpg'
  - '/images/failure-driven_square.jpg'
+author: Selena Small & Michael Milewski 
 ---
 
 Selena and Michael just got back home from [RailsCampAU #24](https://railscamp24.wordpress.com/) in Tasmania and it was an epic weekend!  An intensive but fun trip filled with learning and laughs.

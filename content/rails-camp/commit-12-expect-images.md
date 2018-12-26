@@ -8,6 +8,7 @@ featured_image: 'http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/rail
 images:
  - '/images/rails-camp/commit_12_jon_leighton_e1dbe3e3ee8_still.jpg'
  - '/images/failure-driven_square.jpg'
+author: Selena Small & Michael Milewski 
 draft: true
 ---
 

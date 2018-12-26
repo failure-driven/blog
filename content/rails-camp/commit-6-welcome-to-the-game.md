@@ -8,6 +8,7 @@ featured_image: 'http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/rail
 images:
  - '/images/rails-camp/commit_06_emily_coats_74791c0fa7e_still.jpg'
  - '/images/failure-driven_square.jpg'
+author: Selena Small & Michael Milewski
 draft: true
 ---
 

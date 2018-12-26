@@ -10,6 +10,7 @@ featured_image: '/images/railscamp-search-term-1-to-33-contributors.jpg'
 images:
  - '/images/railscamp-search-term-1-contributor.png'
  - '/images/railscamp-search-term-33-contributors.png'
+author: Selena Small & Michael Milewski 
 ---
 
 1. Given this commit message
