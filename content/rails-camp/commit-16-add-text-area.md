@@ -12,6 +12,12 @@ author: Selena Small & Michael Milewski
 draft: true
 ---
 
+It is tough getting up on a Sunday any week let alone at Rails Camp
+let alone if you have had a long night the night before. There was a
+moring bird around in Nadia and Michael so we sat down before breakfast
+at [rails camp Hobart]({{< ref "/post/railscamp-pairing" >}}) for some coding
+but left the commit till the complete triple was in place and Selena joined us.
+
 <img alt="@nadiavu" src="//github.com/nadiavu.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
@@ -28,43 +34,60 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 Co-authored-by: Michael Milewski <saramic@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+By now we were in the rhythm of things and after a quick introduction to the
+project on how we do BDD as integrations specs driving a browser and than
+dropping down to UI component specs there were plenty of examples and code in
+place to quickly help Nadia work out she needed a UI component test for the
+text area which she wrote.
 
-Up early on Sunday - have you written any code>? yes rails new on my event
-sourcing app - pleas don't write this - perfecct
+### 5 minutes with Nadia
 
-unfortunately I was in bed - how ddid you find the experieince - michael was
-extermely good to pair with
+> **Q:** You are up early on Sunday, have you written any code?
 
-great to pair with new poeple
-emotianlly stresfull as you have to pick up body language as you are pairing -
-pairing with new people is more stresfull, don't know their work flow
+> **A:** Yes `rails new` on my event sourcing app, _please don't write this_,
+> perfect
 
-what the are comfortable with, how they like to be sopken too, really
-concerend with other people how are you? I feel I am super easy to pair with,
-but sometimes difficult if I am indecissive.
+> **Selena:** unfortunately I was in bed, Michael is too keen to get started,
+> how did you find the experieince
 
-implemented the text area - michael gave me instructions - I didn't realise it
-was collaborative effort the implementation waaas collaborative
+> **Nadia:** Michael was extermely good to pair with. It's always great to pair
+> with new poeple. It can be emotionally stresfull as you have to pick up body
+> language as you are pairing. Pairing with new people is more stresfull, you
+> don't know their work flow what the are comfortable with, how they like to be
+> spoken too.
 
-I was given product requirement - I trust the peope around me and trust the
-product managers
+> **Q:** You really seemed aware and concerned with other people you pair with,
+> how are you to pair with do you think?
 
-Need a certain level of "no that's a good idea"
+> **A:** I feel I am super easy to pair with, but sometimes difficult if I am
+> indecissive.
 
-Michael is trustworthy - you can write that one down
+> **Nadia:** We implemented the text area, Michael gave me clear instructions
+> of how you are working and the aim of the project. I didn't realise it was a
+> collaborative effort, that the implementation was collaborative. I was given
+> the product requirement, I trust the peope around me and trust the product
+> managers
 
-They can be confident but still go down the wrong path.
+> **Selena:** You still need a certain level of "no that's a good idea" or "how
+> about we try this idea?"
 
-we struggled with the CSS - "Mornging is the perfeecct time to practive your
-CSS (Countless Sex Styles)"
+> **Nadia:** Michael is trustworthy, you can write that one down!
 
-"I am not going to do that to you michael"
+> **Selena:** They can be confident but still go down the wrong path.
 
-"severe category 6 creep vibe"
+**TODO** what do we do here it is taking a bit of a turn??????
 
-Hectiqué (with accent) pairing - aggressive no hold back - 7 hours straight
-shooting shit, laughtin all day my abs hurt next day.
+
+> **Michael:** we struggled with the CSS - "Morning is the perfect time to
+> practice your CSS (Countless Sex Styles)"
+
+> **Nadia:** I am not going to do that to you Michael
+
+> **Selena:** this is at severe category 6 creep vibe
+
+> **Nadia:** I am used to what we call Hectiqué (with accent) pairing -
+> aggressive no hold back - 7 hours straight shooting shit, laughing all day my
+> abs hurt next day.
 
 ### Lolcommit
 
