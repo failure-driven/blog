@@ -1,0 +1,13 @@
+<!-- this is the summary used on the home page (Latest Posts) -->
+
+{{ if .Date }}
+  <span class="f6">{{ .Date.Format "January 2, 2006" }}</span>
+{{ end }}
+<h3 class="f3 near-black">
+  <a href="{{ .URL }}" class="link black dim">
+    {{ .Title }}
+  </a>
+</h3>
+<div class="nested-links f5 lh-copy nested-copy-line-height" style="overflow-wrap:break-word;">
+  {{ .Summary  }}
+</div>
