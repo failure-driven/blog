@@ -12,6 +12,12 @@ author: Selena Small & Michael Milewski
 draft: true
 ---
 
+Bashir was another learning developer from Coder Academy and we spent some time
+showing him the in's and out's of a tested rails app as part of our [rails camp
+Hobart]({{< ref "/post/railscamp-pairing" >}}) project. He got his hands on the
+keyboard and implmented a spec but for him it was more about the exposure to
+some new tools and approaches that seasoned developers take for granted.
+
 <img alt="@BashirTowdiee" src="//github.com/BashirTowdiee.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
@@ -28,31 +34,54 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
 Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+### 5 min with Bashir
 
-https://github.com/failure-driven/railscamp-search-term/commit/31c435c503177f09a65b21528379900b6d890439
-commit 31c435c503177f09a65b21528379900b6d890439
-Author: Michael Milewski <saramic@gmail.com>
-Date:   Sun Nov 25 10:26:47 2018 +1100
+> **Q:** how did yoy find it?
 
-how did yoy find it?
+> **A:** I liked it, there were quite a few things I didn't know, and you guys
+> helped me get through it. VIM and RSpec, I certainly need to learn those. Now
+> that I am somewhat familiar with them and I know how they can be used and
+> their power they are things I should look at.
 
-I liked it, few things I didn't know, you guys helped me through
+> **Q:** you are currently at Coder Academy, have they mentioned VIM or testing?
 
-VIM and rspec certainly neeed to learn those, get familiar now that I know of
-it
-VIM wise - we were told not to use it at Coder Accademy - it was shunned
-RSpec testing wise we haven't done any testing
+> **A:** I know VIM wise, we were told not to use it at Coder Accademy. It was
+> shunned as too hard and unimportant. I think certainly there is some getting
+> used to it but you just showed me how powerfull it is and even with a few
+> initial commands you can get going.
 
-pairing - I ampaird with class mates, both own cmputer sometimes one computer
-when working on rails project pushed changes - but not really pairing
-collaboratively we come upp with a better solution
-yes it was intimidating - but I warmed up to it
-working with your level is beneficial too as well as with seniours
-remember seniors are also intimidated if we make mistakes
-"thank you guys"
+> RSpec testing wise we haven't done any testing yet, they leave that till
+> later part of the course, maybe we will use RSpec? I don't know. Certainly
+> what you showed me in testing seemed to make sense.
 
+> **Q:** what about the pairing?
 
+> **A:** I am often "paired" with my class mates, were we are using our own
+> computers, maybe sometimes using just one computer when working on a joint
+> rails project and we need to push changes from one computer via Git so the
+> other person can see the code. From what you have shown me that is not really
+> pairing.
+
+> **Q:** The idea is that collaboratively we come up with a better solution
+
+> **A:** yes it was intimidating at first, I suppose I didn't really know what
+> to expect and just learning I was worried I would not know enough, but I
+> warmed up to it.
+
+> **Selena:** For us as professional programmers working with all levels of
+> programmers, even ones that have only started to learn to code, is benficial.
+> Working with your level or a seniour level it is always beneficial to work in
+> a pair as long as you put into it you will get things out of it.
+
+> **Michael:** And remember senior developers are intimidated sometimes as
+> well, they are just better at not showing it, we never know if we may make a
+> silly mistake, but often we will turn it around to be a learning moment and
+> you can not underestimate the life experience someone brings into a
+> particular problem domain, maybe the learning developer is an expert in the
+> problem space due to other work experience and they become a valuable part of
+> solving the problem. Thanks for your time
+
+> **Bashir:** Thank you guys
 
 ### Lolcommit
 
