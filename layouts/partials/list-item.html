@@ -1,0 +1,9 @@
+<!-- this is the list-item used on the home page (Latest Posts) -->
+
+{{ if .Date }}
+  <span class="f6">{{ .Date.Format "January 2, 2006" }}</span>
+{{ end }}
+
+<a href="{{ .URL }}" class="link black db">
+  {{ .Title }}
+</a>
