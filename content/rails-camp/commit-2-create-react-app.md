@@ -10,7 +10,7 @@ featured_image: 'https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/rai
 images:
  - '/images/rails-camp/commit_02_kirsten_comandich_de721fedc80_still.jpg'
  - '/images/failure-driven_square.jpg'
- author: Selena Small & Michael Milewski
+author: Selena Small & Michael Milewski
 ---
 
 <img alt="@kcomandich" src="//github.com/kcomandich.png" style="display: inline; width: 88px;" height="88" />
