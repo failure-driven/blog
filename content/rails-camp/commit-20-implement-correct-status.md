@@ -12,6 +12,8 @@ author: Selena Small & Michael Milewski
 draft: true
 ---
 
+**TODO** no intro added a status of Correct?
+
 <img alt="@danascheider" src="//github.com/danascheider.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
@@ -28,21 +30,36 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 Co-authored-by: Michael Milewski <saramic@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+### 5 minutes with Dana
 
-refreshed my react skills for my job and side project. Working on website
-using facial recognition tech to keep women safe on social media - upload
-picture and search by uploading picture and retun and reports made
+> **Q:** how did you find the pairing? writing some React at Rails Camp?
 
-"hopefullyno reports on the person (looks at michael)" project name inview
+> **A:** it was great, it refreshed my React skills. This will be good for my
+> day job and side project.
 
-side project
+> **Q:** what side projects are you working on?
 
-currently working at envato alos on cucumber team
+> **A:** I am working on website using facial recognition technology to keep
+> women safe on social media. The idea is you upload a picture and the picture
+> is searched and returns any reports made against that person.
 
-a bit as needed pairing at envato - very collaborative  coder - pairing or
-rubbrer ducking - in bath tub talking to rubber duck - or can do it with co
-worksers too - but that may lead to different kind of problems
+> **Selena:** Hopefully there are no reports on this person (looks at Michael),
+> no but in all seriousness, what is the project called?
+
+> **A:** The project name is InView **TODO** link to this?
+
+> **Q:** any other side projects? what about your day job?
+
+> **A:** I am currently working at Envato and also a contributor as part of the
+> Cucumber team.
+
+> **Q:** How did you find the pairing? do you do much pairing?
+
+> **A:** Yeah it was good, I do a bit but I feel more pairing is needed at
+> Envato. I am a very collaborative coder. Either pairing or rubber ducking, as
+> in you are in a bath tub talking to your rubber duck, but you can do it with
+> a co-worker as well, oh dear but that may lead to all sorts of
+> different kinds of problems
 
 ## Lolcommit
 
