@@ -1,0 +1,6 @@
+/* this style originated from Hugo interal and was ovverriden by Ananke theme and now overriden again here :D */
+.pagination {
+  text-align: center;
+  margin: 3rem 0 0;
+  display: block;
+}
