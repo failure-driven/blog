@@ -8,6 +8,8 @@ enableRobotsTXT = true
 
 copyright = "Selena Small & Michael Milewski"
 
+summaryLength = 20
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
