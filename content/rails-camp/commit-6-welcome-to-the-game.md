@@ -14,7 +14,7 @@ draft: true
 In our endeavour to pair with everyone at [rails camp Hobart]({{< ref
 "/post/railscamp-pairing" >}}), our next pair Emily would be the lucky one to
 make that very first [test written by Matt Patterson]({{< ref
-"/post/rails-camp/commit-4-and-5-rspec-and-feature-spec" >}}) pass.
+"/rails-camp/commit-4-and-5-rspec-and-feature-spec" >}}) pass.
 
 Now, we've written an integration test that incorporates the backend logic as well as the front end behaviour. You might be wondering if the test we wrote with rspec is going to also cover the javascript and markup. Well, it is. But we're also going to need to start adding some unit tests at some point. 
 
