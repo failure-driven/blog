@@ -12,23 +12,8 @@ author: Selena Small & Michael Milewski
 draft: true
 ---
 
-<img alt="@jonleighton" src="//github.com/jonleighton.png" style="display: inline; width: 88px;" height="88" />
-<img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
-<img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
-
-Commit [79cb3dd](https://github.com/failure-driven/railscamp-search-term/commit/79cb3dd3bbe62e58826b3ce9b79eae68e4ef76f9)
-
-{{< highlight bash >}}
-Author: Jon Leighton <jonleighton@users.noreply.github.com>
-Date:   Sun Nov 25 00:16:04 2018 +1100
-
-Add failing assertion for image on round 1
-
-Co-authored-by: Michael Milewski <saramic@gmail.com>
-Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
-{{< / highlight >}}
-
-It was starting to get well into the middle of the night and we still didn't
+It was starting to get well into the middle of the night at [rails camp
+Hobart]({{< ref "/post/railscamp-pairing" >}}) and we still didn't
 have an image displayed in our app. An app who's whole point was to show images
 and have people guess what they see in the image. Michael was showing fatigue
 kick in as he could not comprehend our next collaborators name.
@@ -52,7 +37,44 @@ kick in as he could not comprehend our next collaborators name.
 and so it went literally 10 times over. Finally when we were properly
 introduced we could get onto real questions related to RailsCamp
 
-> "Jon, were you a werewoolf?"
+> "Jon, were you a werewolf?"
+
+One of the near mandatory pass times of Rails Camp is to play a game of
+[werewolf](https://en.wikipedia.org/wiki/Werewolf) and we had just come back to
+code from a game with almost the whole camp. It was an epic game lasting well
+over 3 hours. Actually judging by our commits
+
+> [1a3f44d](https://github.com/failure-driven/railscamp-search-term/commit/1a3f44d31def8160b6f7ff4a14a297055c037b36)
+at `Sat Nov 24 20:10:36 2018`
+
+and this commit
+
+> [79cb3dd](https://github.com/failure-driven/railscamp-search-term/commit/79cb3dd3bbe62e58826b3ce9b79eae68e4ef76f9)
+`Sun Nov 25 00:16:04 2018`
+
+it was clear that the game lasted some time between
+8:30pm Saturday night and we were right to code and commit by midnight. This
+obsessive project to code with everyone at rails camp would mean that our repo
+would have 3 clear breaks of about 4 hours, 1 game of werewolf, Saturday and
+Sunday night sleep, more on that in an upcoming post, but first onto Jon's
+commit.
+
+<img alt="@jonleighton" src="//github.com/jonleighton.png" style="display: inline; width: 88px;" height="88" />
+<img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
+<img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
+
+Commit [79cb3dd](https://github.com/failure-driven/railscamp-search-term/commit/79cb3dd3bbe62e58826b3ce9b79eae68e4ef76f9)
+
+{{< highlight bash >}}
+Author: Jon Leighton <jonleighton@users.noreply.github.com>
+Date:   Sun Nov 25 00:16:04 2018 +1100
+
+Add failing assertion for image on round 1
+
+Co-authored-by: Michael Milewski <saramic@gmail.com>
+Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
+{{< / highlight >}}
+
 
 The change Jon helped us make was small. A pending spec to assert that images
 will be displayed on the page. This does highlight that one of the benefits of
@@ -60,41 +82,53 @@ TDD (Test Driven Development) is being able to take as small steps as are
 needed at times and sometimes bigger ones can also be taken. The benefit here
 is obviously small commits are going to be easier to reason about with new
 people to the project like Jon. Also as fatigue sets in, in the middle of the
-night at RailsCamp, small commits are going to be less risky.
+night at Rails Camp, small commits are going to be less risky.
 
-**TODO** go on about size of commits?
+### 5 minutes with Jon
 
-As the commit was small and done we decided to discuss working practices with Jon.
+As the commit was small and done we decided to discuss working practices with
+Jon.
 
-Jon, what did you think of our way of working? test driving everything, working
-on master and pairing?
+> **Q:** Jon, what did you think of our way of working? test driving
+> everything, working on master and pairing?
 
-> "I found the idea of testing entertaining and I was amused by working on
-> master"
+> **A:** I found the idea of testing entertaining and I was amused by working on
+> master.
 
-> "As for pairing, I felt there was good banter and comaraderie in the group"
+> As for pairing, I felt there was good banter and comaraderie in the group,
+> the three of us, you two are a hoot to pair with! I would definitely do it
+> again!
 
-> "I would definitely do it again!"
+> As for working on master, what the hell? I am strongly opposed to working on
+> master. I must say that all in all I Enjoyed the experience.
 
-**TODO** sort this out
-  Strongly opposed to working on master
+> In fact I heard about the project you guys were doing via my girl friend and
+> I was going to approach you guys to see what it was all about.
 
-  Enjoyed the experience
+> **Q:** and where do you work? what do you do?
 
-  This was late on Saturday night
-  Heard about the project through gf and half-way approached us
+> **A:** I work for a bank, like a real bank! a bank with real money!
 
-  a bank
-  a real bank with real money
-  not ont he block chain
-  and not on master - not if I can help it
+> **Q:** so not some kinf of phoney with only money on the block chain?
 
-  Up Ferocia - and do Bendigo bank online banking
+> **A:** nothing on the block chanin and not working on Master either, not if I
+> can help it!
+
+> **Q:** and what fine institution is that?
+
+> **A:** I work for [Up](https://up.com.au/), well for the company
+> [Ferocia](http://www.ferocia.com.au/), we write the software
+> behind the bank Up as well as Bendigo bank's online banking.
 
 In the end Jon gave us his real feelings about working and commiting directly
 to the master git branch
 
 > "No one is working on master - that would be fucking stupid"
+
+### Lolcommit
+
+Jon attempted to show us the roller coaster ride that is working on master in
+his opinion.
 
 ![commit 12 with Jon Leighton](https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_12_jon_leighton_e1dbe3e3ee8.gif)
 
