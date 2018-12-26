@@ -65,7 +65,7 @@ requested of him.
 Soon enough, we found ourselves diving through the depths of Foreman parsing to find the format needed 
 for our Proc file because to be honest, Foreman’s documentation was not that great.
 
-We’d initially been thrown because Foreman kept published to ports 5000 and 5001 and we couldn’t seem 
+We’d initially been thrown because Foreman kept published to ports 5000 and 5100 and we couldn’t seem
 to pass a custom port as an environment variable to the `forman start` command.
 
 At one point, we thought there was maybe a subshell running which was unable to receive the correct 
