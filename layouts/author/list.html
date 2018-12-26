@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="flex-ns flex-wrap justify-around mt5">
+  <div class="card-deck">
+    {{ range (where .Data.Pages "Section" "author").Reverse }}
+      
+      <div class="card">
+        <img class="card-img-top" src="{{ .Params.featured_image }}" alt="Card image cap">
+
+        <div class="card-body">
+          <h3 class="card-title">{{ .Title }}</h3>
+          <p class="card-text">{{ .Content }}</p>                
+        </div>
+      </div>
+      
+    {{ end }}  
+  </div>          
+</section>
+{{ end }}
