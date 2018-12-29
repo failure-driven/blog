@@ -1,7 +1,7 @@
 ---
 title: "Commit 15 Pending Text Area"
 date: 2019-02-06T09:30:00+11:00
-excerpt: ""
+excerpt: "By the time we caught up with Nick to help us with our rails camp Hobart project, it was more like him tracking us down for a final commit in the wee hours of Sunday morning."
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
 featured_image: 'https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_15_nick_wolf_f098ea1286b.gif'
@@ -12,13 +12,12 @@ author: Selena Small & Michael Milewski
 draft: true
 ---
 
-By the time we caught up with Nick for our [rails camp Hobart]({{< ref
-"/post/railscamp-pairing" >}}) code with everyone project it was more like hime
-tracking us down for a final commit in the wee hours of Satruday morning. The
-setup was the same, show him the app so far, the Integratoin specs and the
-React component tests. Then it is time to get his hands on the keyboard and
-drive our pair or tripple to implement the next step. In this case he wrote a
-pending spec for a text area to guess what is in the image that is dispalyed.
+By the time we caught up with Nick to help us with our [rails camp Hobart]({{< ref
+"/post/railscamp-pairing" >}}) project, it was more like him tracking us down for a final commit in the wee hours of Sunday morning. 
+
+Same as we'd been practising all day, we showed him the app so far - the Integratoin specs and the React component tests - before getting his hands on the keyboard and drive forward with the next step. 
+
+We don't have a whole lot to say 'cause we were pretty wrecked by that time but Nick wrote the next pending spec for a text area to guess what is in the image that is dispalyed.
 
 <img alt="@quintrino" src="//github.com/quintrino.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
@@ -39,34 +38,35 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 
 ### 5 minutes with Nick
 
-> **Q:** how did you find the pairing?
+> **Q:** How did you find the pairing?
 
-> **A:** this is a really cool project! I have heard the start of the story
-> about people not writing too much code last rails camp. The thing is how do
+> **A:** This is a really cool project! I have heard the start of the story
+> about people not writing too much code last rails camp. The thing is, how do
 > you do it in a way that is not too forcing of people, keep them comfortable,
 > encorage them, make them want to be part of it and that is what you have made
 > happen! We all want to be part of it now, the Rails Camp Hobart Project, we
 > are hanging out just to take our turn, look at me it is half past two in the
 > morining, this is so cool. 
 
-> **Q:** why thank you, have you learnt anything from the experience?
+> **Q:** Have you learnt anything from the experience?
 
-> **A:** why yes, this is the first time I have written pending RSpec specs. I
+> **A:** Why yes, this is the first time I have written pending RSpec specs. I
 > did hear about them, hmm let me think, at a talk a few weeks ago, at the
 > [Ruby Meetup]({{< ref "/presentations/20181031-failing-for-the-right-reason" >}}),
 > I think it was the most informative and enterataining talk, probably
 > the most entertaining talk ever!
 
-> Also the last bit were we write the Git commit message in your default editor
+> Also the last bit were we wrote the Git commit message in your default editor
 > that happens to be VI. A bit of VI was something I have not looked into as
 > yet.
 
 > **Selena:** The secret with VI is to repeat anything you learn and keep
 > repeating. Also it is good to have someone there to help you and remind you.
-> In this case I was able to tell you the key strokes as I have heard it over
-> and over again today
+> I was able to tell you the key strokes we needed to write (which I also learned today)
+> because I've heard it over and over with everyone we've worked with on the project so
+> far.
 
-> **Q:** anything else you have learnt?
+> **Q:** Anything else you have learnt?
 
 > **A:** Your test first apporach is definitely the way it should be done but
 > my current industry experience is app first and tests maybe later. The
@@ -76,9 +76,9 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 > confirm that it still works. If you don't have a reliable test suite you have
 > no confidence of what the flow on effects of your change could be.
 
-> It was good you just got me here. Your ambition to get every one to write
-> some code, your eagerness to adjust to the skill set of the people you are
-> pairing with, you manage to build good culture very quickly.
+> Your ambition to get every one to write some code, your eagerness to adjust to the
+> skill set of the people you are pairing with, you manage to build good culture very
+> quickly.
 
 ### Lolcommit
 
@@ -87,4 +87,3 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 #### Authored By:
 
 Selena Small & Michael Milewski
-
