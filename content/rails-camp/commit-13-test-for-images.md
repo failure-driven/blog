@@ -1,7 +1,7 @@
 ---
 title: "Commit 13 Test for Images"
 date: 2019-01-30T09:30:00+11:00
-excerpt: ""
+excerpt: "We were digging deep now at rails camp Hobart at 2 oclock in the morning! Adding to the difficulty of bringing someone up to speed on our project, Cameo who was keen but extremely tired, was only half way through her Coder Academy course on how to code."
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
 featured_image: 'http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_13_cameo_langford_359a73f6b08.gif'
@@ -12,19 +12,14 @@ author: Selena Small & Michael Milewski
 draft: true
 ---
 
-> **Cameo:** "what time is it?"
-
-> **A:** "it is almost 2am"
+> **Cameo:** "What time is it?"
 
 We were digging deep now at [rails camp Hobart]({{< ref
-"/post/railscamp-pairing" >}}) and to add to the difficulty of bringing someone
-up to speed on a new project we were working with a keen but tired Cameo who
+"/post/railscamp-pairing" >}}) at 2 oclock in the morning! Adding to the difficulty of bringing someone up to speed on our project, Cameo who was keen but extremely tired,
 was only half way through her [Coder Academy](https://coderacademy.edu.au/)
-course on how to program.
+course on how to code.
 
-Amazingly we managed to make the pending test pass as well as learning about
-`React.Fragments`, more info can be found in the reactjs [framgments
-documentation](https://reactjs.org/docs/fragments.html)
+Amazingly we managed to make the pending test pass as well as learning about [React.Fragments](https://reactjs.org/docs/fragments.html)
 
 <img alt="@cameocodes" src="//github.com/cameocodes.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
@@ -51,7 +46,7 @@ The basic gist is that rather than
   </div>
 {{< / highlight >}}
 
-You can use a Fragment
+You can use a Fragment like this
 
 {{< highlight react >}}
   <React.Fragment>
@@ -70,44 +65,42 @@ or you can simply use the short syntax
 {{< / highlight >}}
 
 This is a bit weird but again that is often how develoeprs pick up little
-shortcuts and new usages. There is no need to be embaraced that maybe we had
-not read the complete React documentation! we were willing to give someone new
-in the field the satisfaction that they can teach an old hack a thing or two.
+shortcuts and new usages. There was no need to be embarassed that maybe we hadn't quite read the complete React documentation... we were willing to give someone new
+in the field the satisfaction that they can teach a pair of old hacks a thing or two!
 
 ### 5 minutes with Cameo
 
-> **Q:** do did you learn anything new?
+> **Q:** How did you find the experience pairing with us, did you learn anything new?
 
-> **A:** Yes, the testing framework you were using, Jest? and the idea of using
-> `--watch` to have the tests run continually as we were saving the file? that
-> was cool. also the enzyme snapshot testing.
+> **A:** Yes, the testing framework you were using, Jest? And the idea of using
+> `--watch` to have the tests run continually as we were saving the file? That
+> was cool. Also the enzyme snapshot testing was new to me.
 
 > **Selena:** Well we learnt something from you as well, about `React fragment` and
-> the short form `<>...</>` as well as for props that are true we can just pass
-> the routes `exact={true}` can simply be `exact`, other than that what was the
-> highlight? talking to us?
+> the short form `<>...</>`. What was your highlight from this experience? Talking to us?
 
 > **Cameo:** [nod]
 
 > **Michael:** I knew it!
 
-> **Cameo:** no it was cool, it was fun!
+> **Cameo:** No, it was cool. I had fun!
 
-> **Q:** what do you want to do next? more testing?
+> **Q:** What do you want to do next? More testing?
 
-> **A:** no going to bed, I am always excited about going to bed!
+> **A:** No. I want to go to bed, I'm always excited about going to bed!
 
 ### Lolcommit
 
-after a quick show of how lolcommits work
+After a quick show of how lolcommits work
 
 ![Michael and Selena show how lols are created](https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_13_selena_small_bff4a932a85.gif)
 
-Cameo and her friend Bashir in the background joined in
+Cameo and her friend Bashir joined in
 
 ![commit 13 with Cameo](https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_13_cameo_langford_359a73f6b08.gif)
+
+And we finally let her to go off to bed!
 
 #### Authored By:
 
 Selena Small & Michael Milewski
-
