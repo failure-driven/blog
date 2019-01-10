@@ -9,7 +9,6 @@ images:
  - '/images/rails-camp/commit_03_edward_0f515e5ecc3_still.jpg'
  - '/images/failure-driven_square.jpg'
 author: Selena Small & Michael Milewski
-draft: true
 ---
 
 <img alt="@isikyus" src="//github.com/isikyus.png" style="display: inline; width: 88px;" height="88" />
