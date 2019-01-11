@@ -1,22 +1,21 @@
 {{ define "main" }}
-  
-
-  <div class="row">
-    <div class="col-md-7">
-      <!-- begin top section -->
+  <div class="row" style="margin:0px;">
+    <div class="col-md-8" style="padding:0px;">
+      <!-- begin top featured section -->
       <div class="relative w-100 mb4 nested-copy-line-height">
         <div class="mb3 pa4 overflow-hidden">
-          <h1>Hear about feature testing</h1>
+          <h1>Tech Brekky - Friday 18 Jan 2019</h1>
 
-          <p>Hear about feature testing modern apps with multi layer Behavioural Driven Development (BDD).
-          <a href="https://www.meetup.com/Ruby-On-Rails-Oceania-Melbourne/">#RORO Meblourne</a></p>
-            
+          <p>We're so excited to have been invited to present at <a href="https://www.cultureamp.com/">CultureAmp</a>'s tech brekky.
+            Come along and listen to us discuss testing modern web apps with multi layer Behavioural Driven Development (BDD) and a strong focus towards the frontend.
+          </p>
+
           <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-            <iframe src="https://www.youtube.com/embed/p72EPNXbjiU" style="position: absolute;  width: 100%; height: 100%; border:0; margin: auto;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube Video"></iframe>
+            <iframe src="https://www.meetup.com/en-AU/Tech-Brekky/" style="position: absolute;  width: 100%; height: 100%; border:0; margin: auto;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube Video"></iframe>
           </div>
         </div>
       </div>
-      <!-- end top section -->
+      <!-- end top featured section -->
 
       <!-- begin rails-camp section -->
       {{ $section := where .Site.RegularPages "Section" "in" "rails-camp" }}
@@ -24,8 +23,8 @@
       {{ $section_count := len $section }}
       {{ if ge $section_count 1 }}
         {{ $section_name := "rails-camp" }}
-        <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-          <div class="bg-white mb3 pa4 gray overflow-hidden">
+        <div class="relative w-100 bg-white nested-copy-line-height">
+          <div class="bg-white pa4 gray overflow-hidden">
             {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
             {{ with .Site.GetPage "section" $section_name }}
               <h4 class="flex-none w-80 mw8 center text-center">
@@ -64,11 +63,11 @@
       <!-- end rails-camp section -->
     </div>
 
-    <div class="col-md-5">
+    <div class="col-md-4" style="padding:0px; background-color: rgba(0,0,0,0.7);">
       <!-- Begin Mailchimp Signup Form -->
       <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
       <style type="text/css">
-        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+        #mc_embed_signup{background:#1e90ff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;padding:20px;}
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
       </style>
@@ -77,62 +76,76 @@
       <form action="https://failure-driven.us19.list-manage.com/subscribe/post?u=7206c4a51341123e351195246&amp;id=ec5d157e17" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
         <label for="mce-EMAIL">Join our mailing list</label>
-        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required style="width: 100%;margin-top: 5px;">
           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7206c4a51341123e351195246_ec5d157e17" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="width: 100%;margin-top: 5px;"></div>
           </div>
       </form>
       </div>
       <!--End mc_embed_signup-->
 
-      <!-- begin post section -->
+      <!-- begin presentations section -->
+      <div class="relative w-100 mb4 nested-copy-line-height">
+        <div class="mb3 pa4 white overflow-hidden">
+          <h2>Feature Testing</h2>
+
+          <p>Driving modern web apps with multi layer Behavioural Driven Design (BDD) at
+            <a href="https://www.meetup.com/Ruby-On-Rails-Oceania-Melbourne/">#RORO Meblourne</a></p>
+
+          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe src="https://www.youtube.com/embed/p72EPNXbjiU" style="position: absolute;  width: 100%; height: 100%; border:0; margin: auto;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube Video"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- end presentations section -->
+
+      <!-- begin latest post section -->
       {{ $section := where .Site.RegularPages "Section" "in" "post" }}
 
       {{ $section_count := len $section }}
       {{ if ge $section_count 1 }}
-        {{ $section_name := "post" }}
-        <div class="relative w-100 mb4 nested-copy-line-height">
-          <div class="mb3 pa4 gray overflow-hidden">
-            {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
-            {{ with .Site.GetPage "section" $section_name }}
-              <h2 class="flex-none w-100 mw8 center">
-                Latest {{ .Title }}
-              </h2>
-            {{ end }}
+      {{ $section_name := "post" }}
+      <div class="relative w-100 mb4 nested-copy-line-height">
+        <div class="mb3 pa4 white overflow-hidden">
+          {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
+          {{ with .Site.GetPage "section" $section_name }}
+          <h2 class="flex-none w-100 mw8 center">
+            Latest {{ .Title }}
+          </h2>
+          {{ end }}
 
-            {{ $n_posts := $.Param "recent_posts_number" | default 7 }}
+          {{ $n_posts := $.Param "recent_posts_number" | default 7 }}
 
-            <section class="w-100 mw8 center">
-              {{/* Range through the first $n_posts items of the section */}}
-              <div class="relative w-100">
-                <ul class="list-group list-group-flush">
-                  {{ range (first $n_posts $section) }}
-                    <li class="list-group-item" style="padding-left:0; background-color: transparent;">
-                      {{ partial "list-item.html" . }}  
-                    </li>
-                  {{ end }}
-                </ul>
-              </div>
-            </section>
-
-            {{ if ge $section_count (add $n_posts 1) }}
-              <section class="w-100 mw8 center">
-                {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
-                {{ with .Site.GetPage "section" $section_name }}
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-right" style="padding-left:0; background-color: transparent;">
-                        <a href="{{ .URL }}">See all {{ $section_name }}</a>    
-                    </li>
-                  </ul>                 
+          <section class="w-100 mw8 center">
+            {{/* Range through the first $n_posts items of the section */}}
+            <div class="relative w-100">
+              <ul class="list-group list-group-flush">
+                {{ range (first $n_posts $section) }}
+                <li class="list-group-item" style="padding-left:0; background-color: transparent;">
+                  {{ partial "list-item.html" . }}
+                </li>
                 {{ end }}
-              </section>
+              </ul>
+            </div>
+          </section>
+
+          {{ if ge $section_count (add $n_posts 1) }}
+          <section class="w-100 mw8 center">
+            {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
+            {{ with .Site.GetPage "section" $section_name }}
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-right" style="padding-left:0; background-color: transparent;">
+                <a href="{{ .URL }}">See all {{ $section_name }}</a>
+              </li>
+            </ul>
             {{ end }}
-          </div>
+          </section>
+          {{ end }}
         </div>
+      </div>
       {{ end }}
-      
-      <!-- end post section -->
+      <!-- end latest post section -->
     </div>
   </div>
 {{ end }}
