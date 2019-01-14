@@ -21,10 +21,10 @@ testing framework!
 As developers who come from a strong testing background, we are obviously _not_ going 
 to be teaching anyone to write code without driving the need with a test.
 
-The idea of writing a test for functionality that does not exist sounds weird at first. This style of app development is called [Test Driven Development](link/to/wikipedia) (TDD). The idea is that new functionality is driven out by writing a test first. 
+The idea of writing a test for functionality that does not exist sounds weird at first. This style of app development is called [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) (TDD). The idea is that new functionality is driven out by writing a test first. 
 
 More specifically, the way we like to test drive applications is to focus first on how
-a user might expect our app to work. This style of testing, known as [Behavioural Driven Development](link/to/wiki) means that we not only test functionality of individual lines of code, we also test our expected user experience.
+a user might expect our app to work. This style of testing, known as [Behavioural Driven Development](https://en.wikipedia.org/wiki/Behavior-driven_development) means that we not only test functionality of individual lines of code, we also test our expected user experience.
 
 In this experiment we were planning to build a game, withe the first piece of functionality being that a user navigating to the game would be greeted with a welcome message. 
 
