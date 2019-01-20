@@ -1,9 +1,10 @@
 ---
-title: "Add RSpec and Feature Spec"
+title: "The first line of code in a Rails app shoud be ..."
 date: 2019-01-21T09:30:00+11:00
-excerpt: "With the ability to fire up Rails and a React app, there was one more
-configuration step required for us to write any actual code. That step was to
-set up a testing framework!"
+excerpt: 'As part of "The Rails Camp Project" it was time to write the first
+line of code. With the ability to fire up Rails and a React app clearly we
+could write some code? Well not exactly. The first line of code in a Rails
+app should be ...'
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
 featured_image: 'http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_04_matt_patterson_22212c2fea9.gif'
@@ -14,9 +15,13 @@ author: Selena Small & Michael Milewski
 draft: true
 ---
 
-With the ability to fire up Rails and a React app, there was one more configuration
-step required for us to write any actual code. That step was to set up a
-testing framework!
+As part of ["The Rails Camp Project"]({{< ref"/post/railscamp-pairing" >}}),
+coding with everyone at rails camp to build a simple game in Rails and ReactJS,
+it was time to write the first line of code. With the ability to fire up Rails
+and a React app clearly we could write some code? Well not exactly. The first line of
+code in a Rail app should be ... a test of course. To run tests we prefer to
+use the RSpec testing framework. In todays post we setup RSpec and write that
+all important first feature spec to start you off on building an app.
 
 As developers who come from a strong testing background, we are obviously _not_ going
 to be teaching anyone to write code without driving the need with a test.
@@ -173,6 +178,12 @@ Sometimes you need a couple of lolcommits to get one that actually works...
 And a second commit for fun
 
 ![commit 5 with Matt Patterson](http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_05_matt_patterson_8e85e82e854.gif)
+
+### Next time
+
+Now that we have everything setup and a failing test, clearly next post of
+["The Rails Camp Project"]({{< ref"/post/railscamp-pairing" >}}) will finally
+write some code? No? well we hope you join us next time to find out!
 
 ### Resources
 
