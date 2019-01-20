@@ -1,9 +1,9 @@
 ---
-title: "Add Rspec and Feature Spec"
-date: 2019-01-04T09:30:00+11:00
-excerpt: "With the ability to fire up Rails and a React app, there was one more configuration 
-step required for us to write any actual code. That step was to set up a
-testing framework!"
+title: "Add RSpec and Feature Spec"
+date: 2019-01-21T09:30:00+11:00
+excerpt: "With the ability to fire up Rails and a React app, there was one more
+configuration step required for us to write any actual code. That step was to
+set up a testing framework!"
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
 featured_image: 'http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_04_matt_patterson_22212c2fea9.gif'
@@ -14,21 +14,33 @@ author: Selena Small & Michael Milewski
 draft: true
 ---
 
-With the ability to fire up Rails and a React app, there was one more configuration 
+With the ability to fire up Rails and a React app, there was one more configuration
 step required for us to write any actual code. That step was to set up a
 testing framework!
 
-As developers who come from a strong testing background, we are obviously _not_ going 
+As developers who come from a strong testing background, we are obviously _not_ going
 to be teaching anyone to write code without driving the need with a test.
 
-The idea of writing a test for functionality that does not exist sounds weird at first. This style of app development is called [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) (TDD). The idea is that new functionality is driven out by writing a test first. 
+The idea of writing a test for functionality that does not exist sounds weird
+at first. This style of app development is called [Test Driven
+Development](https://en.wikipedia.org/wiki/Test-driven_development) (TDD). The
+idea is that new functionality is driven out by writing a test first.
 
-More specifically, the way we like to test drive applications is to focus first on how
-a user might expect our app to work. This style of testing, known as [Behavioural Driven Development](https://en.wikipedia.org/wiki/Behavior-driven_development) means that we not only test functionality of individual lines of code, we also test our expected user experience.
+More specifically, the way we like to test drive applications is to focus first
+on how a user might expect our app to work. This style of testing, known as
+[Behavioural Driven
+Development](https://en.wikipedia.org/wiki/Behavior-driven_development) means
+that we not only test functionality of individual lines of code, we also test
+our expected user experience.
 
-In this experiment we were planning to build a game, withe the first piece of functionality being that a user navigating to the game would be greeted with a welcome message. 
+In this experiment we were planning to build a game, with the first piece of
+functionality being that a user navigating to the game would be greeted with a
+welcome message.
 
-Not much functionality to it really, but if that message was to change in the future for some unknown reason we would want to know about it as soon as possible. And for that reason, the first thing we would write before building the page is a test!
+Not much functionality to it really, but if that message was to change in the
+future for some unknown reason we would want to know about it as soon as
+possible. And for that reason, the first thing we would write before building
+the page is a test!
 
 A BDD test can be simplified into 2 states and a function.
 
@@ -44,13 +56,24 @@ A BDD test can be simplified into 2 states and a function.
 
     **Then** assert that the welcome message is displayed as expected
 
-### So why is testing important? 
+### So why is testing important?
 
-And more importantly, why is test driving critical? Tests give us confidence that certain functionality works and that changes in one place don't break things in ohter places. In fact, `test driven development`, is often more correctly refered to as `test driven design` because it not only helps us to test funtionality but also to test our design ensuring decoupled code where changes in one place couldn't possible break things in other places.
+And more importantly, why is test driving critical? Tests give us confidence
+that certain functionality works and that changes in one place don't break
+things in other places. In fact, `test driven development`, is often more
+correctly refered to as `test driven design` because it not only helps us to
+test funtionality but also to test our design ensuring decoupled code where
+changes in one place couldn't possible break things in other places.
 
-Many developers are tempted to just the write the code first and maybe add a test for it later on, you know, if they have time. Despite your first thought, **This is not faster or more efficent!** It's much harder to write a test after the implementation and the resulting tests that are written often fool the developers writing them where they think they wrote a test but having never seen it fail can't be sure that the test they wrote actually covered the code they implemented.
+Many developers are tempted to just the write the code first and maybe add a
+test for it later on, you know, if they have time. Despite your first thought,
+**This is not faster or more efficent!** It's much harder to write a test after
+the implementation and the resulting tests that are written often fool the
+developers writing them where they think they wrote a test but having never
+seen it fail can't be sure that the test they wrote actually covered the code
+they implemented.
 
-Wanting to pair with everyone at rails camp, TDD was great allowing us to chunk the 
+Wanting to pair with everyone at rails camp, TDD was great allowing us to chunk the
 work down into small pieces, even tiny pieces if need be.
 
 Writing a failing test could be such a small test. This was critical as we had
@@ -59,9 +82,14 @@ only have time to contribute a small part. Also the only way to easily hand
 over code to the next developer is if there is a way to document what has been
 done and what we are up to. Tests play this role well.
 
-Another major reason for wanting to write quality tests is because it also doubles as clear documentation. Theoretically, a new developer coming along should be able to read existing tests and gather an understanding of precisely how the system currently works.
+Another major reason for wanting to write quality tests is because it also
+doubles as clear documentation. Theoretically, a new developer coming along
+should be able to read existing tests and gather an understanding of precisely
+how the system currently works.
 
-Since we used Rails for the backend, we went with the well-known RSpec testing framework and our next pair, Matt Patterson, was up for the job of helping us add the framework so we could move forward.
+Since we used Rails for the backend, we went with the well-known RSpec testing
+framework and our next pair, Matt Patterson, was up for the job of helping us
+add the framework so we could move forward.
 
 <img alt="@mattpatterson94" src="//github.com/mattpatterson94.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
@@ -104,17 +132,22 @@ experience, starting off with how he found it.
 
 **Q:** Do you write code outside of work? Are you working on interesting side projects?
 
-**A:** Yeah at home I play around with all sorts of tech. I even have a small torrent server setup for my mum up in Queensland. It runs on port 9091.
-Localy I run a hydroponics setup with my RasPi, for my um .. 'herbs.' Oh shit did I just say that? off the record (laughter...)
+**A:** Yeah at home I play around with all sorts of tech. I even have a small
+torrent server setup for my mum up in Queensland. It runs on port 9091.  Locally
+I run a hydroponics setup with my RasPi, for my um .. 'herbs.' Oh shit did I
+just say that? off the record (laughter...)
 
 **note:** _that last comment was off the record guys..._
 
-Matt explored the ability to see if he could actually run the RSpec tests from our Procfile. This would be a Procfile task that could startup the server and run the 
-RSpec tests. Cool idea. Unfortunately, in our short time together we did not manage to make it possible but we certainly gave it a try!
+Matt explored the ability to see if he could actually run the RSpec tests from
+our Procfile. This would be a Procfile task that could startup the server and
+run the RSpec tests. Cool idea. Unfortunately, in our short time together we
+did not manage to make it possible but we certainly gave it a try!
 
 The idea was to have a Foreman Procfile which would fire up the test server
 and run the tests if they are successfull. In the end we went for the more
-traditional approach - running our server setup with Foreman in one shell and running the tests in a second shell with another command.
+traditional approach - running our server setup with Foreman in one shell and
+running the tests in a second shell with another command.
 
 Not only did we teach him a few things, Matt also taught us a new shortcut for VI!
 
