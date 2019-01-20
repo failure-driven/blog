@@ -1,6 +1,6 @@
 ---
 title: "The first line of code in a Rails app shoud be ..."
-date: 2019-01-21T09:30:00+11:00
+date: 2019-01-21T09:20:00+11:00
 excerpt: 'As part of "The Rails Camp Project" it was time to write the first
 line of code. With the ability to fire up Rails and a React app clearly we
 could write some code? Well not exactly. The first line of code in a Rails
