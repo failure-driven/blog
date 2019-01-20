@@ -12,7 +12,6 @@ images:
  - '/images/rails-camp/commit_04_matt_patterson_ed182d1c315_still.jpg'
  - '/images/failure-driven_square.jpg'
 author: Selena Small & Michael Milewski
-draft: true
 ---
 
 As part of ["The Rails Camp Project"]({{< ref"/post/railscamp-pairing" >}}),
