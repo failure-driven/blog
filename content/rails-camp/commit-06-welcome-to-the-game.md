@@ -1,6 +1,6 @@
 ---
 title: "Commit 6 Welcome to the Game"
-date: 2019-01-05T09:30:00+11:00
+date: 2019-01-22T09:00:00+11:00
 excerpt: "In our endeavour to pair with everyone at rails camp Hobart, our next pair Emily would be the lucky one to make that very first test written by Matt Patterson pass."
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'

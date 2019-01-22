@@ -1,6 +1,6 @@
 ---
 title: "Commit 8 Start the Game"
-date: 2019-01-09T09:30:00+11:00
+date: 2019-01-29T09:00:00+11:00
 excerpt: "Next to join us for our rails camp Hobart project was Rob Jacoby. 
 After Brenton was taught how to push a pending commit that would be allowed to not pass in a CI set up, we wanted to Rob to help us bring in the first front end component."
 cover_padding_class: 'pv7-l'

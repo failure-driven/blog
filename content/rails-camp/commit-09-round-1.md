@@ -1,6 +1,6 @@
 ---
 title: "Commit 9 Round 1"
-date: 2019-01-14T09:30:00+11:00
+date: 2019-01-30T09:00:00+11:00
 excerpt: "Rails camp brings together Ruby and Ruby on Rails develoeprs and everything
 that they are interested in. Among the varied interests are board games and for
 our pair in this episode of, 'code with everyone at rails camp Hobart project', was Paul Douglas. For Paul games means Dungeons and Dragons (D&D)."
