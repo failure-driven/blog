@@ -10,6 +10,10 @@ featured_image: 'https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/rai
 images:
  - '/images/rails-camp/commit_02_kirsten_comandich_de721fedc80_still.jpg'
  - '/images/failure-driven_square.jpg'
+aliases: [
+  '/post/rails-camp/commit-2-create-react-app/',
+  '/rails-camp/commit-2-create-react-app/'
+]
 author: Selena Small & Michael Milewski
 ---
 

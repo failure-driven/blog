@@ -13,6 +13,10 @@ featured_image: 'https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/rai
 images:
  - '/images/rails-camp/commit_01_jess_brown_85e0a9dde4d_still.jpg'
  - '/images/failure-driven_square.jpg'
+aliases: [
+  '/post/rails-camp/commit-1-rails-new/',
+  '/rails-camp/commit-1-rails-new/'
+]
 author: Selena Small & Michael Milewski
 ---
 
