@@ -1,7 +1,10 @@
 ---
-title: "Commit 6 Welcome to the Game"
-date: 2019-01-22T09:00:00+11:00
-excerpt: "In our endeavour to pair with everyone at rails camp Hobart, our next pair Emily would be the lucky one to make that very first test written by Matt Patterson pass."
+title: "Is snapshot testing test driven?"
+date: 2019-01-29T09:00:00+11:00
+excerpt: 'In our endeavour to pair with everyone as part of our test driven
+"The Rails Camp Project" our next hurdle as Rails developers was to navigate
+the always changing ReactJS landscape and make use of snapshot testing, but how
+is snapshot testing even test driven?'
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
 featured_image: 'http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_06_emily_coats_74791c0fa7e.gif'
@@ -12,24 +15,79 @@ author: Selena Small & Michael Milewski
 draft: true
 ---
 
-In our endeavour to pair with everyone at [rails camp Hobart]({{< ref
-"/post/railscamp-pairing" >}}), our next pair Emily would be the lucky one to
-make that very first [test written by Matt Patterson]({{< ref
-"/rails-camp/commit-04-and-05-rspec-and-feature-spec" >}}) pass.
+In our endeavour to pair with everyone as part of ["The Rails Camp Project"]({{<
+ref "/post/railscamp-pairing" >}}), at Rails Camp Hobart, our next pair was
+Emily. The aim of the project was to test drive a simple multi round game using
+a Rails backend and ReactJS. Emily was the lucky one to write the first line of
+actual code making the [test written by Matt Patterson]({{< ref
+"/rails-camp/commit-04-and-05-first-line-of-code-in-rails-app" >}}) pass. The
+only hurdle for us Rails developers was to navigate the always changing ReactJS
+landscape and make use of snapshot testing, but how is snapshot testing even
+test driven?
 
 Now, we've written an integration test that incorporates the backend logic as
 well as the front end behaviour. You might be wondering if the test we wrote
 with rspec is going to also cover the javascript and markup. Well, it is. But
-we're also going to need to start adding some unit tests at some point. 
+we're also going to need to start adding some unit tests for the frontend at
+some point.
 
 You see, integration tests test that all components work together as expected
 but we also need to ensure that each isolated unit works on its own as expected
 too.
 
-First, we got Emily to help us setup Enzyme Snapshot tests for the React
-component of our game and she changed the app entry which we created in
-[commit-2-create-react-app](link/to/post) to what was expected in our first
-integration test, a H1 with "Welcome to the game"
+First, we got Emily to help us setup [Enzyme](https://airbnb.io/enzyme/)
+testing and in a rush to try new things we added snapshot tests. As Enzyme
+Snapshot tests were the cool new thing people talked about we presumed this
+would be a good way to test the React component of our game. Emily changed the
+app entry which we created in [commit 02 create-react-app]({{< ref
+"/rails-camp/commit-02-create-react-app" >}}) to what was expected in our first
+integration test, a H1 with "Welcome to the game".
+
+TODO animated gif?
+
+At this time this was not really "test driven". We wrote the implementation and
+then just accepted what was provided by the Enzyme snapshot with a press of `u`
+for update the snapshot. on various discussions in the past we have heard
+eveything from:
+
+> "snapshot test everything, it is the new way of testing, we test 95% of our
+> app that way"
+
+to
+
+> "well you could edit the snapshot to make it fail and then update the
+> implementation to make it pass"
+
+So as we write this article a few months later what is our view on Enzyme and
+snapshot testing?
+
+## Our current rules on Enzyme testing
+
+TODO update examples and text to be more precise
+
+* use shallow rendering for most unit level assertions
+{{< highlight react >}}
+it('renders three <Foo /> components', () => {
+  const wrapper = shallow(<MyComponent />);
+  expect(wrapper.find(Foo)).to.have.lengthOf(3);
+});
+{{< / highlight >}}
+* use full DOM rendering sparingly, it is no longer a unit but multiple units
+  like for
+{{< highlight react >}}
+const wrapper = mount(<Foo bar="baz" />);
+{{< / highlight >}}
+* use snapshot testing as a once off for a component as more of a "pseudo
+  visual" confirmation that should be actually reviewed in the browser before
+  pressing `u` to update the snapshot, more of a CSS style test.
+{{< highlight react >}}
+const wrapper = shallow(<App />);
+expect(shallowToJson(wrapper)).toMatchSnapshot();
+{{< / highlight >}}
+
+# Tracking to pair with everyone at rails camp
+
+TODO fill this in
 
 With a lot of work already cut out for us, trying to share context with 36
 developers, one at a time in just 48 hours - many of whom are new to or
@@ -56,7 +114,7 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
 
 Emily is a [vue.js](link/to/vue) developer and this was her first experience
 with snapshot testing. To be honest, we have only been playing with it for a
-short while and are still debating as to how usefull it actually is. 
+short while and are still debating as to how usefull it actually is.
 
 The way it works is (**TODO**) takes a snapshot of the DOM for the React
 component under test. This means if an element changes or state causes a change
@@ -64,7 +122,7 @@ in the DOM, then the snapshot changes when test are run again. You can then
 verify the changes are what you expected.
 
 To make it more manageable the snapshot is shallow rendered only rendering the
-one component under test and not the hierarchy of components below or above. 
+one component under test and not the hierarchy of components below or above.
 
 The problem, however, is that very quickly huge swaths of HTML like snapshots
 are being generated which can become a nightmare as you try to find the diffs.
@@ -73,7 +131,7 @@ likely to just accept those changes without double checking.
 
 ### 5 minutes with Emily
 
-**Emily:** 
+**Emily:**
 
 > "I see how useful this would be for refactoring to see you have not changed
 > anything by accident"
@@ -91,7 +149,7 @@ a unit test frist, get the code to work and then write a feature test
 afterwards.
 
 Happy with the way our group pairing went, Emily liked the idea we presented of
-layered tests. 
+layered tests.
 
 She thought the ability to mark a test as `pending`, leaving it deliberately
 failing while focussing on lower level tests and implementation was a great
@@ -100,6 +158,14 @@ approach.
 ### Lolcommit
 
 ![Add welcome message](https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_06_emily_coats_74791c0fa7e.gif)
+
+### Next time
+
+Now that we have implemented a spec through the integration layer down to the
+component unit testing layer and made it pass, it will be time to rinse and
+repeat next time. Another failing test, but what if you cannot make it pass but
+still want to integrate your code with the rest of the team and not break
+continuous integration CI tests? join us next time to find out.
 
 #### Authored By:
 
