@@ -29,3 +29,11 @@ The range of experience and knowledge over the weekend was unbelievably diverse.
 One of the biggest highlights that everyone who participated can take away from the project was that, regardless of experience, we all have knowledge to share and we all have something to learn from each other.
 
 Follow our story over the coming weeks, as we share some of the other insights that we’ve learned through this experience.
+
+# The Rails Camp Project posts
+
+* [rails new]({{< ref "/rails-camp/commit-01-rails-new.md" >}})
+* [create react app new]({{< ref "/rails-camp/commit-02-create-react-app.md" >}})
+* [configuring procfiles]({{< ref "/rails-camp/commit-03-configuring-procfiles.md" >}})
+* [first line of code in a rails app]({{< ref "/rails-camp/commit-04-and-05-first-line-of-code-in-rails-app.md" >}})
+
