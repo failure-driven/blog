@@ -1,6 +1,6 @@
 ---
 title: "Commit 14 Render Images"
-date: 2019-02-04T09:30:00+11:00
+date: 2018-02-15T09:00:00+11:00
 excerpt: "Having followed along with Cameo on the introduction to our rails camp
 Hobart project, seeing all the tests pass, our next commrade Ethan was already up to speed with what was going on. One thing he noted though, was..."
 cover_padding_class: 'pv7-l'

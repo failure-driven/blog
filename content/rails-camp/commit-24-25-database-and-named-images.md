@@ -1,6 +1,6 @@
 ---
 title: "Commit 24 25 Database and Named Images"
-date: 2019-03-11T09:30:00+11:00
+date: 2018-03-25T09:00:00+11:00
 excerpt: ""
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'

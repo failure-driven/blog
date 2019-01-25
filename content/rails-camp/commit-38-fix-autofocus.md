@@ -1,6 +1,6 @@
 ---
 title: "Commit 38 Fix Autofocus"
-date: 2019-04-17T09:30:00+11:00
+date: 2018-05-06T09:00:00+11:00
 excerpt: ""
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'

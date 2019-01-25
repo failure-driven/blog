@@ -1,6 +1,6 @@
 ---
 title: "Commit 12 Expect Images"
-date: 2019-01-28T09:30:00+11:00
+date: 2018-02-11T09:00:00+11:00
 excerpt: "Starting to get well into the middle of the night at rails camp
 Hobart and we still didn't have an image displayed in our app! An app who's whole point was to show images and have people guess what they see in the image. With fatigue starting to set in, the mere dialog taking place to try and establish what to call our next collaborator really just shows how tired we'd become."
 cover_padding_class: 'pv7-l'

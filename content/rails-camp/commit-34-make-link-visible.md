@@ -1,6 +1,6 @@
 ---
 title: "Commit 34 Make Link Visible"
-date: 2019-04-08T09:30:00+11:00
+date: 2018-04-22T09:00:00+11:00
 excerpt: ""
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'

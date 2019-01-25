@@ -1,6 +1,6 @@
 ---
 title: "Commit 13 Test for Images"
-date: 2019-01-30T09:30:00+11:00
+date: 2018-02-13T09:00:00+11:00
 excerpt: "We were digging deep now at rails camp Hobart at 2 oclock in the morning! Adding to the difficulty of bringing someone up to speed on our project, Cameo who was keen but extremely tired, was only half way through her Coder Academy course on how to code."
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'

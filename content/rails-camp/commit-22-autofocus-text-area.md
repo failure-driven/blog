@@ -1,6 +1,6 @@
 ---
 title: "Commit 22 Autofocus Text Area"
-date: 2019-03-04T09:30:00+11:00
+date: 2018-03-18T09:00:00+11:00
 excerpt: ""
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'

@@ -1,6 +1,6 @@
 ---
 title: "Commit 23 Handle More Use Cases for Input"
-date: 2019-03-06T09:30:00+11:00
+date: 2018-03-20T09:00:00+11:00
 excerpt: ""
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'

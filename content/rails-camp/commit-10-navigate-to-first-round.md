@@ -1,6 +1,6 @@
 ---
 title: "Commit 10 Navigate to First Round"
-date: 2019-02-04T09:00:00+11:00
+date: 2018-02-06T09:00:00+11:00
 excerpt: "Tim is next up in our series of 'code with everyone at rails camp Hobart project'. As is part of the process in TDD, we were now ready for some green refactoring."
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'

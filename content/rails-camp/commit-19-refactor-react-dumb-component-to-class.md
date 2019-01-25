@@ -1,6 +1,6 @@
 ---
 title: "Commit 19 Refactor React Dumb Component to Class"
-date: 2019-02-20T09:30:00+11:00
+date: 2018-03-04T09:00:00+11:00
 excerpt: ""
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
