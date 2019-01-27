@@ -1,18 +1,29 @@
 ---
-title: "Commit 22 Autofocus Text Area"
+title: "Autofocus text area"
 date: 2018-03-18T09:00:00+11:00
-excerpt: ""
+excerpt: 'Although there was a lot of support for our "The Rails Camp
+Project", at Rails Camp Hobart, there was not always support for our
+practices of pairing and testing. James challenged us on that but
+ultimately we were technologists making an app work better and talk
+technology.'
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
 featured_image: 'https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_22_james_martelletti_29385d82754.gif'
 images:
  - '/images/rails-camp/commit_22_james_martelletti_29385d82754_static.jpg'
  - '/images/failure-driven_square.jpg'
-author: Selena Small & Michael Milewski 
+author: Selena Small & Michael Milewski
 draft: true
 ---
 
-**TODO** the beginnings of trying to get autofocus working
+Although there was a lot of support for our ["The Rails Camp
+Project"]({{< ref "/post/railscamp-pairing" >}}), at
+Rails Camp Hobart, there was not always support for our practices of
+pairing and testing. James challenged us on that but ultimately we were
+technologists making an app work better and talk technology.
+
+The making the app work better was to optimise the way the answer could
+be intput by making the text box focused by default.
 
 <img alt="@jmartelletti" src="//github.com/jmartelletti.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
@@ -81,41 +92,56 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 
 > **Q:** How do you get your team to work the way you want them to work?
 
-> **A:** I work at higher architercture level. How thing integrate together
+> **A:** I work at higher architercture level. How things integrate together
 > that kind of thing.
 
-**TODO** continue from here on
+> **Q:** and where do you work at the moment?
 
-product: Harbour what AWS env looks like
-"put it this wway I have a lot of access to a lot of pepoles envoirments"
+> **A:** I am the founder of [hava.io](https://www.hava.io/) which visualises
+> your existing cloud infrastructure and network topology automatically. Put it
+> this way, I have a lot of access to a lot of pepoles envoirments.
 
-about discovering thoose services hmans ae good at anomoly detection
-"kind fo massive giant spot the difference"
+> The product is about discovering those services and visualising them. Humans
+> are then good at anomoly detection, kind of like a massive spot the
+> difference once the services are visualised. This visualisation allows for
+> network diagnoses and security audits.
 
-visualise and diagnoes network and security
+> **Q:** and what did you get out of todays session on pairing and test driving?
 
-I got out of it "Iam correct testing is not for me, not my style"
+> **A:** I got out of it that I was always correct! Testing isnot for me, it's
+> not my style. I started in writing Basic and C, there was not much in terms
+> of testing back then. In fact growning up with the development of internet
+> technologies was so easy, things were simple and slowly evolved so following
+> along was simple as things would take some years to develop.
 
-I started in basic and C - there was not much in terms of testing then
+> These days though there are some many technologies and evolving concpets. I
+> imagine it would be extremely hard to keep up to date and understand how
+> these things have evolved. In my case all the various network libraries and
+> how they have evolved.
 
-growning up with the development of internet technologies was so easy, but
-these days there are som many things to know and where these concpets,
-technologies, netowrk libarries and where they came from
+> **Q:** Boot camps for coding - thoughts?
 
-Boot camps - thoughts? I have seen good results from people
-it covers you don't know what hyou don't know if you want to go down this
-bpath this is the package of the things you need to know
+> **A:** I have seen good results from people! it covers all the things that
+> you don't know that you don't know. If you want to go down this path, it will
+> package up all the things you need to know. I belveive to become a developer
+> or technoloigist you need to be a patrticular type of person. People who get
+> passionate about technology. These people ignite at the challenge and work
+> hard to keep on top of the changing technology landscape and move forward.
 
-to become dev technoloigist you need to be a patrticular type of person
+> **Q:** What most surprised you about our time pairing together today?
 
-but a lot of people get passion ignite and then keep on top of it and move
-forward
-
-" you got me to do something I didn't want to do wtih great success"
+> **A:** You got me to do something I didn't want to do, and you did it with
+> great success! well done!
 
 ## Lolcommit
 
 ![commit 22 James Martaletti](https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_22_james_martelletti_29385d82754.gif)
+
+### Next time
+
+Now that the user could easily enter a guess, join us next time for
+working out if the guess is actually correct. That and a comparison of
+our app to a banking app.
 
 #### Authored By:
 
