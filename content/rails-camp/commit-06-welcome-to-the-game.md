@@ -28,8 +28,8 @@ test driven?
 Now, we've written an integration test that incorporates the backend logic as
 well as the front end behaviour. You might be wondering if the test we wrote
 with rspec is going to also cover the javascript and markup. Well, it is. But
-we're also going to need to start adding some unit tests for the frontend at
-some point.
+we're also going to need to start adding some isolated unit tests for the
+frontend at some point.
 
 You see, integration tests test that all components work together as expected
 but we also need to ensure that each isolated unit works on its own as expected
@@ -94,8 +94,6 @@ expect(shallowToJson(wrapper)).toMatchSnapshot();
 
 # Tracking to pair with everyone at rails camp
 
-TODO fill this in
-
 With a lot of work already cut out for us, trying to share context with 36
 developers, one at a time in just 48 hours - many of whom are new to, or
 unpracticed at TDD - we were thankful for our background in pair programming.
@@ -119,17 +117,18 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 Co-authored-by: Michael Milewski <saramic@gmail.com>
 {{< / highlight >}}
 
-Emily is a [vue.js](link/to/vue) developer and this was her first experience
-with snapshot testing. To be honest, we have only been playing with it for a
-short while and are still debating as to how usefull it actually is.
+Emily is a [vue.js](https://vuejs.org/) developer and this was her first
+experience with snapshot testing. To be honest, we have only been playing with
+it for a short while and are still debating as to how usefull it actually is.
 
 The way it works is, the test takes a snapshot of the shallow rendered React
 component under test. What this means is that only that component is rendered
 and only the props that would be passed to further components down the render
-tree. This means if an element changes or state causes a change in the
-rendering of the component, then the snapshot changes when test are run again.
-You can then verify the changes are what you expected, post implementation
-test.
+tree are rendered and not the actual components. This means if an element
+changes or state causes a change in the rendering of the component, then the
+snapshot changes when test are run again. You can then verify the changes are
+what you expected, post implementing the actual change, so not driving them
+through the tests.
 
 The problem, however, is that very quickly huge swaths of HTML like snapshots
 are being generated which can become a nightmare as you try to find the diffs.
