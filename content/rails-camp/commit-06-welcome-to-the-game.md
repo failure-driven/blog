@@ -43,7 +43,7 @@ app entry which we created in [commit 02 create-react-app]({{< ref
 "/rails-camp/commit-02-create-react-app" >}}) to what was expected in our first
 integration test, a H1 with "Welcome to the game".
 
-TODO animated gif?
+![snapshot testing](/images/rails-camp/commit_06_snapshot_testing.gif)
 
 At this time this was not really "test driven". We wrote the implementation and
 then just accepted what was provided by the Enzyme snapshot with a press of `u`
@@ -63,19 +63,24 @@ snapshot testing?
 
 ## Our current rules on Enzyme testing
 
-TODO update examples and text to be more precise
-
 * use shallow rendering for most unit level assertions
 {{< highlight react >}}
-it('renders three <Foo /> components', () => {
-  const wrapper = shallow(<MyComponent />);
-  expect(wrapper.find(Foo)).to.have.lengthOf(3);
+it("renders welcome message", () => {
+  const wrapper = shallow(<App />);
+  expect(wrapper.childAt(0).type()).toBe("h1");
+  expect(wrapper.childAt(0).text()).toBe("Welcome to the game");
 });
 {{< / highlight >}}
-* use full DOM rendering sparingly, it is no longer a unit but multiple units
-  like for
+* use full DOM rendering sparingly, using `mount()` is no longer doing isolated
+  unit testing of componenets. It can be handy when testing components that
+  come from a third party and what goes on inside the component is not the
+  concern of our tests, like when we use react router in a few posts time.
 {{< highlight react >}}
-const wrapper = mount(<Foo bar="baz" />);
+const wrapper = mount(
+  <MemoryRouter>
+    <App/>
+  </MemoryRouter>
+);
 {{< / highlight >}}
 * use snapshot testing as a once off for a component as more of a "pseudo
   visual" confirmation that should be actually reviewed in the browser before
@@ -84,17 +89,19 @@ const wrapper = mount(<Foo bar="baz" />);
 const wrapper = shallow(<App />);
 expect(shallowToJson(wrapper)).toMatchSnapshot();
 {{< / highlight >}}
+* And don't get over excited like we did and attempt to use snapshot testing
+  for everything
 
 # Tracking to pair with everyone at rails camp
 
 TODO fill this in
 
 With a lot of work already cut out for us, trying to share context with 36
-developers, one at a time in just 48 hours - many of whom are new to or
+developers, one at a time in just 48 hours - many of whom are new to, or
 unpracticed at TDD - we were thankful for our background in pair programming.
 
-Our ability to navigate as each new pair approached the keyboard meant that
-_they_ could get stuck in quicker.
+Our ability to navigate and pre-empt our new pairing budies as each new pair
+approached the keyboard meant that _they_ could get stuck in quicker.
 
 <img alt="@gamzatti" src="//github.com/gamzatti.png" style="display: inline; width: 88px;" height="88" />
 <img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
@@ -116,17 +123,17 @@ Emily is a [vue.js](link/to/vue) developer and this was her first experience
 with snapshot testing. To be honest, we have only been playing with it for a
 short while and are still debating as to how usefull it actually is.
 
-The way it works is (**TODO**) takes a snapshot of the DOM for the React
-component under test. This means if an element changes or state causes a change
-in the DOM, then the snapshot changes when test are run again. You can then
-verify the changes are what you expected.
-
-To make it more manageable the snapshot is shallow rendered only rendering the
-one component under test and not the hierarchy of components below or above.
+The way it works is, the test takes a snapshot of the shallow rendered React
+component under test. What this means is that only that component is rendered
+and only the props that would be passed to further components down the render
+tree. This means if an element changes or state causes a change in the
+rendering of the component, then the snapshot changes when test are run again.
+You can then verify the changes are what you expected, post implementation
+test.
 
 The problem, however, is that very quickly huge swaths of HTML like snapshots
 are being generated which can become a nightmare as you try to find the diffs.
-As you can imagine, developers who are in a rush or dont know better, are
+As you can imagine, developers who are in a rush or don't know any better, are
 likely to just accept those changes without double checking.
 
 ### 5 minutes with Emily
@@ -150,10 +157,6 @@ afterwards.
 
 Happy with the way our group pairing went, Emily liked the idea we presented of
 layered tests.
-
-She thought the ability to mark a test as `pending`, leaving it deliberately
-failing while focussing on lower level tests and implementation was a great
-approach.
 
 ### Lolcommit
 
