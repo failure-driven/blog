@@ -1,7 +1,8 @@
 ---
 title: "Commit 8 Start the Game"
 date: 2018-02-01T09:00:00+11:00
-excerpt: "Next to join us for our rails camp Hobart project was Rob Jacoby. 
+excerpt: "Next to join us for our rails camp Hobart project was
+Rob Jacoby. 
 After Brenton was taught how to push a pending commit that would be allowed to not pass in a CI set up, we wanted to Rob to help us bring in the first front end component."
 cover_padding_class: 'pv7-l'
 cover_dimming_class: 'none'
@@ -15,7 +16,7 @@ draft: true
 
 Next to join us for our [rails camp Hobart]({{< ref"/post/railscamp-pairing" >}}) project was Rob Jacoby. 
 
-After Brenton was taught how to push a [pending commit]({{< ref "/rails-camp/commit-07-pending-specs" >}}) that would be allowed to _not pass_ in a CI set up, we wanted to Rob to help us bring in the first front end component.
+After Brenton was taught how to push a [pending commit]({{< ref "/rails-camp/commit-07-pending-specs-for-continual-integration" >}}) that would be allowed to _not pass_ in a CI set up, we wanted to Rob to help us bring in the first front end component.
 
 Quickly bringing Rob up to speed with our code base and testing approach, we gave him an opportunity to write some react.
 
