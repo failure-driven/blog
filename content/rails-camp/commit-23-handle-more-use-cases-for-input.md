@@ -1,5 +1,5 @@
 ---
-title: "Commit 23 Handle More Use Cases for Input"
+title: "Handle More Use Cases for Input"
 date: 2018-03-20T09:00:00+11:00
 excerpt: ""
 cover_padding_class: 'pv7-l'
@@ -28,64 +28,98 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
 Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
 
-**TODO**
 
-Up banker
+> **Q:** So Michael Morris, what is it that you do?
 
-one time you submitted to do a talk to a national conference? got any tips? I
-was. It was an interesting topic, playing mario cart in ruby - conference
-organiser bait - I can tell yuo bit hvat to kill you. There is a lot of stuff
-at work around banking that is interesting but haven't been selected yet,
-earyl days
+> **A:** I am an Up banker, yeah a banker
 
-focus on wht you want people to get out of that 40 mintues make it int3ersting
-for people.
+> **Q:** You have submitted a talk to a national conference and been
+> successfull in being accepted, any tips?
 
-"it's like sales copy rreally"
+> **A:** Well it was an interesting topic, playing Mario Cart in ruby -
+> conference organiser bait - I can tell you more but will have to kill you.
 
-the code
-looks like
+> This year round I have put in a talk around the stuff at work, there is a lot
+> of things around banking that are interesting but haven't been selected yet,
+> early days.
 
-the process i sgreat it is fantastic what you have done tne oputt of thep
-rpocjet much more inmport ant then the code
+> I suggest you focus on wht you want people to get out of that 40 mintues,
+> make it intersting for people.
 
-maybe you are solving the wrold problem by sharing something in a different
-way
+> And as for the submission, "it's like sales copy really"
 
-SS craps on about all the opportunites she took but sees peopel missing out
+> **Q:** what do you think of "The Rails Camp Project" so far?
 
-I have gone through hpases spending 12 hours a day - in the past i have
-written games for others to participate in - I would happliy helpp out with
-other people
+> **A:** The code, well looks like, maybe I don't say :) The process on the
+> other hand is great, it is fantastic what you have done. The output of the
+> project is so much more than the code. Maybe you are solving the worlds
+> problems by sharing something in a different way
 
-Juniors come to these events, they feel intimidated
+> **Selena:** You are right, our inspiration was all the missed opportunities
+> we see around at places like Rails Camp. Getting into software late myself I
+> would die for any opportunity to learn from all these knowledgeable people. I
+> see people missing out I want to change that by driving a fun project to get
+> people talking, sharing inspiring and learning. What have you seen in the
+> past that has inspired people to make more of opportunites to code and learn
+> together?
 
-did you learn anything?
-lauhgs all the things bad with the code thoughts go through
+> **A:** I have gone through different phases, some camps spending 12 hours a
+> day non stop coding. In the past I have written games for others to
+> participate in, I would happily help out, help other people.
 
-the process you guys are using is great - write project with whole bunch of
-people that is a learning for me - do it again sometime.
+> **Q:** That's great, you know a lot of juniors come to these events, they
+> feel intimidated, sometimes it is up to us to seek out who needs some help, a
+> little direction, an interest in what they are doing, learning. Did you learn
+> anything today?
 
-there is probably a lot of way sto solve prolbem of helping others.
-"count me in next time"
-"you do you, do whatver you wnat on this plante you have 80 years you do you"
-one guy I work together but not really pair
-"I don't think a velcro wall would encourage dversity, we have some large
-people and that would not be fair"
+> **A:** [lauhgs] I have some thoughts of all the bad things with the code, but
+> you are not writing a banking app.
 
-we do feature branches, master has to be shippable all times, we need to code
-review - we need a mechanism to do this. we have a bank to run, lot's of
-security issues, github tooling "we could make our code publick and it
+> The process you guys are using is great! Write a project with a whole bunch
+> of people! The fact that is possilbe, te approach, the feeling of involvement
+> and community, that is a learning for me. Make sure you do it again sometime.
+
+> Ofcourse there is probably a lot of ways to solve the probelm of helping
+> others. Make sure you "count me in next time!"
+
+> Just remember You do You, do whatever you want ont his planet, you have 80
+> years, You do You, that is what everyone is good at doing.
+
+> **Q:** Do you often pair program?
+
+> **A:** There is one guy I work together with at work but not really pair.
+
+> **Q:** What do you think companies should do to bring in talent? Our thinking
+> at the moment is a full size velcro wall and velcro body suits!
+
+> **A:** I don't think a velcro wall would encourage dversity, we have some
+> large people and that would not be fair
+
+> **Q:** What about our version of Continuous Integration (CI) alwasy working
+> and pushing to master?
+
+> **A:** we do feature branches, master has to be shippable at all times, our
+> process requires for code review, we need a mechanism to do this, feature
+> branches and pull requests works for us. After all we have a bank to run,
+> lot's of security issues
+
+, github tooling "we could make our code publick and it
 wouldn't make a differencer
 you have lots of oopprrtunities but ai is not
 
-no the code does not have 340 stars people will beleive anything
+> **Q:** you mentioned your Werewolf alorithm to always be ~~lyn...~~ killing
+> has 340 stars?
 
-Spuber comming in 5 minutes - focus on that
+> **A:** no the code does not have 340 stars, but during a game of Werewolf
+> people will beleive anything.
 
-"in my opinion, x amount of code base I am big fan of the monolith" when you
-want to add latency to you rmehthod calls that is when microservices are for
-you.
+> talking of which your idea for sp-uber, coming in 5 minutes, focus on that!
+
+> **Q:** You had some interesting views on monliths and microservices?
+
+> **A:** This is a rails camp and in my rails camp opinion that for any large
+> amount of code base I am a big fan of the monolith. When you want to add some
+> latency to your mehthod calls, that is when microservices are for you!
 
 ## Lolcommit
 
