@@ -28,45 +28,51 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
 Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+> **Q:** how did you find it?
 
-Super keen to join you guys,
-I knew I hae not done this before
-not worked with When/Then stuff and in this way
-have been writing in elixir
-and thought this would be fun
+> **A:** I was super keen to join you guys, I knew I have not done this before
+> so it was exciting to be taken on this quick tour. I have not worked with
+> Given/When/Then testing stuff in this way. Most recently I have been writing
+> in elixir and thought this would be fun.
 
-what I learnt was the process,step by step
-I am used to testing more on the b/e and no so much on f/e
-more at unit tests and not step by step
+> **Q:** do you think you learnt anything today?
 
-I haven't done flow testing
-At the end of the day still anintegration test
+> **A:** what I learnt was the process, step by step. I am used to testing more
+> on the backend and no so much on frontend also more at the isolated unit test
+> level and not this idea of steps flowing through the whole system. I haven't
+> done flow testing, but at the end of the day it's still an integration test
 
-Interestin situation because it was all setup and I felt there was
-expectations on me to do things a cretain way and do something in paritcular,
-I was not sure what to do
+> **Q:** what were your expectations of this pairing experience?
 
-I liked the playfull time, it was fine
-I can't figure Selena out, put that on the record
-it was a good time, I would do it agian, maybe Michael can also wear a stripy
-shirt
+> **A:** it was an interesting situation because it was all setup and I felt
+> there were expectations on me to do things a certain way and do something in
+> paritcular, I was not sure what to do, which direction to drive it in but you
+> guys manage to keep me guided on the path you were aiming for.
 
-I was not sure what I would get out of this. I was not sure i would learn
-anything, I did not know what to esxpect.
+> **Q:** how do you think we managed that?
 
-I liked we foccused on the testing, we have written a lot
+> **A:** I liked the playfull time, it was fun! I can't figure Selena out, you
+> can put that on the record, it was certainly a good time.
 
-I really wanted to make that image change but refactoring was going to help
-the next person
+> **Q:** anything we can do better?
 
-I think you guys know what you want out of it and have done well
-if what you wanted to do is drive others to build the app for you then you
-have succeeded but the app has a long way to go
+> **A:** I would do it agian, but maybe Michael can also wear a stripy shirt
+> next time?
 
-Our goal this time was to have everyone invoolved to be part of the project
-the limited time to bring people around the context we have had to drive it
-more
+> **Q:** do you feel you got anything out of it?
+
+> **A:** I was not sure what I would get out of this. I was not sure i would
+> learn anything, I did not know what to expect. I liked we focused on the
+> testing, we have written a lot of code today. I really wanted to make that
+> image change but refactoring was going to help the next person
+
+> I think you guys know what you want out of it and have done well if what you
+> wanted to do is drive others to build the app for you then you have succeeded
+> but the app has a long way to go.
+
+> **Selena:** Our goal this time was to have everyone involved to be part of
+> "The Rail Camp Project" and with the limited time to bring people around the
+> context we have had to drive it more then we would have liked to.
 
 ## Lolcommit
 
