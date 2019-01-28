@@ -28,55 +28,68 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
 Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+> **Q:** how did you find the experience?
 
-how experience - I stayed up waiting for my     go
+> **A:** well I stayed up waiting for my go, it is now almost 2am Monday
+> morning. I liked the concept of everyone from Rails Camp collaborating on one
+> project and the git commit history is nice way of connecting everyone.
 
-I liked the concept of everyone from camp collaborating on one project and the
-git commit history is nice way of connecting everyone
+> **Q:** do you think we are ready to launch? with the app we have built so
+> far?
 
-I think you can go to market even though I did not expect it to work the way
-it did - i needed more guidance
+> **A:** I think you can go to market even though I did not expect it to work
+> the way it did - I needed more guidance in actually playing the game.
 
-We did not get too deep end goals
+> **Q:** We didn't want to get in too deep and have to ambitious an end goal,
+> hopefully making it easier to understand, pickup and contribute.
 
-we just had one thing and I appreciate that given it is 2am
+> **A:** It was good to only have one small thing to contribute and I
+> appreciate that given it is 2am
 
-SS varied experience level
+> **Selena:** there was also such a varied experience level
 
-it was hard to find to find a place where everyone can join
+> **Sam:** it must be hard to find a part of the project that everyone can join
+> in on.
 
-our main focus was to get everyone involved and last rails camp not much coding and
-that is a shame for a lot of junior people where those people could have
-benefit-ed from talking to people there
+> **Selena:** our main focus was to get everyone involved. Last rails camp not
+> much coding was happening and that is a shame for a lot of junior people come
+> to these events and they could have really benefitted from talking to people
+> with more experience.
 
-Landscape of people coming to RailsCamp is chaining and last 4 or 5 people
-are dropping and new coming in at junior level looking at opportunities to get
-in
+> I feel the landscape of people coming to Rails Camp is chaining. In the last
+> 4 or 5 camps a lot of regulars are dropping off and new people are joining in
+> at a much more junior level looking at opportunities to get into the
+> industry.
 
-my experience is around people needing help around mirrors and servers setup
+> **Sam:** my experience is around people needing help around mirrors and
+> servers setup, I don't tend to stick around beyond solving a problem and
+> giving them some runway to keep them going for some time.
 
-I don't tend to stick around beyond solving a problem and giving them some
-runway to keep them going for some time
+> **Selena:** It's good you are willing to help
 
-SS It's good you are willing to help
+> **Sam:** there is a high impetus to reach out
 
-Sam High impetus to reach out
+> **Selena:** there is someone we talked to earlier on. We helped with `rails
+> new`. She told us she was not sure if she was going to do any coding. After
+> our pairing. We saw her get her laptop out later on, no doubt we were an
+> encouragement.
 
-SS someone we talked to early on we helped with rails new and saw her have
-her laptop out later on no doubt we were an encouragement
+> **Selena:** We think it is intimidating for more junior people to come up to
+> more senior people to get help.
 
-SS it is intimidating for people to come up to more senior people to get help
+> **Sam:** How can we help these people, organically talking at lunch?
 
-Sam - how can we help these people, organically talking at lunch?
+> **Selena:** Each camp people mention that more encouragement needs to happen
+> to get people writing more code. This camp being small made it easier to
+> connect with more people. It should also be on the senior people to reach out
+> to the more junior that need the help.
 
-SS each camp people mention that more encouragement needs to happen and
-this camp being small was easier to get to cache to more people
-it should be on the senior people to reach out
+> **Sam:** camps vary, some times it's more games, some times coding, or
+> drinking.
 
-Sam - camps vary, games, coding, drinking,
+> **Q:** any feedback for us?
 
-Feedback for us - "it was fine" even when you said you are going to get youe
+> **A:** it was fine, even when you said "you are going to get me"
 
 ## Lolcommit
 
