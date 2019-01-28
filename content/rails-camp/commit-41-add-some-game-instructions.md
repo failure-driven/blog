@@ -28,40 +28,40 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
 Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+> **Q:** How did you find the experience?
 
-pretty good at explaining where code was at and next steps
-great at this time of night to have something similar
+> **A:** it was pretty good, you were good at explaining where the code was at
+> and then likely next steps that needed to be done. This was great at this
+> time of night to have so much support.
 
-would have liked to sort out initial problem around the timer but maybe a bit
-har dat 3am
+> I would have liked to sort out the other problem around the timer but maybe a
+> bit hard at 3am and given it is javascript, and I am not a front end guy.
 
-given it is javascript
+> **Selena:** Pat you claim not to be a front end guyt but you seem pretty good
+> with the `p` tags :)
 
-SS claims to be a not front end guy but seem pretty good with the p tags
+> **Pat:** this is my 4th react commit, of all time!
 
-"this is my 4th react commit"
+> **Selena:** are you a Rails Camp lifer?
 
-SS are you a rails camp lifer
+> **Pat:** Ruby is my language of choice for 10 years. What has been the focus
+> of this project for you guys?
 
-Ruby is my lang of choice for 10 years.
+> **Selena:** our project? purely from getting everyone involved and
+> appreciating it is fantastic. You can only do so much, focus on so many
+> things, getting almost everyone on camp to be involved has been an
+> achivement. The lolcommit adds a lot of joy for every one involved
 
-our project - purely from getting everyone to appreciate it is fantastic -
-you can only do so much focus on so many things - almost everyone on camp
+> **Pat:** Yeah every one had a great laugh at the joint commit and enjoyed it
 
-the lolcommits adds a lot of joy for every one involved
+> **Selena:** We have been light hearted as much as possible, the most serious
+> part is the code commit message and the interview. We think everyone has
+> learnt something.
 
-every one had a great laygh at the joint commit and enjoy it
+> It has lead to lot's of discussions to help create more opportunities and
+> more interactions with new and junior people.
 
-SS we have been light hearted most serious part is the code commit message nd
-the interview
-
-we think =every one has learnt something
-
-lot's of discussions to help create more opportunities and more interactions
-with new and junior people
-
-it was good fun great, really thrilled you are doing this all
+> **A:** it was good fun, great, really thrilled you are doing this all!
 
 ## Lolcommit
 
