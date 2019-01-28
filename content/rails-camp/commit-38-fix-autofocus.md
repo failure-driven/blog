@@ -28,25 +28,31 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
 Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+> **Q:** What have you learnt from the expereince?
 
-what I learnt persisence and frirend ship arhe the true committments, after we
-conrenered you on the first night you avoided us
+> **A:** What I learnt is persisence and friendship are the true committments
 
-did you have fun " oh the most fun you could have coding"
+> **Q:** After we conrnered you on the first night you seemed to avoid us, did
+> you have fun?
 
-again? "oh when is the next rails camp"
+> **A:** oh the most fun you could have coding!
 
+> **Q:** would you do it again?
 
-I am only a monring guy - busy at work
-take calls in  the morning
+> **A:** when is the next rails camp?
 
-would I switch to ember - sure givee anything a go
+> **Q:** clearly you can make some time for us before next Rails Camp?
 
-any feedback - alcohol to buy help
+> **A:** Well I am only a monring guy, I am busy at work, I take calls in the
+> morning.
 
-"keep up the great  work"
+> **Q:** would you switch to a different technology like Ember?
 
+> **A:** would I switch to ember? sure I would give anything a go!
+
+> **Q:** any feedback?
+
+> **A:** you can always use alcohol to buy help! keep up the great work!
 
 ## Lolcommit
 
