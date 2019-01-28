@@ -28,20 +28,29 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 Co-authored-by: Michael Milewski <saramic@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+> **Q:** Emma, how did you find the experience?
 
-This one? this was challenging not familiar with rspec testing or anyting.
-Super fun, the best fun was the gif, You gusyw were so much fun
+> **A:** This one? coding with you guys? this was challenging as I was not
+> familiar with rspec testing or anyting. It was super fun, the best fun was
+> the gif from the lolcommit, you guys were so much fun!
 
-it is note easy to pair with snr or mid level devs but so fun
-you guys were making it so fun and comfortable
+> **Q:** how did you find our pairing?
 
-learnt whe using rspec could adda ctions in the middle
+> **A:** it is not always easy to pair with senior or mid level developers but
+> can be so much fun, you guys were making it so fun and comfortable!
 
-you guys awesome
+> **Q:** and did you learn anthing? anything you may want to go and learn later
+> on?
 
-I think this is nicest project here because you are working with all peopel
-here, its' really cool, awesom
+**TODO** what does the below mean?
+
+> **A:** I learnt when using rspec you could add actions in the middle
+
+> **Q:** any last thoughts on "The Rails Camp Project" ?
+
+> **A:** Yeah, you guys are awesome! I think this is nicest project here at
+> Rails Camp because you are working with all the people here, it's really
+> cool, awesome!
 
 ## Lolcommit
 
@@ -50,3 +59,4 @@ here, its' really cool, awesom
 #### Authored By:
 
 Selena Small & Michael Milewski
+
