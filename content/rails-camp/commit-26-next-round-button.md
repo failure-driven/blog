@@ -28,37 +28,43 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 Co-authored-by: Michael Milewski <saramic@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+> **Q:** Caitlin, as one of the organisers of Rails Camp Hobart how have you
+> found it?
 
-this has been a truley amazing rails camp for you guys
+> **A:** I will tell you one thing, this has been a truley amazing Rails Camp
+> for you guys!
 
-I spelt it right whtne I said itn
+> - It is making sure everyone codes!
 
-it is makcing sure everyone code
-it has pairing
-look at things they have not seen before
-strongly encouraging people to step outside theri comfrot zone in a safe and
-suportive environemengt
+> - It has pairing
 
-I guess I am interested to learn some more react
+> It allows a lot of partipants look at things they have not seen before, be it
+> testing, ReactJS, pairing. You are also strongly encouraging people to step
+> outside their comfrot zone in a safe and suportive environment.
 
-that is much less enthusisatic then i actually wash
+> **Q:** has it been a learning experience for yourself? what have inspired you
+> to learn more of?
 
-this is bueatifyl
+> **A:** I guess I am interested to learn some more react!
 
-as a rails camp orginiser I would like to see more of tehse thinngs
+> **Q:** and "The Rails Camp Project" how have you found that?
 
-having Mm & ss to be at all rails camps
+> **A:** yeah good. That is much less enthusisatic then i actually feel, This
+> project is beautiful. As a Rails Camp orginiser I would like to see more of
+> these things. I think we need Michael and Selena to be at all the rails
+> camps!
 
-by time you land in melbourne I would love you to get everyone but I don't
-hink you will make it, sorry
+> **Q:** and the aim now is to code with everyone, it is 4pm on a Sunday, what
+> are our chances?
 
-I want you to make it, I don't think it will happen
-thank you to your dedication to your coding at rails camp cause
+> **A:** by time you land in Melbourne I would love you to get everyone in but
+> I don't think you will make it, sorry :(
 
-I thin there is a lot more of this then at the last camp
+> Don't get me wrong, I want you to make it, I just don't think it will happen.
+> Thank you to your dedication to your coding at Rails Camp because there is a
+> lot more coding happening than at the last camp.
 
-1 commit per participant per camp
+> 1 commit per participant per camp, that is a good minimum expectation to set!
 
 ## Lolcommit
 
