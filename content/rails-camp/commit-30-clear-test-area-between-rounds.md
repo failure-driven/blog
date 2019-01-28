@@ -28,38 +28,58 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 Co-authored-by: Michael Milewski <saramic@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+> **Q:** how was it?
 
-It was great, the lol commits definitely the highlight
+> **A:** It was great, the lolcommit is definitely the highlight!
 
-I loved intese focus to do 1 thing and do it in such a short time. I learnt
-shit tuns $ for end of regex I learnt I don't know stuff
+> I loved the intense focus to do one thing and do it in such a short time. I
+> learnt shit tons. Even little things like `$` for end of line being the same
+> for regex as well as a shortcut in Vim. I learnt I don't know stuff
 
-React - a little
+> **Q:** have you ever done any react?
+
+> **A:** React - a little
+
+**TODO** what is this quote?
 
 "your react looks great, are you doing it all wrong?
 
-I learnt I can drill into snapshots never you you can look at them
+> **Q:** did you learn anything in React?
 
-RSpec
+> **A:** I learnt I can drill into snapshots, never knew you can actually open
+> up the file and look at them.
 
-I a pro test and test it allows me to structure what is happening
-only have done it post as I am not experienced eenought
+> **Q:** what about testing using RSpec?
 
-I often write tests but don't build it, at lookahead as a tactical recuirter
+> **A:** I am pro test and test first looks like it allows me to structure what
+> is happening up front. In practice I have only done testing post
+> implementation, I felt I was not expereinced enough.
 
-and changeineers build medical shit
+> **Q:** do you do much coding and/or testing day to day?
 
-Watching it build and having 2 people look at you coding is intense
-"You sound like you know hwat you are doing, kudos"
+> **A:** I often write tests but don't build much as I am a tactical recuirter
+> at [Lookahead](https://www.lookahead.com.au/)
 
-I would have loved to be a fly on the wall and watched this
+> **Q:** so where do you get most of your coding done?
 
-"you are both good at predicting difficult moments and catching failures to
-reduce the intimidation
+> **A:** I work with [Changeineers](https://changineers.com.au/) and build
+> medical shit!
 
-not as intimidating as I thought it would be after watching you pair with
-others.
+> **Q:** how was the experience pairing with us?
+
+> **A:** Watching this project build over the last day and a half and
+> anticipating having 2 people look over my sholder as I do some coding started
+> to feel really intese. But you sound like you know what you are doing and
+> guided me throught it well, kudos to you!"
+
+> I would have loved to be a fly on the wall and watched all your interactions
+> pairing. You are both good at predicting difficult moments and catcing
+> failures to reduce any moments of embarassement or intimidation.
+
+> **Q:** were you intimidated?
+
+> **A:** not as intimidating as I thought it would be after watching you pair
+> with others.
 
 ## Lolcommit
 
