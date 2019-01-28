@@ -28,37 +28,41 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
 Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+> **Q:** so was this the best thing at camp?
 
-not the hightlight of the camp, playing werewoolf - dealt the seer card 3
-times in 1 camp in 1 night
+> **A:** No, not the hightlight of the camp, playing werewolf was the highlight
+> where I was dealt the seer card three times in one camp in one night! that is
+> hard to beat!
 
-intimidating as I didn't know what you had roped me infor
+> **Q:** how did you find the expereince?
 
-I would do it again though
+> **A:** intimidating as I didn't know what you had roped me in for. I would do
+> it again though!
 
-I think there is too much react stuff I make sense of
+> **Q:** any tips for us?
 
-I hate 2 people watching me code
+> **A:** I think there is too much react stuff going on and it takes time to
+> make sense of it as well. I hate the idea of two people watching me code.
 
-sometimes pair program
+> **Q:** do you pair program much?
 
-I like a balance, some pairing but not too much work with someone for a bit
-but don't want to think I am wasting someone elses time
+> **A:** sometimes I pair program, I like a balance, some pairing but not too
+> much. I might work with someone for a bit but I don't want to think I am
+> wasting someone elses time
 
-SS but it's a priveleege to code with you
+> **Q:** but it was a priveledge to code with you, you need to share your
+> coding time with others!
 
-sometime I need some time to think agbout it, do some isolated experiments and
-prefer to do that solo
+> **A:** sometime I need some time to think about things, do some isolated
+> experiments and I prefer to do that solo. Pairing takes extra effort to
+> communicate everything as you are going along which is fine but sometimes it
+> is nice to find out some things solo and bring them back to the problem.
 
-pairing takes extra effort to communicat everything as you are going along
-which is fine but sometime ti is nice to find some things solo and bring it
-back to the problem
+> **Q:** are you into Test Driven Development (TDD)?
 
-Testing yes not necessarily testing first.
-
-this would be a good example where we could not do test first as we were
-unfamiliar with some things - it is ok to do some tinkering with the browser.
+> **A:** Testing yes, not necessarily testing first. What we did today, would
+> be a good example where we could not do test first as we were unfamiliar with
+> some things - it is ok to do some tinkering with the browser.
 
 ## Lolcommit
 
