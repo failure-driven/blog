@@ -43,37 +43,56 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
 Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+> **Q:** so how did you find the pairing and testing as part of "The Rails Camp
+> Project" ?
 
-It was fun, I would do it again
-appart from lolcommits - disccover where the exercise as a whole is up to and
-what you wanted me to configure
+> **A:** It was fun, I would do it again, maybe appart from lolcommits. It was
+> fun to disccover where the exercise as a whole is up to and what you wanted
+> me to configure.
 
-Learnt that RubyMine can enalble vim bindings that is pretty cool
+> **Q:** did you learn anything?
 
-pairing every now and again, contesxt of helping a junior. Remote pairing is
-interesting. Usually in zoom session and pair will share their screen and I
-jsut guide them.
+> **A:** Yeah I learnt that RubyMine can enalble vim bindings, that is pretty cool.
 
-unnecssary sophistication to use a more complex tool to both collaborate - one
-extra thing that is not helfull enought to make it worthwhilte
+> **Q:** do you pair in your day job?
 
-I do like the pariing style where 1 drive and the other is navigating and
-swithc once enought to commit, enjoy that but have not had the opportunity
-recenty to do that
+> **A:** I am pairing every now and again, mostly in the context of helping a
+> junior. Most of my pairing is also remote, remote pairing is, let's just say interesting.
 
-tmux and grok before as tools to minise bandwidth problesm.
+> **Q:** What technology do you use for remote pairing?
 
-fantastich initaiatve one of the best tjhings I have seen at any rails camp
-out of the 19 I have been at
+> **A:** Usually in a video conferencing app like a zoom session and the pair
+> will share their screen and I just guide them. I feel it an unnecssary
+> sophistication to use a more complex tool to both collaborate. I feel it is
+> one extra thing that is not helpfull enough to make it worthwhile.
 
-ticks so many boxes, collaborating with so many people, every collaboration is
-a different pairing experience. relatively non threating, and fun with the
-lolcommit.
+> I do like the paring style where one person drives and the other is
+> navigating and switch once enough code has been written to commit, I enjoy
+> that but have not had the opportunity recenty to do that style of pairing.
 
-What opinions have you formed? -
-it is now a projcect how can we scale this in the future - Micahel is now
-helping juniors.
+> **Q:** what tools have you used in the past to do collabrative pairing?
+
+> **A:** I have used tmux and [ngrok](https://ngrok.com/) before as tools which
+> allow to share terminals and dev servers whilst minimising bandwidth by not
+> having to send any video.
+
+> **Q:** Having seen the code, had the pairing experience with us, what do you
+> think of "The Rails Camp Project" ?
+
+> **A:** I think it is a fantastic initiative, probably one of the best things
+> I have seen at any rails camp out of the 19 I have been at! Your project
+> ticks so many boxes, collaborating with so many people, every collaboration
+> is a different pairing experience. It was relatively non threating, with you
+> guys guiding each participant it was hard not to want to take part, and fun
+> with the lolcommit.
+
+> Why what opinions have you formed?
+
+> **Selena:** it is now a real project with some momentum. We are wandering how
+> we can scale this in the future?
+
+> **Keith:** look your last participant, Michael Morris is now helping juniors,
+> I think you have inspired him.
 
 ## Lolcommit
 
