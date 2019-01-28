@@ -31,37 +31,47 @@ Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 Co-authored-by: Michael Milewski <saramic@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+> **Q:** We are surprised that you had time for us this morning?
 
-what exactly could I be doing at 3am
+> **A:** What exactly could I be doing at 3am?
 
-learnt lots of things like copy pasting form other projects, I am very
-proficient please confirm on linked in
+> **Q:** Did you learn anything?
 
+> **A:** I learnt lots of things, like copy pasting form other projects, I am
+> very proficient at this, please confirm on
+> [linkedIn](https://www.linkedin.com/in/antonkatunin/)
 
-GOod skills on listening on right ear but not form left year
+> **Q:** Any other skills you would like to share?
 
-Trust collaboration
+> **A:** I have good skills on listening on right ear [Michael] but not form
+> left year [Selena]. I trust collaboration.
 
-do you trust us
-?
-You know where I sleep?
+> **Q:** do you trust us?
 
-have you been anticipating this moment? 2.45
+> **A:** I suppose I have to, you know where I sleep!
 
-Yeah if I went to bed would you wake me up?
+> **Q:** Have you been anticipating this moment? it is 2:45 am for the record
 
-we would have held your hand sleeping only ctrl c and v for cut paste
+> **A:** Yeah if I went to bed would you wake me up?
 
-I love test first second and last, always test, dont write any code, the code
-is the only thing to break the tests, the code is the problem delete the code
-,dont write it, where are all the bugs? in the code?
+> **Michael:** We would have held your hand whilst you were sleeping. Your input
+> needed only be a CTRL-C and V for cut & paste.
 
-where did you see bugs in test in production - exactly that is my point
+> **Q:** What are your thoughts on test driven development TDD ?
 
-feedback - no, don't type, delete that recording, no point it will go into the
-notes
+> **A:** I love test first, test second and test last, always test, dont write
+> any code, the code is the only thing to break the tests! the code is the
+> problem delete the code ,dont write it, where are all the bugs? in the code?
 
+> When did you last see bugs in your test code in productin? exactly, that is
+> my point!
+
+> **Q:** any feedback for us?
+
+> **A:** No, don't type, delete that recording, no point it will go into the
+notes.
+
+TODO audio recording on Michael's phone
 
 ## Lolcommit
 
