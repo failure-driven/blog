@@ -28,53 +28,50 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
 Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+> **Q:** what did you think of our layered testing approach?
 
-We used to write full integration tests but now have split out to request
-specs on the back end and frontend compnent tests
+> **A:** We used to write full integration tests but now we have split out to
+> request specs on the back end and frontend component tests. Most people hated
+> to write selenium specs.
 
-most people hated to write selenium specs
+> We write request specs for things with consequences but maybe not for a plain
+> index controller that does nothing. The controller test that I write now
+> usually test permission sets and things like that.
 
-write request specs for things with consequences but maybe not for a plain
-index controller that does nothing
+> The request spec tests that assuming someone can do a thing that they can do
+> it, only the happy path really. It doesn't test unauthorised
 
-the controller test that I write now usually test permission sets and things
-like that.
+> **Q:** only the happy path? how do you test errors, [Selena chokes on a
+> pretzel], how do you test the pretzel that I have just half choked on?
 
-the request spec test that assuming someone can do a thing that they can do it
+> **A:** we write code we expect to work, not the errors that may be surfaced.
+> I am team lead because I am bossy, acute concern about the care of others, so
+> I delegate to others, the pretzel, someone else can fix that.
 
-only the happy path, don't test unauthorised
+> **Q:** how have you found this exeperience?
 
-SS only on the happy path, how do you tst errros, how do you test the pretzel
-that I have just half choked on
+> **A:** "it was fun" (soudned like fucked up) it's probably going to make you
+> sick, I touched your keyboard
 
-"we write code we expect to work" not the errors that may be surfaced
+> I always wanted to do it! I like the cause, to get everyone to pair for a
+> whole camp. Next rails camp I will find a junior and get them to show me what
+> they are coding on, I am going to do that - but move onto a conversation
+> around what brought them here, deal with the person.
 
-Team lead because bossy, acute concern about the care of others, so I
-delegated to others, the pretzel
+> **Selena:** I am shit scared to show you my code, that is less likely to
+> happen but if you write some code with me you open that conversation and are
+> more likely to have a real code conversation and get something done
 
-how have you found this exeperience: "it was fun" (soudned like fucked up)
+> **Lauren:** I agree with that
 
-probably going to make you sick, I touched your keyboard
+> **Q:** was it easy for you to get involved in this project?
 
-I always wanted to do it
+> **A:** I had trouble, geniuenly understanding the state the app was in at the
+> time I came, like that there was a Rails backend
 
-I like the cause, to get everyone to pair for a whole camp
+> **Q:** any tips on progressing the project?
 
-Next rails camp I will find a junior and show me what your coding I am going
-to do that - but move onto a conversation around what brought you here, the
-person
-
-SS - i am shit scared to show you my code, that is less likely to happen but
-if you write some code you open that conversation and are more likely to have
-  a real code conversation and get something done
-
-  Lauren "I agree with that"
-
-I had trouble, geniuenly understanding the state the app was in at the time I
-came, likke that there was a backend
-
-how the project progresses, people need more time to
+> **A:** I think people need more time to get the context of the whole app.
 
 ## Lolcommit
 
