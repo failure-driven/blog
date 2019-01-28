@@ -28,36 +28,30 @@ Co-authored-by: Michael Milewski <saramic@gmail.com>
 Co-authored-by: Selena Small <selenawiththetattoo@gmail.com>
 {{< / highlight >}}
 
-**TODO**
+> **Q:** how was the experience?
 
-it was horrible
+> **A:** it was horrible! leading up to it I couldn't imagine a worse time but
+> I was overreacting I think. As you guys are so keen to get everyone envolved
+> it felt a little forced and I don't like anything being enforced.
 
-I couldn't imagein a worse time I was being an idiot
+> **Q:** did you find it intimidating?
 
-react to the felling forces
+> **A:** it wasn't intimidating, maybe just a small bit, it was ok! I now feel
+> much better having done it.
 
-this morning "hey you are up for doing this monring"
+> **Selena:** we are really happy you did a commit with us, We just really
+> wanted everyone to have the chance to write some code with us this Rails
+> Camp. I feel people at Rails Camp often miss opportunities and there is so
+> much experience in this room, sometimes people need a little bit of
+> encouragement.
 
-don't like anything being enforced.
+> **Caroline:** you also need to be concious of what peole want. Now having
+> done it I am really happy having done it and it was good.
 
+> **Q:** did you learn anything?
 
-wasn't intimidating, just a small bit it was ok
-
-I now feel awful
-
-we are really happy you do a commit - and we really wanted everyone to write
-code
-
-SS = feel people at rails camp have missed opportunities and there is so much
-experience.
-
-Caaroline need to be concious of what peole want
-
-Now having done it I am really happy having done it and it was good.
-
-did you learn anything - aliases not everyone,
-
-co authored by cool
+> **A:** interesting that not everyone uses aliases, as you guys don't. Also
+> the co-authored commits are cool.
 
 ## Lolcommit
 
