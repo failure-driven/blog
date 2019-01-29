@@ -1,6 +1,6 @@
 ---
 title: "Start the Game with React"
-date: 2019-02-01T09:00:00+11:00
+date: 2019-02-01T08:00:00+11:00
 excerpt: "Happy to join us for a commit on our mission to pari with everyone as
 part of \"The Rails Camp Project\", at Rails Camp Hobart, wass Rob Jacoby. Rob
 would write a ReactJS component to start the game and start his exeprience with
@@ -12,7 +12,6 @@ images:
  - '/images/rails-camp/commit_08_rob_jacoby_db0eb0f8b2e_still.jpg'
  - '/images/failure-driven_square.jpg'
 author: Selena Small & Michael Milewski
-draft: true
 ---
 
 Happy to join us for a commit on our mission to pair with everyone as part

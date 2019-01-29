@@ -36,4 +36,5 @@ Follow our story over the coming weeks, as we share some of the other insights t
 * [create react app new]({{< ref "/rails-camp/commit-02-create-react-app.md" >}})
 * [configuring procfiles]({{< ref "/rails-camp/commit-03-configuring-procfiles.md" >}})
 * [first line of code in a rails app]({{< ref "/rails-camp/commit-04-and-05-first-line-of-code-in-rails-app.md" >}})
+* [is snapshot testing test driven?]({{< ref "/rails-camp/commit-06-is-snapshot-testing-test-driven.md" >}})
 
