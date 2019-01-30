@@ -1,6 +1,6 @@
 ---
 title: "Is snapshot testing test driven?"
-date: 2019-01-30T08:00:00+11:00
+date: 2019-01-31T08:00:00+11:00
 excerpt: 'In our endeavour to pair with everyone as part of our test driven
 "The Rails Camp Project" our next hurdle as Rails developers was to navigate
 the always changing ReactJS landscape and make use of snapshot testing, but how

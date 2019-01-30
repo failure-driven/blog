@@ -1,6 +1,6 @@
 ---
-title: "Pending Specs for Continual Integration"
-date: 2019-01-31T08:00:00+11:00
+title: "Pending Specs for Continuous Integration"
+date: 2019-02-01T08:00:00+11:00
 excerpt: "Happy to join us for a commit on our mission to pair with everyone as
 part of \"The Rails Camp Project\", at Rails Camp Hobart, we were excited to be
 coding next with Brenton! Highlighted by his colleage at Culture Amp for

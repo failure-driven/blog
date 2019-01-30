@@ -19,7 +19,7 @@ of ["The Rails Camp Project"]({{< ref "/post/railscamp-pairing" >}}), at
 Rails Camp Hobart, was Rob Jacoby.
 
 In our last commit Brenton showed how to push a [pending commit]({{< ref
-"/rails-camp/commit-07-pending-specs-for-continual-integration" >}}) that
+"/rails-camp/commit-07-pending-specs-for-continuous-integration" >}}) that
 would be allowed to on purpose _not pass_ on a CI test server. This approach of
 pending specs allows to push regularily to master and hence real continuous
 integration (CI). Rob would write a ReactJS component to start the game and
