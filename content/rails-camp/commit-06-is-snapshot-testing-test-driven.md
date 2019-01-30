@@ -42,6 +42,13 @@ app entry which we created in [commit 02 create-react-app]({{< ref
 "/rails-camp/commit-02-create-react-app" >}}) to what was expected in our first
 integration test, a H1 with "Welcome to the game".
 
+> **The below animation shows that with snapshot testing you update your
+> implementation to get a failure in the tests. This is the wrong way around
+> for test driven development. Snapshots are not test driven and should not be
+> used to drive out functionality but are ok for a verification of the general
+> structure and styling of a component if done together with a visual check in
+> the browser and a good set of integration tests.**
+
 ![snapshot testing](/images/rails-camp/commit_06_snapshot_testing.gif)
 
 At this time this was not really "test driven". We wrote the implementation and
