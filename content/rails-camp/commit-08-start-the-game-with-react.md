@@ -1,6 +1,6 @@
 ---
 title: "Start the Game with React"
-date: 2019-02-01T16:00:00+11:00
+date: 2019-02-05T08:00:00+11:00
 excerpt: "Happy to join us for a commit on our mission to pari with everyone as
 part of \"The Rails Camp Project\", at Rails Camp Hobart, wass Rob Jacoby. Rob
 would write a ReactJS component to start the game and start his exeprience with
