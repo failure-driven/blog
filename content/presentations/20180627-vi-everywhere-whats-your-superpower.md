@@ -180,9 +180,11 @@ brew cask install keycastr
 
 ## In the future
 
-I am hoping to give this talk with a python flavour at the upcoming [March
-Python meetup in
-Melbourne](https://www.meetup.com/Melbourne-Python-Meetup-Group/events/mtbwgqyzfbgb/)
+I am hoping to give this talk with a python flavour at the upcoming [Melbourne Python Meetup in
+Melbourne - Monday 4th March](https://www.meetup.com/Melbourne-Python-Meetup-Group/events/mtbwgqyzfbgb/)
+
+- [slides on GitHub](https://github.com/saramic/vi-on-the-command-line)
+- [slides](https://saramic.github.io/vi-on-the-command-line/)
 
 #### Authored By:
 
