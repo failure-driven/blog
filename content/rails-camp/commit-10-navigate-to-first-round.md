@@ -1,6 +1,6 @@
 ---
-title: "Commit 10 Navigate to First Round"
-date: 2019-03-04T08:00:00+11:00
+title: "Navigate to First Round"
+date: 2019-03-05T08:00:00+11:00
 excerpt: "Tim is next up in our series of 'code with everyone at rails camp
 Hobart project'. As is part of the process in TDD, we were now ready for some
 refactoring in the GREEN."
