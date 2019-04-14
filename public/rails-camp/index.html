@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Failure Driven  | the Rails Camp Project</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.51" />
+    
+    
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+    <link href="/dist/css/app.e08a958ae3e530145318b6373195c765.css" rel="stylesheet">
+    
+
+    
+
+    
+    
+    
+
+    
+    <link href="https://failure-driven.com/rails-camp/index.xml" rel="alternate" type="application/rss+xml" title="Failure Driven" />
+    <link href="https://failure-driven.com/rails-camp/index.xml" rel="feed" type="application/rss+xml" title="Failure Driven" />
+    
+
+    <meta property="og:title" content="the Rails Camp Project" />
+<meta property="og:description" content="Let failure drive you to success" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://failure-driven.com/rails-camp/" />
+<meta property="og:updated_time" content="2019-03-05T08:00:00&#43;11:00"/>
+
+<meta itemprop="name" content="the Rails Camp Project">
+<meta itemprop="description" content="Let failure drive you to success">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="the Rails Camp Project"/>
+<meta name="twitter:description" content="Let failure drive you to success"/>
+
+</head>
+
+<body class="ma0 avenir bg-near-white">
+
+
+
+
+
+  
+  
+  
+  
+<style>
+  @media(min-width: 1201px) {
+    #header-image {
+      background-image: url('https://failure-driven.com/images/header_960_380.jpg');
+    }
+  }
+  @media (max-width: 1200px) {
+    #header-image {
+      background-image: url('https://failure-driven.com/images/header_960_245.jpg');
+    }
+  }
+  @media (max-width: 600px) {
+    #header-image {
+      background-image: url('https://failure-driven.com/images/header_415_245.jpg');
+    }
+  }
+</style>
+  <header class="cover bg-top" id="header-image">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://failure-driven.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Failure Driven
+    </a>
+    <div class="flex-l items-center">
+      
+      
+
+
+
+  <a href="https://twitter.com/selenasmall88" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+  <a href="https://twitter.com/saramic" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
+          the Rails Camp Project
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+<main role="main">
+    
+  
+  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
+  <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+    
+  </main>
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-10-navigate-to-first-round/" class="db grow">
+            <img src="https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_10_tim_lucas_41ca4d41985.gif" class="img" alt="image from Navigate to First Round">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-10-navigate-to-first-round/" class="color-inherit dim link">
+            Navigate to First Round
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2019-03-05T08:00:00&#43;11:00">March 5, 2019</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Tim is next up in our series of &#39;code with everyone at rails camp Hobart project&#39;. As is part of the process in TDD, we were now ready for some refactoring in the GREEN.
+        </div>
+          <a href="/rails-camp/commit-10-navigate-to-first-round/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-09-round-1-to-a-conversation/" class="db grow">
+            <img src="http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_09_paul_douglas_62b614eb49a.gif" class="img" alt="image from Round 1 to a conversation">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-09-round-1-to-a-conversation/" class="color-inherit dim link">
+            Round 1 to a conversation
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2019-02-06T08:00:00&#43;11:00">February 6, 2019</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Pairing whilst coding is a lot about the social interaction. This next commit of &#34;The Rails Camp Project&#34; was less about a test for Round 1 and more about the conversation. As with any Rails Camp, it bring together Ruby and Ruby on Rails developers and everything they are interested in. For Paul Doublas this means Dungeons and Dragons (D&amp;D).
+        </div>
+          <a href="/rails-camp/commit-09-round-1-to-a-conversation/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-08-start-the-game-with-react/" class="db grow">
+            <img src="http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_08_rob_jacoby_5f2f45c6243.gif" class="img" alt="image from Start the Game with React">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-08-start-the-game-with-react/" class="color-inherit dim link">
+            Start the Game with React
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2019-02-05T08:00:00&#43;11:00">February 5, 2019</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Happy to join us for a commit on our mission to pari with everyone as part of &#34;The Rails Camp Project&#34;, at Rails Camp Hobart, was Rob Jacoby. Rob would write a ReactJS component to start the game and start his exeprience with ReactJS.
+        </div>
+          <a href="/rails-camp/commit-08-start-the-game-with-react/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-07-pending-specs-for-continuous-integration/" class="db grow">
+            <img src="http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_07_brenton_annan_76caa230579.gif" class="img" alt="image from Pending Specs for Continuous Integration">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-07-pending-specs-for-continuous-integration/" class="color-inherit dim link">
+            Pending Specs for Continuous Integration
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2019-02-01T08:00:00&#43;11:00">February 1, 2019</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Happy to join us for a commit on our mission to pair with everyone as part of &#34;The Rails Camp Project&#34;, at Rails Camp Hobart, we were excited to be coding next with Brenton! Highlighted by his colleage at Culture Amp for exemplifying one of the company&#39;s values, Courage to be vulnerable, but did he have the courage to do trunk based development committing straight to master?
+        </div>
+          <a href="/rails-camp/commit-07-pending-specs-for-continuous-integration/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-06-is-snapshot-testing-test-driven/" class="db grow">
+            <img src="http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_06_emily_coats_74791c0fa7e.gif" class="img" alt="image from Is snapshot testing test driven?">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-06-is-snapshot-testing-test-driven/" class="color-inherit dim link">
+            Is snapshot testing test driven?
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2019-01-31T08:00:00&#43;11:00">January 31, 2019</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          In our endeavour to pair with everyone as part of our test driven &#34;The Rails Camp Project&#34; our next hurdle as Rails developers was to navigate the always changing ReactJS landscape and make use of snapshot testing, but how is snapshot testing even test driven?
+        </div>
+          <a href="/rails-camp/commit-06-is-snapshot-testing-test-driven/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-04-and-05-first-line-of-code-in-rails-app/" class="db grow">
+            <img src="http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_04_matt_patterson_22212c2fea9.gif" class="img" alt="image from The first line of code in a Rails app shoud be ...">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-04-and-05-first-line-of-code-in-rails-app/" class="color-inherit dim link">
+            The first line of code in a Rails app shoud be ...
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2019-01-21T09:20:00&#43;11:00">January 21, 2019</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          As part of &#34;The Rails Camp Project&#34; it was time to write the first line of code. With the ability to fire up Rails and a React app clearly we could write some code? Well not exactly. The first line of code in a Rails app should be ...
+        </div>
+          <a href="/rails-camp/commit-04-and-05-first-line-of-code-in-rails-app/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-03-configuring-procfiles/" class="db grow">
+            <img src="http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_03_edward_0f515e5ecc3.gif" class="img" alt="image from Configuring procfiles">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-03-configuring-procfiles/" class="color-inherit dim link">
+            Configuring procfiles
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-12-21T09:30:00&#43;11:00">December 21, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Although a large proportion of rails developers use Macs, it is certainly not mandatory and people can effectively code using Windows or a flavour of linux. This was the case with Isikyus who although was proud of his own setup using ubuntu, was quick to get his hands on the keyboard and just as quick to voice his frustration with the differences with the Mac. 
+        </div>
+          <a href="/rails-camp/commit-03-configuring-procfiles/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-02-create-react-app/" class="db grow">
+            <img src="https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_02_kirsten_comandich_de721fedc80.gif" class="img" alt="image from Create React App">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-02-create-react-app/" class="color-inherit dim link">
+            Create React App
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-12-10T15:00:00&#43;11:00">December 10, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Although there seems to not be too much in creating a new react app, simply typing `npx create-react-app new-app` and firing up the react demo app with `npm start` there is actually a whole lot going on here!
+        </div>
+          <a href="/rails-camp/commit-02-create-react-app/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-01-rails-new/" class="db grow">
+            <img src="https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_01_jess_brown_85e0a9dde4d.gif" class="img" alt="image from Rails New">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-01-rails-new/" class="color-inherit dim link">
+            Rails New
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-12-04T15:00:00&#43;11:00">December 4, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          As seasoned Rails developers, we all know that the first step in building any standard Rails application, is to open the command line and run &#39;rails new [app_name]&#39; One of the cool things about Rails camp though, is that it brings together people of all different experience levels and backgrounds. And who better to ask for help in spinning up a new Rails app than someone who&#39;d never done it before?!
+        </div>
+          <a href="/rails-camp/commit-01-rails-new/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-43-css-tweaks/" class="db grow">
+            <img src="https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_43_aaron_moodie6f8556f9ff0.gif" class="img" alt="image from Commit 43 Css Tweaks">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-43-css-tweaks/" class="color-inherit dim link">
+            Commit 43 Css Tweaks
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-05-15T09:00:00&#43;11:00">May 15, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          
+        </div>
+          <a href="/rails-camp/commit-43-css-tweaks/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+    </section>
+    
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/rails-camp/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item disabled">
+    <a href="" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/rails-camp/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/rails-camp/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/rails-camp/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/rails-camp/page/4/">4</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/rails-camp/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/rails-camp/page/4/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+  </article>
+
+</main>
+<footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://failure-driven.com/" >
+    &copy; 2019 Selena Small &amp; Michael Milewski
+  </a>
+    <div>
+
+
+
+  <a href="https://twitter.com/selenasmall88" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+  <a href="https://twitter.com/saramic" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/custom.css"/>
+
+
+</body>
+</html>

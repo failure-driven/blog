@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Failure Driven  | Configuring procfiles</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.51" />
+    
+    
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+    <link href="/dist/css/app.e08a958ae3e530145318b6373195c765.css" rel="stylesheet">
+    
+
+    
+
+    
+    
+    
+
+    
+
+    <meta property="og:title" content="Configuring procfiles" />
+<meta property="og:description" content="Commit a8a752f
+Author: Isikyus &lt;isikyus@users.noreply.github.com&gt; Date: Sat Nov 24 14:48:43 2018 &#43;1100 Procfile to run client and server together Co-authored-by: Michael Milewski &lt;saramic@gmail." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://failure-driven.com/rails-camp/commit-03-configuring-procfiles/" />
+<meta property="og:image" content="https://failure-driven.com/images/rails-camp/commit_03_edward_0f515e5ecc3_still.jpg" />
+
+<meta property="og:image" content="https://failure-driven.com/images/failure-driven_square.jpg" />
+<meta property="article:published_time" content="2018-12-21T09:30:00&#43;11:00"/>
+<meta property="article:modified_time" content="2018-12-21T09:30:00&#43;11:00"/>
+
+<meta itemprop="name" content="Configuring procfiles">
+<meta itemprop="description" content="Commit a8a752f
+Author: Isikyus &lt;isikyus@users.noreply.github.com&gt; Date: Sat Nov 24 14:48:43 2018 &#43;1100 Procfile to run client and server together Co-authored-by: Michael Milewski &lt;saramic@gmail.">
+
+
+<meta itemprop="datePublished" content="2018-12-21T09:30:00&#43;11:00" />
+<meta itemprop="dateModified" content="2018-12-21T09:30:00&#43;11:00" />
+<meta itemprop="wordCount" content="622">
+
+  <meta itemprop="image" content="https://failure-driven.com/images/rails-camp/commit_03_edward_0f515e5ecc3_still.jpg">
+
+  <meta itemprop="image" content="https://failure-driven.com/images/failure-driven_square.jpg">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://failure-driven.com/images/rails-camp/commit_03_edward_0f515e5ecc3_still.jpg"/>
+
+<meta name="twitter:title" content="Configuring procfiles"/>
+<meta name="twitter:description" content="Commit a8a752f
+Author: Isikyus &lt;isikyus@users.noreply.github.com&gt; Date: Sat Nov 24 14:48:43 2018 &#43;1100 Procfile to run client and server together Co-authored-by: Michael Milewski &lt;saramic@gmail."/>
+
+</head>
+
+<body class="ma0 avenir bg-near-white">
+
+
+   
+  
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_03_edward_0f515e5ecc3.gif');">
+    <div class="pb3-m pv7-l none">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://failure-driven.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Failure Driven
+    </a>
+    <div class="flex-l items-center">
+      
+      
+
+
+
+  <a href="https://twitter.com/selenasmall88" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+  <a href="https://twitter.com/saramic" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Configuring procfiles</h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+
+<main role="main">
+    
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3 ph0-l">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        THE RAILS CAMP PROJECT
+      </p>
+      <h1 class="f1 athelas mb1">Configuring procfiles</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2018-12-21T09:30:00&#43;11:00">December 21, 2018</time>      
+      
+      
+    </header>
+
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<p><img alt="@isikyus" src="//github.com/isikyus.png" style="display: inline; width: 88px;" height="88" />
+<img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" />
+<img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" /></p>
+
+<p>Commit <a href="https://github.com/failure-driven/railscamp-search-term/commit/a8a752f2cf2d3be7f204ee028a5ff52d51e7dda7">a8a752f</a></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Author: Isikyus &lt;isikyus@users.noreply.github.com&gt;
+Date:   Sat Nov <span style="color:#ae81ff">24</span> <span style="color:#ae81ff">14</span>:48:43 <span style="color:#ae81ff">2018</span> +1100
+
+Procfile to run client and server together
+
+Co-authored-by: Michael Milewski &lt;saramic@gmail.com&gt;
+Co-authored-by: Selena Small &lt;selenawiththetattoo@gmail.com&gt;</code></pre></div>
+
+<p>Although a large proportion of rails developers use Macs, it is certainly not mandatory and people
+can effectively code using Windows or a flavour of linux. This was the case with Isikyus who although
+was proud of his own setup using ubuntu, was quick to get his hands on the keyboard and just as quick
+to voice his frustration with the differences with the Mac.</p>
+
+<blockquote>
+<p>“There is no caps lock, this sucks”</p>
+</blockquote>
+
+<p>In this case, the MacBook Pro being used had the <code>caps lock</code> maped to <code>esc</code> because of the fancy but
+rather inconvenient touch bar. Who needs a caps lock key anyway? Well, Isikyus and people who are used
+to using it, of course.</p>
+
+<p>By the time we got to Isikyus, we already had rails server running and a react app set up, so there
+was a whole lot of context to share. On top of that the idea of two confident developers approaching
+you to come and code with them as they sit either side looking over both shoulders, well…</p>
+
+<p>&hellip;Let’s just say that it took a little while for us all to get to know each other, to be able to
+talk about that context.</p>
+
+<p>Dealing with personality differences and clashes can be difficult in a collaborative environment,
+but in a short period of time we needed to create a high performance team in our little threesome,
+which meant finding a way to deal with those differences and ultimately create a level of psychological
+safety. As a friend of ours recently tweeted</p>
+
+<blockquote>
+<p>“The number one thing that is central to high performing teams is psychological safety&rdquo;
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The number one thing that is central to high performing teams is psychological safety (as discovered in a Google study). I personally have felt both sides of this scenario &amp; can tell you I am a better developer when I feel safe. <a href="https://t.co/iuvDN0D1lr">pic.twitter.com/iuvDN0D1lr</a></p>&mdash; Melissa Kaulfuss 🌈👩‍💻✨ (@MelissaKaulfuss) <a href="https://twitter.com/MelissaKaulfuss/status/1070563864721293312?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+</blockquote>
+
+<p>If you’ve read this far, you’re probably wondering if we even wrote any code with Isikyus. What we
+wanted him to help us with was coming up with a straightforward way to use the <a href="https://github.com/ddollar/foreman">Foreman</a>
+gem for publishing both our Rails backend and our React frontend on different ports.</p>
+
+<p>We’d already done this before on another version of the project, so we kind of already knew the answer.
+But it was fascinating to receive the push back from our pair, allowing him to help us as we’d initially
+requested of him.</p>
+
+<p>Soon enough, we found ourselves diving through the depths of Foreman parsing to find the format needed
+for our Proc file because to be honest, Foreman’s documentation was not that great.</p>
+
+<p>We’d initially been thrown because Foreman kept published to ports 5000 and 5100 and we couldn’t seem
+to pass a custom port as an environment variable to the <code>forman start</code> command.</p>
+
+<p>At one point, we thought there was maybe a subshell running which was unable to receive the correct
+variables. Eventually, Sam, who was sitting across the room, set us in the right direction by telling<br />
+us that by default, Foreman sets PORT for the first line in your procfile to 5000 and increments by 100.</p>
+
+<p>Finally, with a deep exploration of Foreman’s inner workings and a bit of help from some other developers
+nearby, we figured out that we just needed to export an environment variable with a slightly different name.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export PUBLIC_PORT<span style="color:#f92672">=</span>$PORT</code></pre></div>
+
+<h3 id="lolcommit">lolcommit</h3>
+
+<p>In the end we had a great time together, solved the problem and the camera was rolling to capture the commit.</p>
+
+<p><img src="http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_03_edward_0f515e5ecc3.gif" alt="initial commit" /></p>
+
+<h4 id="authored-by">Authored By:</h4>
+
+<p>Selena Small &amp; Michael Milewski</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+</main>
+<footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://failure-driven.com/" >
+    &copy; 2019 Selena Small &amp; Michael Milewski
+  </a>
+    <div>
+
+
+
+  <a href="https://twitter.com/selenasmall88" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+  <a href="https://twitter.com/saramic" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/custom.css"/>
+
+
+</body>
+</html>

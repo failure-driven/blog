@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Failure Driven</title>
+    <link>https://failure-driven.com/post/</link>
+    <description>Recent content in Posts on Failure Driven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Selena Small &amp; Michael Milewski</copyright>
+    <lastBuildDate>Fri, 21 Dec 2018 00:00:00 +1100</lastBuildDate>
+    
+	<atom:link href="https://failure-driven.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Customising your setup</title>
+      <link>https://failure-driven.com/post/2018-12-21-customising-your-setup/</link>
+      <pubDate>Fri, 21 Dec 2018 00:00:00 +1100</pubDate>
+      
+      <guid>https://failure-driven.com/post/2018-12-21-customising-your-setup/</guid>
+      <description>Everyone has their quirks and like to add their own personal flavour to things. Especially things they use a lot. Things like, I don’t know, their computer?</description>
+    </item>
+    
+    <item>
+      <title>Rewrite git commit messages and authors</title>
+      <link>https://failure-driven.com/post/rewrite-git-commit-message-and-author/</link>
+      <pubDate>Thu, 20 Dec 2018 14:19:19 +1100</pubDate>
+      
+      <guid>https://failure-driven.com/post/rewrite-git-commit-message-and-author/</guid>
+      <description>Given this commit message
+commit 6d1e4b0db1f232728bf7da6769c50f8dc0315985 Author: Michael Milewski &amp;lt;saramic@gmail.com&amp;gt; Date: Sun Nov 25 20:36:35 2018 +1100 page fragments Co-authored-by: Selena Small &amp;lt;selenawiththetattoo@gmail.</description>
+    </item>
+    
+    <item>
+      <title>Rails Camp Pairing</title>
+      <link>https://failure-driven.com/post/railscamp-pairing/</link>
+      <pubDate>Wed, 28 Nov 2018 09:28:33 +1100</pubDate>
+      
+      <guid>https://failure-driven.com/post/railscamp-pairing/</guid>
+      <description>Selena and Michael just got back home from RailsCampAU #24 in Tasmania and it was an epic weekend! An intensive but fun trip filled with learning and laughs.</description>
+    </item>
+    
+    <item>
+      <title>Failing for the Right Reasons</title>
+      <link>https://failure-driven.com/post/in-progress/failing-for-the-right-reasons/</link>
+      <pubDate>Sat, 17 Nov 2018 07:32:33 +1100</pubDate>
+      
+      <guid>https://failure-driven.com/post/in-progress/failing-for-the-right-reasons/</guid>
+      <description>presentation
+  slides
+  game
+  </description>
+    </item>
+    
+    <item>
+      <title>Fizz buzz in 15 minutes</title>
+      <link>https://failure-driven.com/post/in-progress/fizz-buzz-in-15-minutes/</link>
+      <pubDate>Sat, 17 Nov 2018 07:32:33 +1100</pubDate>
+      
+      <guid>https://failure-driven.com/post/in-progress/fizz-buzz-in-15-minutes/</guid>
+      <description>   </description>
+    </item>
+    
+    <item>
+      <title>Step 0 - setup rails and react app</title>
+      <link>https://failure-driven.com/post/in-progress/step_0-setup-rails-and-react-app/</link>
+      <pubDate>Sat, 17 Nov 2018 06:35:07 +1100</pubDate>
+      
+      <guid>https://failure-driven.com/post/in-progress/step_0-setup-rails-and-react-app/</guid>
+      <description>Basic setups to get started with rails, create-react-app, testing setup and deploy to heroku</description>
+    </item>
+    
+    <item>
+      <title>Step 1 - the beginnings of a flow</title>
+      <link>https://failure-driven.com/post/in-progress/step_1-the-beginnings-of-a-flow/</link>
+      <pubDate>Sat, 17 Nov 2018 06:35:07 +1100</pubDate>
+      
+      <guid>https://failure-driven.com/post/in-progress/step_1-the-beginnings-of-a-flow/</guid>
+      <description>outline the first flow of a user coming to the site and wanting to see some images</description>
+    </item>
+    
+    <item>
+      <title>Step 2 - dive down to the mechanic</title>
+      <link>https://failure-driven.com/post/in-progress/step_2-dive-down-to-the-mechanic/</link>
+      <pubDate>Sat, 17 Nov 2018 06:35:07 +1100</pubDate>
+      
+      <guid>https://failure-driven.com/post/in-progress/step_2-dive-down-to-the-mechanic/</guid>
+      <description>Create a mechanic for the game page</description>
+    </item>
+    
+    <item>
+      <title>Step 3 - snapshot testing the frontend React component</title>
+      <link>https://failure-driven.com/post/in-progress/step_3-snapshot-test-the-frontend-react-component/</link>
+      <pubDate>Sat, 17 Nov 2018 06:35:07 +1100</pubDate>
+      
+      <guid>https://failure-driven.com/post/in-progress/step_3-snapshot-test-the-frontend-react-component/</guid>
+      <description>a basic react component that will render a button per available game as retrieved by the API call</description>
+    </item>
+    
+    <item>
+      <title>Step 4 - integration test of the API</title>
+      <link>https://failure-driven.com/post/in-progress/step_4-integration-test-of-the-api/</link>
+      <pubDate>Sat, 17 Nov 2018 06:35:07 +1100</pubDate>
+      
+      <guid>https://failure-driven.com/post/in-progress/step_4-integration-test-of-the-api/</guid>
+      <description>integration level test of the API</description>
+    </item>
+    
+    <item>
+      <title>Step 5 - unit test the rails controller</title>
+      <link>https://failure-driven.com/post/in-progress/step_5-unit-test-rails-controller/</link>
+      <pubDate>Sat, 17 Nov 2018 06:35:07 +1100</pubDate>
+      
+      <guid>https://failure-driven.com/post/in-progress/step_5-unit-test-rails-controller/</guid>
+      <description>have we missed the serilaizer test?
+unit test the controller</description>
+    </item>
+    
+    <item>
+      <title>Step 6 - unit test the model</title>
+      <link>https://failure-driven.com/post/in-progress/step_6-unit-test-model/</link>
+      <pubDate>Sat, 17 Nov 2018 06:35:07 +1100</pubDate>
+      
+      <guid>https://failure-driven.com/post/in-progress/step_6-unit-test-model/</guid>
+      <description>Unit test the model</description>
+    </item>
+    
+    <item>
+      <title>Step 7 - failure averted first passing spec</title>
+      <link>https://failure-driven.com/post/in-progress/step_7-failure-averted-first-passing-spec/</link>
+      <pubDate>Sat, 17 Nov 2018 06:35:07 +1100</pubDate>
+      
+      <guid>https://failure-driven.com/post/in-progress/step_7-failure-averted-first-passing-spec/</guid>
+      <description>bubble up through the layers to see the tests all passing</description>
+    </item>
+    
+  </channel>
+</rss>

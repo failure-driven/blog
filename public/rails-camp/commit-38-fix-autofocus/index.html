@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Failure Driven  | Commit 38 Fix Autofocus</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.51" />
+    
+    
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+    <link href="/dist/css/app.e08a958ae3e530145318b6373195c765.css" rel="stylesheet">
+    
+
+    
+
+    
+    
+    
+
+    
+
+    <meta property="og:title" content="Commit 38 Fix Autofocus" />
+<meta property="og:description" content="Commit 1e53290
+Author: Sam Margalit &lt;margalit@users.noreply.github.com&gt; Date: Mon Nov 26 01:29:51 2018 &#43;1100 Why: why not? Co-authored-by: Michael Milewski &lt;saramic@gmail." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://failure-driven.com/rails-camp/commit-38-fix-autofocus/" />
+<meta property="og:image" content="https://failure-driven.com/images/rails-camp/commit_38_sam_margalit__other_project_1216642f840_static.jpg" />
+
+<meta property="og:image" content="https://failure-driven.com/images/failure-driven_square.jpg" />
+<meta property="article:published_time" content="2018-05-06T09:00:00&#43;11:00"/>
+<meta property="article:modified_time" content="2018-05-06T09:00:00&#43;11:00"/>
+
+<meta itemprop="name" content="Commit 38 Fix Autofocus">
+<meta itemprop="description" content="Commit 1e53290
+Author: Sam Margalit &lt;margalit@users.noreply.github.com&gt; Date: Mon Nov 26 01:29:51 2018 &#43;1100 Why: why not? Co-authored-by: Michael Milewski &lt;saramic@gmail.">
+
+
+<meta itemprop="datePublished" content="2018-05-06T09:00:00&#43;11:00" />
+<meta itemprop="dateModified" content="2018-05-06T09:00:00&#43;11:00" />
+<meta itemprop="wordCount" content="164">
+
+  <meta itemprop="image" content="https://failure-driven.com/images/rails-camp/commit_38_sam_margalit__other_project_1216642f840_static.jpg">
+
+  <meta itemprop="image" content="https://failure-driven.com/images/failure-driven_square.jpg">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://failure-driven.com/images/rails-camp/commit_38_sam_margalit__other_project_1216642f840_static.jpg"/>
+
+<meta name="twitter:title" content="Commit 38 Fix Autofocus"/>
+<meta name="twitter:description" content="Commit 1e53290
+Author: Sam Margalit &lt;margalit@users.noreply.github.com&gt; Date: Mon Nov 26 01:29:51 2018 &#43;1100 Why: why not? Co-authored-by: Michael Milewski &lt;saramic@gmail."/>
+
+</head>
+
+<body class="ma0 avenir bg-near-white">
+
+
+   
+  
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_38_sam_margalit__other_project_1216642f840.gif');">
+    <div class="pb3-m pv7-l none">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://failure-driven.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Failure Driven
+    </a>
+    <div class="flex-l items-center">
+      
+      
+
+
+
+  <a href="https://twitter.com/selenasmall88" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+  <a href="https://twitter.com/saramic" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Commit 38 Fix Autofocus</h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+
+<main role="main">
+    
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3 ph0-l">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        THE RAILS CAMP PROJECT
+      </p>
+      <h1 class="f1 athelas mb1">Commit 38 Fix Autofocus</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2018-05-06T09:00:00&#43;11:00">May 6, 2018</time>      
+      
+      
+    </header>
+
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<p><img alt="@margalit" src="//github.com/margalit.png" style="display: inline; width: 88px;" height="88" />
+<img alt="@SelenaSmall" src="//github.com/SelenaSmall.png" style="display: inline; width: 88px;" height="88" />
+<img alt="@saramic" src="//github.com/saramic.png" style="display: inline; width: 88px;" height="88" /></p>
+
+<p>Commit <a href="https://github.com/failure-driven/railscamp-search-term/commit/1e532902857dff89158403445e9d966f499a8d5d">1e53290</a></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Author: Sam Margalit &lt;margalit@users.noreply.github.com&gt;
+Date:   Mon Nov <span style="color:#ae81ff">26</span> <span style="color:#ae81ff">01</span>:29:51 <span style="color:#ae81ff">2018</span> +1100
+
+Why: why not?
+
+Co-authored-by: Michael Milewski &lt;saramic@gmail.com&gt;
+Co-authored-by: Selena Small &lt;selenawiththetattoo@gmail.com&gt;</code></pre></div>
+
+<blockquote>
+<p><strong>Q:</strong> What have you learnt from the expereince?</p>
+
+<p><strong>A:</strong> What I learnt is persisence and friendship are the true committments</p>
+
+<p><strong>Q:</strong> After we conrnered you on the first night you seemed to avoid us, did
+you have fun?</p>
+
+<p><strong>A:</strong> oh the most fun you could have coding!</p>
+
+<p><strong>Q:</strong> would you do it again?</p>
+
+<p><strong>A:</strong> when is the next rails camp?</p>
+
+<p><strong>Q:</strong> clearly you can make some time for us before next Rails Camp?</p>
+
+<p><strong>A:</strong> Well I am only a monring guy, I am busy at work, I take calls in the
+morning.</p>
+
+<p><strong>Q:</strong> would you switch to a different technology like Ember?</p>
+
+<p><strong>A:</strong> would I switch to ember? sure I would give anything a go!</p>
+
+<p><strong>Q:</strong> any feedback?</p>
+
+<p><strong>A:</strong> you can always use alcohol to buy help! keep up the great work!</p>
+</blockquote>
+
+<h2 id="lolcommit">Lolcommit</h2>
+
+<p><img src="http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_38_sam_margalit_fc82f185dcb.gif" alt="commit 38" />
+<img src="http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_38_sam_margalit__other_project_1216642f840.gif" alt="commit 38 more help" /></p>
+
+<h4 id="authored-by">Authored By:</h4>
+
+<p>Selena Small &amp; Michael Milewski</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+</main>
+<footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://failure-driven.com/" >
+    &copy; 2019 Selena Small &amp; Michael Milewski
+  </a>
+    <div>
+
+
+
+  <a href="https://twitter.com/selenasmall88" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+  <a href="https://twitter.com/saramic" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/custom.css"/>
+
+
+</body>
+</html>

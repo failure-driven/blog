@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Failure Driven  | the Rails Camp Project</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.51" />
+    
+    
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+    <link href="/dist/css/app.e08a958ae3e530145318b6373195c765.css" rel="stylesheet">
+    
+
+    
+
+    
+    
+    
+
+    
+    <link href="https://failure-driven.com/rails-camp/index.xml" rel="alternate" type="application/rss+xml" title="Failure Driven" />
+    <link href="https://failure-driven.com/rails-camp/index.xml" rel="feed" type="application/rss+xml" title="Failure Driven" />
+    
+
+    <meta property="og:title" content="the Rails Camp Project" />
+<meta property="og:description" content="Let failure drive you to success" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://failure-driven.com/rails-camp/" />
+<meta property="og:updated_time" content="2018-03-06T09:00:00&#43;11:00"/>
+
+<meta itemprop="name" content="the Rails Camp Project">
+<meta itemprop="description" content="Let failure drive you to success">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="the Rails Camp Project"/>
+<meta name="twitter:description" content="Let failure drive you to success"/>
+
+</head>
+
+<body class="ma0 avenir bg-near-white">
+
+
+
+
+
+  
+  
+  
+  
+<style>
+  @media(min-width: 1201px) {
+    #header-image {
+      background-image: url('https://failure-driven.com/images/header_960_380.jpg');
+    }
+  }
+  @media (max-width: 1200px) {
+    #header-image {
+      background-image: url('https://failure-driven.com/images/header_960_245.jpg');
+    }
+  }
+  @media (max-width: 600px) {
+    #header-image {
+      background-image: url('https://failure-driven.com/images/header_415_245.jpg');
+    }
+  }
+</style>
+  <header class="cover bg-top" id="header-image">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://failure-driven.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Failure Driven
+    </a>
+    <div class="flex-l items-center">
+      
+      
+
+
+
+  <a href="https://twitter.com/selenasmall88" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+  <a href="https://twitter.com/saramic" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
+          the Rails Camp Project
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+<main role="main">
+    
+  
+  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
+  <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+    
+  </main>
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-20-implement-correct-status/" class="db grow">
+            <img src="https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_20_dana_scheider_7033765db1a.gif" class="img" alt="image from Commit 20 Implement Correct Status">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-20-implement-correct-status/" class="color-inherit dim link">
+            Commit 20 Implement Correct Status
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-03-06T09:00:00&#43;11:00">March 6, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          
+        </div>
+          <a href="/rails-camp/commit-20-implement-correct-status/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-19-refactor-react-dumb-component-to-class/" class="db grow">
+            <img src="https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_19_chris_aitchison_0e4321b3140.gif" class="img" alt="image from Commit 19 Refactor React Dumb Component to Class">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-19-refactor-react-dumb-component-to-class/" class="color-inherit dim link">
+            Commit 19 Refactor React Dumb Component to Class
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-03-04T09:00:00&#43;11:00">March 4, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          
+        </div>
+          <a href="/rails-camp/commit-19-refactor-react-dumb-component-to-class/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-18-placeholder-for-status/" class="db grow">
+            <img src="https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_18_laurence_dibah_9cf363e1ffb.gif" class="img" alt="image from Commit 18 Placeholder for Status">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-18-placeholder-for-status/" class="color-inherit dim link">
+            Commit 18 Placeholder for Status
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-02-27T09:00:00&#43;11:00">February 27, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          
+        </div>
+          <a href="/rails-camp/commit-18-placeholder-for-status/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-17-pending-status/" class="db grow">
+            <img src="https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_17_bashir_towdiee_31c435c5031.gif" class="img" alt="image from Commit 17 Pending Status">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-17-pending-status/" class="color-inherit dim link">
+            Commit 17 Pending Status
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-02-25T09:00:00&#43;11:00">February 25, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          
+        </div>
+          <a href="/rails-camp/commit-17-pending-status/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-16-add-text-area/" class="db grow">
+            <img src="https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_16_nadia_vu_ae4da77bd81.gif" class="img" alt="image from Commit 16 Add Text Area">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-16-add-text-area/" class="color-inherit dim link">
+            Commit 16 Add Text Area
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-02-20T09:00:00&#43;11:00">February 20, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          
+        </div>
+          <a href="/rails-camp/commit-16-add-text-area/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-15-pending-text-area/" class="db grow">
+            <img src="https://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_15_nick_wolf_f098ea1286b.gif" class="img" alt="image from Commit 15 Pending Text Area">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-15-pending-text-area/" class="color-inherit dim link">
+            Commit 15 Pending Text Area
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-02-18T09:00:00&#43;11:00">February 18, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          By the time we caught up with Nick to help us with our rails camp Hobart project, it was more like him tracking us down for a final commit in the wee hours of Sunday morning.
+        </div>
+          <a href="/rails-camp/commit-15-pending-text-area/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-14-render-images/" class="db grow">
+            <img src="http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_14_eathan_langford_2b21d630629.gif" class="img" alt="image from Commit 14 Render Images">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-14-render-images/" class="color-inherit dim link">
+            Commit 14 Render Images
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-02-15T09:00:00&#43;11:00">February 15, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Having followed along with Cameo on the introduction to our rails camp Hobart project, seeing all the tests pass, our next commrade Ethan was already up to speed with what was going on. One thing he noted though, was...
+        </div>
+          <a href="/rails-camp/commit-14-render-images/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-13-test-for-images/" class="db grow">
+            <img src="http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_13_cameo_langford_359a73f6b08.gif" class="img" alt="image from Commit 13 Test for Images">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-13-test-for-images/" class="color-inherit dim link">
+            Commit 13 Test for Images
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-02-13T09:00:00&#43;11:00">February 13, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          We were digging deep now at rails camp Hobart at 2 oclock in the morning! Adding to the difficulty of bringing someone up to speed on our project, Cameo who was keen but extremely tired, was only half way through her Coder Academy course on how to code.
+        </div>
+          <a href="/rails-camp/commit-13-test-for-images/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-12-expect-images/" class="db grow">
+            <img src="http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_12_jon_leighton_e1dbe3e3ee8.gif" class="img" alt="image from Commit 12 Expect Images">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-12-expect-images/" class="color-inherit dim link">
+            Commit 12 Expect Images
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-02-11T09:00:00&#43;11:00">February 11, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Starting to get well into the middle of the night at rails camp Hobart and we still didn&#39;t have an image displayed in our app! An app who&#39;s whole point was to show images and have people guess what they see in the image. With fatigue starting to set in, the mere dialog taking place to try and establish what to call our next collaborator really just shows how tired we&#39;d become.
+        </div>
+          <a href="/rails-camp/commit-12-expect-images/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+        <div class="relative w-30-l mb4 bg-white">
+          
+          
+<article>
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        
+        <div class="pr3-ns pl3-ns pb3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/rails-camp/commit-11-react-router/" class="db grow">
+            <img src="http://s3-ap-southeast-2.amazonaws.com/failure-driven-blog/railscamp-24-woodfield-hobart/commit_11_selena_small_d94e2cc3f89.gif" class="img" alt="image from Commit 11 React Router">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/rails-camp/commit-11-react-router/" class="color-inherit dim link">
+            Commit 11 React Router
+            </a>
+        </h1>
+        <time class="f6 mv2 dib tracked" datetime="2018-02-08T09:00:00&#43;11:00">February 8, 2018</time>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          The whole point of our code with everyone at rails camp Hobart project was to code with, well everyone but sometimes you just need to stick it out with the core team.
+        </div>
+          <a href="/rails-camp/commit-11-react-router/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
+      
+    </section>
+    
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/rails-camp/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/rails-camp/page/3/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/rails-camp/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/rails-camp/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/rails-camp/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/rails-camp/page/4/">4</a></li>
+    
+    
+    <li class="page-item disabled">
+    <a href="" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/rails-camp/page/4/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+  </article>
+
+</main>
+<footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://failure-driven.com/" >
+    &copy; 2019 Selena Small &amp; Michael Milewski
+  </a>
+    <div>
+
+
+
+  <a href="https://twitter.com/selenasmall88" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+  <a href="https://twitter.com/saramic" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/custom.css"/>
+
+
+</body>
+</html>

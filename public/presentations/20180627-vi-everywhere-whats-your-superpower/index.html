@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Failure Driven  | VI everywhere, what&#39;s your superpower</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.51" />
+    
+    
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+    <link href="/dist/css/app.e08a958ae3e530145318b6373195c765.css" rel="stylesheet">
+    
+
+    
+
+    
+    
+    
+
+    
+
+    <meta property="og:title" content="VI everywhere, what&#39;s your superpower" />
+<meta property="og:description" content="Abstract  &ldquo;Once you learn VI bindings, they will be stuck with you for life&rdquo;
+ and you will want to use them everywhere!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://failure-driven.com/presentations/20180627-vi-everywhere-whats-your-superpower/" /><meta property="article:published_time" content="2018-06-27T20:00:00&#43;10:00"/>
+<meta property="article:modified_time" content="2018-06-27T20:00:00&#43;10:00"/>
+
+<meta itemprop="name" content="VI everywhere, what&#39;s your superpower">
+<meta itemprop="description" content="Abstract  &ldquo;Once you learn VI bindings, they will be stuck with you for life&rdquo;
+ and you will want to use them everywhere!">
+
+
+<meta itemprop="datePublished" content="2018-06-27T20:00:00&#43;10:00" />
+<meta itemprop="dateModified" content="2018-06-27T20:00:00&#43;10:00" />
+<meta itemprop="wordCount" content="743">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="VI everywhere, what&#39;s your superpower"/>
+<meta name="twitter:description" content="Abstract  &ldquo;Once you learn VI bindings, they will be stuck with you for life&rdquo;
+ and you will want to use them everywhere!"/>
+
+</head>
+
+<body class="ma0 avenir bg-near-white">
+
+
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://failure-driven.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Failure Driven
+    </a>
+    <div class="flex-l items-center">
+      
+      
+
+
+
+  <a href="https://twitter.com/selenasmall88" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+  <a href="https://twitter.com/saramic" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+<main role="main">
+    
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3 ph0-l">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        PRESENTATIONS
+      </p>
+      <h1 class="f1 athelas mb1">VI everywhere, what&#39;s your superpower</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2018-06-27T20:00:00&#43;10:00">June 27, 2018</time>      
+      
+      
+    </header>
+
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h2 id="abstract">Abstract</h2>
+
+<blockquote>
+<p>&ldquo;Once you learn VI bindings, they will be stuck with you for life&rdquo;</p>
+</blockquote>
+
+<p>and you will want to use them everywhere! This is an exploration of
+all the places you can use them, from the command line, language REPL
+to your database console, browser and program input, even ways of
+adding them to places they don&rsquo;t exist. Even if VI has always been
+on your TODO list, some tips on how to get started in learning VI
+bindings from someone who is pragmatic and does NOT use VIM as their
+editor, just VI bindings in every place you would least expect.</p>
+
+<h2 id="the-ruby-version">The Ruby version</h2>
+
+<p>This presentation at <a href="https://www.meetup.com/Ruby-On-Rails-Oceania-Melbourne/events/mcrjmnyxjbkc/">June Ruby Melbourne
+meetup</a>
+was given with a bit of a ruby spin. Talk can be watched here</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/l6dwu6cCfkM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p><br /></p>
+
+<h2 id="key-takeaways">Key takeaways</h2>
+
+<ul>
+<li><p>by default you are using <code>EMACS</code> bindings on your command line
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">set -o | egrep -e <span style="color:#e6db74">&#39;emacs|vi &#39;</span>
+
+<span style="display:block;width:100%;background-color:#3c3d38">emacs          	on
+</span>vi             	off</code></pre></div></p></li>
+
+<li><p>you can turn <code>VI</code> bindings on with the following command
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="display:block;width:100%;background-color:#3c3d38">set -o vi
+</span>
+set -o | egrep -e <span style="color:#e6db74">&#39;emacs|vi &#39;</span>
+
+emacs          	off
+<span style="display:block;width:100%;background-color:#3c3d38">vi             	on</span></code></pre></div></p></li>
+
+<li><p>you can now use all the handy VI bindings like the following
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">w        <span style="color:#75715e"># jump a word</span>
+5w       <span style="color:#75715e"># jump 5 words</span>
+d2w      <span style="color:#75715e"># delete 2 words</span>
+$        <span style="color:#75715e"># jump to end of line (like regex)</span>
+^        <span style="color:#75715e"># jump to beginning of line (like regex)</span>
+ct;      <span style="color:#75715e"># change to `;` character</span>
+u        <span style="color:#75715e"># undo</span>
+y$       <span style="color:#75715e"># yank (copy) to end of line</span>
+p        <span style="color:#75715e"># paste what you have yanked</span>
+h j k l  <span style="color:#75715e"># h - left, j - down, k - up, l - right</span></code></pre></div></p></li>
+
+<li><p>How to learn VI bindings? come up with a script like above and just rote
+learn it. Then when someone teaches you a new binding, come up with a script
+and learn to use it too. It only takes 5 minutes a day of practice for about
+a week
+<a href="https://twitter.com/hashtag/7DayCodeChallenge?f=tweets&amp;src=hash">#7DayCodeChallenge</a>
+and you will have it in muscle memory.</p></li>
+</ul>
+
+<p><strong>Script for below console demo</strong></p>
+
+<ul>
+<li>Jump <code>5w</code> 5 words forward,</li>
+<li><code>$</code> jump to the end of the line,</li>
+<li><code>^</code> jump to the beginning of the line,</li>
+<li><code>d5w</code> to delete 5 words,</li>
+<li><code>P</code> to paste at the cursor,</li>
+<li><code>p</code> to paste multiple times after the cursor,</li>
+<li><code>u</code> to undo multiple paste commands.</li>
+</ul>
+
+<p><img src="/images/vi-everywhere/vi_binding_practice.gif" alt="VI binding practice" /></p>
+
+<ul>
+<li><p>So can I use this for the input of my program?</p>
+
+<blockquote>
+<p><code>Ruby</code></p>
+</blockquote>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ruby -e <span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">require &#34;readline&#34;
+</span><span style="color:#e6db74">while line = Readline.readline(&#34;&gt; &#34;, true)
+</span><span style="color:#e6db74">  p line
+</span><span style="color:#e6db74">end&#39;</span></code></pre></div>
+
+<blockquote>
+<p><code>Python</code></p>
+</blockquote>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python3 -c <span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">import readline
+</span><span style="color:#e6db74">while True:
+</span><span style="color:#e6db74">  line = input(&#34;:&#34;)
+</span><span style="color:#e6db74">  if line == &#34;stop&#34;:
+</span><span style="color:#e6db74">    break
+</span><span style="color:#e6db74">  print(&#34;%s&#34; % line)&#39;</span></code></pre></div></li>
+</ul>
+
+<p><strong>Script for below console demo</strong></p>
+
+<ul>
+<li>Using <code>y W</code> to yank (copy) a word,</li>
+<li>then <code>P</code> to paste it at the cursor</li>
+<li>and <code>p</code> to paste it after the cursor</li>
+<li>and finally <code>u</code> to undo one of the pastes.</li>
+</ul>
+
+<p><img src="/images/vi-everywhere/python_readline.gif" alt="python readline" /></p>
+
+<ul>
+<li><p>Hey I am using a programming language REPL (Read-Execute-Print Loop) or a DB
+console and I want VI bindings too!</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">just got a 100x speed improvement in my ruby irb<br>set editing-mode vi<br>and<br>cat &gt;&gt; ~/.editrc<br>bind -v<a href="http://t.co/c26qxc4tQW">http://t.co/c26qxc4tQW</a></p>&mdash; Michael Milewski (@saramic) <a href="https://twitter.com/saramic/status/332354236996272129?ref_src=twsrc%5Etfw">May 9, 2013</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># ~/.editrc</span>
+bind -v</code></pre></div></li>
+
+<li><p>But I am on someone elses machine, or on a server in production and don&rsquo;t
+want to set that up!</p>
+
+<blockquote>
+<p>Sure just hit</p>
+
+<p><code>&lt;ESC&gt; &lt;ENTER&gt; &lt;ESC&gt; &lt;ENTER&gt;</code></p>
+
+<p>and magically VI bindings will be there</p>
+</blockquote></li>
+
+<li><p>What else is there?
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/        <span style="color:#75715e"># to go into search mode</span>
+v        <span style="color:#75715e"># to take your command line straight into a full VI editor, when you</span>
+         <span style="color:#75715e"># exit the command runs</span></code></pre></div></p></li>
+</ul>
+
+<p><strong>Script for below console demo</strong></p>
+
+<ul>
+<li><code>⎋</code> (⎋ = ESC) <code>ESC</code> to go out of <em>insert</em> mode and go into <em>normal</em> mode</li>
+<li><code>/</code> to search,</li>
+<li><code>/dev</code> to search for last command in history with text <code>dev</code></li>
+<li><code>↩</code> (↩ = ENTER) <code>ENTER</code> to run command</li>
+<li><code>v</code> to open VI on the command</li>
+<li><code>$</code> to jump to end of line</li>
+<li><code>B</code> to jump back a word</li>
+<li><code>10~</code> to swap case of next 10 characters (upcase)</li>
+<li><code>:x↩</code> to quit VI and execute the command</li>
+</ul>
+
+<p><img src="/images/vi-everywhere/search_and_vi_command_line.gif" alt="Search and VI command line" /></p>
+
+<ul>
+<li><p>I am using <code>mongo</code> or <code>elxir</code> or <code>node</code> which don&rsquo;t use readline so I can&rsquo;t
+get VI bindings 😢</p>
+
+<blockquote>
+<p>Use rlwrap - <a href="https://github.com/hanslub42/rlwrap">https://github.com/hanslub42/rlwrap</a></p>
+</blockquote>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install rlwrap
+
+rlwrap --always-readline mongo
+rlwrap --always-readline node
+rlwrap --always-readline iex</code></pre></div></li>
+
+<li><p>hey what are you using to show which keys are being used?</p>
+
+<blockquote>
+<p>Keycaster <a href="https://github.com/keycastr/keycastr">https://github.com/keycastr/keycastr</a></p>
+</blockquote>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew cask install keycastr
+
+^ ⌥ ⌘ k    <span style="color:#75715e"># to toggle it on/off</span></code></pre></div></li>
+</ul>
+
+<h2 id="in-the-future">In the future</h2>
+
+<p>I am hoping to give this talk with a python flavour at the upcoming <a href="https://www.meetup.com/Melbourne-Python-Meetup-Group/events/mtbwgqyzfbgb/">Melbourne Python Meetup in
+Melbourne - Monday 4th March</a></p>
+
+<ul>
+<li><a href="https://github.com/saramic/vi-on-the-command-line">slides on GitHub</a></li>
+<li><a href="https://saramic.github.io/vi-on-the-command-line/">slides</a></li>
+</ul>
+
+<h4 id="authored-by">Authored By:</h4>
+
+<p>Michael Milewski</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+</main>
+<footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://failure-driven.com/" >
+    &copy; 2019 Selena Small &amp; Michael Milewski
+  </a>
+    <div>
+
+
+
+  <a href="https://twitter.com/selenasmall88" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+  <a href="https://twitter.com/saramic" class="link-transition twitter link dib z-999 pt3 pt0-l mr2" title="Twitter link">
+    <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+  </a>
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/custom.css"/>
+
+
+</body>
+</html>
