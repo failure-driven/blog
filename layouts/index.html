@@ -1,194 +1,272 @@
 {{ define "main" }}
-  <div class="row" style="margin:0px;">
-    <div class="col-md-8" style="padding:0px;">
-      <!-- begin top featured section -->
-      <div class="relative w-100 mb4 nested-copy-line-height">
+<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-primary">
+    <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#coming-up">Coming up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#featured">Featured</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#mailing-list">Mailing List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#presentations">Presentations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#articles">Articles</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- begin coming up section -->
+<div class="row">
+    <a name="coming-up"></a>
+    <div class="col-md-8 offset-md-2">
         <div class="mb3 pa4 overflow-hidden">
-          <h1>RailsConf 2019 Minneapolis</h1>
-          <p>We're so excited to have been accepted to run a <a href="https://railsconf.com/program/workshops#session-782">workshop</a> at <b>RailsConf 2019</b> in Minneapolis!
-            We'll be running through the ins and outs of testing modern web apps with multi layer Behavioural Driven Development (BDD) making use of the latest <a href="https://edgeguides.rubyonrails.org/6_0_release_notes.html">Rails 6</a> release.
-            <a href="https://railsconf.com/register">Register here</a>
-          </p>
-          <div style="position: relative; padding-bottom: 10px; overflow: hidden;">
-            <img src="/images/railsconf2019.png" alt="railsconf 2019" />
-          </div>
+            <h4 class="flex-none mt-5 w-80 mw8 center text-center">
+                coming up
+            </h4>
+
+            <h2 class="flex-none w-80 mw8 center text-center">
+                RailsConf 2019 Minneapolis
+            </h2>
+            <p>We're so excited to have been accepted to run a <a
+                    href="https://railsconf.com/program/workshops#session-782">workshop</a> at <b>RailsConf
+                2019</b> in Minneapolis!
+                We'll be running through the ins and outs of testing modern web apps with multi layer
+                Behavioural Driven Development (BDD) making use of the latest <a
+                        href="https://edgeguides.rubyonrails.org/6_0_release_notes.html">Rails 6</a> release.
+                <a href="https://railsconf.com/register">Register here</a>
+            </p>
+            <div style="position: relative; padding-bottom: 10px; overflow: hidden;">
+                <img src="/images/railsconf2019.png" alt="railsconf 2019"/>
+            </div>
         </div>
-      </div>
-      <!-- end top featured section -->
+    </div>
+</div>
+<!-- end coming up section -->
 
-      <!-- begin rails-camp section -->
-      {{ $section := where .Site.RegularPages "Section" "in" "rails-camp" }}
+<!-- begin rails-camp section -->
+{{ $section := where .Site.RegularPages "Section" "in" "rails-camp" }}
 
-      {{ $section_count := len $section }}
-      {{ if ge $section_count 1 }}
-        {{ $section_name := "rails-camp" }}
-        <div class="relative w-100 bg-white nested-copy-line-height">
-          <div class="bg-white pa4 gray overflow-hidden">
-            {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
-            {{ with .Site.GetPage "section" $section_name }}
-              <h4 class="flex-none w-80 mw8 center text-center">
-                Featured Series
-              </h4>
+{{ $section_count := len $section }}
+{{ if ge $section_count 1 }}
+{{ $section_name := "rails-camp" }}
+<div class="row">
+    <a name="featured"></a>
+    <div class="col-md-12 bg-white pa4 gray overflow-hidden">
+        {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
+        {{ with .Site.GetPage "section" $section_name }}
+        <h4 class="flex-none mt-5 w-80 mw8 center text-center">
+            featured
+        </h4>
 
-              <h2 class="flex-none w-80 mw8 center text-center">
-                {{ .Title }}
-              </h2>
-            {{ end }}
+        <h2 class="flex-none w-80 mw8 center text-center">
+            {{ .Title }}
+        </h2>
+        {{ end }}
 
-            {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
+        {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
 
-            <section class="w-80 mw8 center">
-              {{/* Range through the first $n_posts items of the section */}}
-              {{ range (first $n_posts $section) }}
-                <div class="relative w-100 mb4">
-                  {{ partial "summary-with-image.html" . }}
+        <section class="w-80 mw8 center">
+            <div class="row">
+                {{/* Range through the first $n_posts items of the section */}}
+                {{ range (first $n_posts $section) }}
+                <div class="col-md-4">
+                    <div class="relative w-100 mb4">
+                        {{ partial "summary-with-image.html" . }}
+                    </div>
                 </div>
-              {{ end }}
+                {{ end }}
+            </div>
+        </section>
+
+        {{ if ge $section_count (add $n_posts 1) }}
+        <section class="w-80 mw8 center">
+            {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it
+            exists */}}
+            {{ with .Site.GetPage "section" $section_name }}
+            <button class="float-right f5">
+                <a href="{{ .URL }}">See all from {{ .Title }}</a>
+            </button>
+            {{ end }}
+        </section>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+<!-- end rails-camp section -->
+
+<!-- Begin Mailchimp Signup Form -->
+<div class="row">
+    <a name="mailing-list"></a>
+    <div class="col-md-6 offset-md-3">
+        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet"
+              type="text/css">
+        <style type="text/css">
+            #mc_embed_signup {
+                background: #1e90ff;
+                clear: left;
+                font: 14px Helvetica, Arial, sans-serif;
+                width: 100%;
+                padding: 20px;
+            }
+
+            /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+              We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+
+        <div id="mc_embed_signup" class="mb5 pt2 pb2" style="margin-top: 100px;">
+            <form action="https://failure-driven.us19.list-manage.com/subscribe/post?u=7206c4a51341123e351195246&amp;id=ec5d157e17"
+                  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                  class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <label for="mce-EMAIL">Join our mailing list</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                           placeholder="email address" required style="width: 100%;margin-top: 5px;">
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                              name="b_7206c4a51341123e351195246_ec5d157e17"
+                                                                                              tabindex="-1"
+                                                                                              value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                                              id="mc-embedded-subscribe" class="button"
+                                              style="width: 100%;margin-top: 5px;"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--End mc_embed_signup-->
+
+<!-- begin presentations section -->
+<div class="row" style="background-color: rgba(0,0,0,0.7);">
+    <a name="presentations"></a>
+    <div class="col-md-8 offset-md-2">
+        <div class="mb3 pa4 white overflow-hidden">
+            <h4 class="flex-none mt-5 w-80 mw8 center text-center">
+                presentations
+            </h4>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <iframe src="https://www.youtube.com/embed/ekLYyjXbUso"
+                                style="position: absolute;  width: 100%; height: 100%; border:0; margin: auto;"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen title="YouTube Video"></iframe>
+                    </div>
+                    <h2>Feature Testing</h2>
+                    <p>Testing modern web apps with multi layer Behavioural Driven Development (BDD) and a
+                        strong focus towards the frontend at
+                        <a href="https://www.cultureamp.com/">CultureAmp</a>'s tech brekky</p>
+                </div>
+
+                <div class="col-md-4">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <iframe src="https://www.youtube.com/embed/p72EPNXbjiU"
+                                style="position: absolute;  width: 100%; height: 100%; border:0; margin: auto;"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen title="YouTube Video"></iframe>
+                    </div>
+                    <h2>Feature Testing</h2>
+                    <p>Driving modern web apps with multi layer Behavioural Driven Design (BDD) at
+                        <a href="https://www.meetup.com/Ruby-On-Rails-Oceania-Melbourne/">#RORO Meblourne</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <iframe src="https://www.youtube.com/embed/7bTXuIBhwGI"
+                                style="position: absolute;  width: 100%; height: 100%; border:0; margin: auto;"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen title="YouTube Video"></iframe>
+                    </div>
+                    <a href="/presentations/20180627-breaking-builds-and-breaking-bones/">
+                        <h2>Breaking builds & breaking bones</h2>
+                    </a>
+                    <p>Becoming a software engineer or a professional kickboxer,
+                        you’ll run into many obstacles. I’ll share some of the biggest hurdles
+                        I faced while changing careers into software & becoming a Nak Muay Ying
+                        (female Muay Thai boxer). Be inspired & learn that failures will help
+                        you to ultimately succeed!</p>
+                </div>
+
+                <div class="col-md-4">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <iframe src="https://www.youtube.com/embed/l6dwu6cCfkM"
+                                style="position: absolute;  width: 100%; height: 100%; border:0; margin: auto;"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen title="YouTube Video"></iframe>
+                    </div>
+                    <a href="/presentations/20180627-vi-everywhere-whats-your-superpower/">
+                        <h2>VI everywhere, what's your super power?</h2>
+                    </a>
+                    <p>"Once you learn VI bindings, they will be stuck with you for life"
+                        and you will want to use them everywhere! This is an exploration of
+                        all the places you can use them, from the command line, language REPL
+                        to your database console, browser and program input.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end presentations section -->
+
+<!-- begin latest post section -->
+{{ $section := where .Site.RegularPages "Section" "in" "post" }}
+
+{{ $section_count := len $section }}
+{{ if ge $section_count 1 }}
+{{ $section_name := "post" }}
+<div class="row" style="background-color: rgba(0,0,0,0.7);">
+    <a name="articles"></a>
+    <div class="col-md-8 offset-md-2">
+        <div class="mb3 pa4 white overflow-hidden">
+            {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
+            <h4 class="flex-none mt-5 w-80 mw8 center text-center">
+                articles
+            </h4>
+
+            {{ $n_posts := $.Param "recent_posts_number" | default 7 }}
+
+            <section class="w-100 mw8 center">
+                {{/* Range through the first $n_posts items of the section */}}
+                <div class="relative w-100">
+                    <ul class="list-group list-group-flush">
+                        {{ range (first $n_posts $section) }}
+                        <li class="list-group-item" style="padding-left:0; background-color: transparent;">
+                            {{ partial "list-item.html" . }}
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
             </section>
 
             {{ if ge $section_count (add $n_posts 1) }}
-              <section class="w-80 mw8 center">
-                {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
+            <section class="w-100 mw8 center">
+                {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it
+                if it exists */}}
                 {{ with .Site.GetPage "section" $section_name }}
-                  <h3 class="f3 text-right">
-                    <a href="{{ .URL }}">See all from {{ .Title }}</a>
-                  </h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-right"
+                        style="padding-left:0; background-color: transparent;">
+                        <a href="{{ .URL }}">See all {{ $section_name }}</a>
+                    </li>
+                </ul>
                 {{ end }}
-              </section>
+            </section>
             {{ end }}
-          </div>
         </div>
-      {{ end }}
-      <!-- end rails-camp section -->
     </div>
-
-    <div class="col-md-4" style="padding:0px; background-color: rgba(0,0,0,0.7);">
-      <!-- Begin Mailchimp Signup Form -->
-      <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-      <style type="text/css">
-        #mc_embed_signup{background:#1e90ff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;padding:20px;}
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-      </style>
-
-      <div id="mc_embed_signup" class="mt0 mb5 pt2 pb2 ">
-      <form action="https://failure-driven.us19.list-manage.com/subscribe/post?u=7206c4a51341123e351195246&amp;id=ec5d157e17" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-        <label for="mce-EMAIL">Join our mailing list</label>
-        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required style="width: 100%;margin-top: 5px;">
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7206c4a51341123e351195246_ec5d157e17" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="width: 100%;margin-top: 5px;"></div>
-          </div>
-      </form>
-      </div>
-      <!--End mc_embed_signup-->
-
-      <!-- begin presentations section -->
-      <div class="relative w-100 mb4 nested-copy-line-height">
-        <div class="mb3 pa4 white overflow-hidden">
-          <h2>Feature Testing</h2>
-
-          <p>Testing modern web apps with multi layer Behavioural Driven Development (BDD) and a strong focus towards the frontend at
-            <a href="https://www.cultureamp.com/">CultureAmp</a>'s tech brekky</p>
-
-          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-            <iframe src="https://www.youtube.com/embed/ekLYyjXbUso" style="position: absolute;  width: 100%; height: 100%; border:0; margin: auto;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube Video"></iframe>
-          </div>
-
-          <hr>
-
-          <p>Driving modern web apps with multi layer Behavioural Driven Design (BDD) at
-            <a href="https://www.meetup.com/Ruby-On-Rails-Oceania-Melbourne/">#RORO Meblourne</a></p>
-
-          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-            <iframe src="https://www.youtube.com/embed/p72EPNXbjiU" style="position: absolute;  width: 100%; height: 100%; border:0; margin: auto;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube Video"></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="relative w-100 mb4 nested-copy-line-height">
-        <div class="mb3 pa4 white overflow-hidden">
-          <a href="/presentations/20180627-vi-everywhere-whats-your-superpower/">
-            <h2>VI everywhere, what's your super power?</h2>
-          </a>
-
-          <p>"Once you learn VI bindings, they will be stuck with you for life"
-          and you will want to use them everywhere! This is an exploration of
-          all the places you can use them, from the command line, language REPL
-          to your database console, browser and program input.
-
-          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-            <iframe src="https://www.youtube.com/embed/l6dwu6cCfkM" style="position: absolute;  width: 100%; height: 100%; border:0; margin: auto;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube Video"></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="relative w-100 mb4 nested-copy-line-height">
-        <div class="mb3 pa4 white overflow-hidden">
-          <a href="/presentations/20180627-breaking-builds-and-breaking-bones/">
-            <h2>Breaking builds & breaking bones</h2>
-          </a>
-
-          <p>Becoming a software engineer or a professional kickboxer,
-            you’ll run into many obstacles. I’ll share some of the biggest hurdles
-            I faced while changing careers into software & becoming a Nak Muay Ying
-            (female Muay Thai boxer). Be inspired & learn that failures will help
-            you to ultimately succeed!
-
-          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-            <iframe src="https://www.youtube.com/embed/7bTXuIBhwGI" style="position: absolute;  width: 100%; height: 100%; border:0; margin: auto;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube Video"></iframe>
-          </div>
-        </div>
-      </div>
-      <!-- end presentations section -->
-
-      <!-- begin latest post section -->
-      {{ $section := where .Site.RegularPages "Section" "in" "post" }}
-
-      {{ $section_count := len $section }}
-      {{ if ge $section_count 1 }}
-      {{ $section_name := "post" }}
-      <div class="relative w-100 mb4 nested-copy-line-height">
-        <div class="mb3 pa4 white overflow-hidden">
-          {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
-          {{ with .Site.GetPage "section" $section_name }}
-          <h2 class="flex-none w-100 mw8 center">
-            Latest {{ .Title }}
-          </h2>
-          {{ end }}
-
-          {{ $n_posts := $.Param "recent_posts_number" | default 7 }}
-
-          <section class="w-100 mw8 center">
-            {{/* Range through the first $n_posts items of the section */}}
-            <div class="relative w-100">
-              <ul class="list-group list-group-flush">
-                {{ range (first $n_posts $section) }}
-                <li class="list-group-item" style="padding-left:0; background-color: transparent;">
-                  {{ partial "list-item.html" . }}
-                </li>
-                {{ end }}
-              </ul>
-            </div>
-          </section>
-
-          {{ if ge $section_count (add $n_posts 1) }}
-          <section class="w-100 mw8 center">
-            {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
-            {{ with .Site.GetPage "section" $section_name }}
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item text-right" style="padding-left:0; background-color: transparent;">
-                <a href="{{ .URL }}">See all {{ $section_name }}</a>
-              </li>
-            </ul>
-            {{ end }}
-          </section>
-          {{ end }}
-        </div>
-      </div>
-      {{ end }}
-      <!-- end latest post section -->
-    </div>
-  </div>
+</div>
+{{ end }}
+<!-- end latest post section -->
 {{ end }}
