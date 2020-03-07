@@ -1,9 +1,24 @@
 ---
 title: "Tmux All the Dev Things"
 date: 2020-03-09T09:00:00+11:00
+excerpt: "iTerm2 native window integration and tmux can help run all the various services needed for development with 1 simple startup script but there are a few gotcha's."
+featured_image: ""
+cover_dimming_class: "bg-black-20"
+images:
+  - ""
+author: Selena Small & Michael Milewski
 draft: true
 ---
 
+<blockquote class="speech-bubble-selena">
+<p>
+<b>TL;DR</b>
+</p>
+<p>
+iTerm2 native window integration and tmux can help run all the various services needed for development with 1 simple startup script but there are a few gotcha's.
+</p>
+</blockquote>
+<br />
 <h2><i><span class="selena">Dev</span> vs <span class="michael">Dev</span> SmackDown</i></h2>
 
 <div>Selena</div>
