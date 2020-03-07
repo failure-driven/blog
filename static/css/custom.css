@@ -4,3 +4,112 @@
   margin: 3rem 0 0;
   display: block;
 }
+
+.selena {
+  display: inline-block;
+  position: relative;
+  margin-top: 30px;
+}
+
+.selena:before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  background-image: url(/images/selena_twitter_400_400.jpg);
+  background-size: 48px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.michael {
+  display: inline-block;
+  position: relative;
+  margin-top: 30px;
+}
+
+.michael:before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  background-image: url(/images/michael_twitter_400_400.jpg);
+  background-size: 48px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.speech-bubble-selena {
+  margin-top: 60px;
+  margin-right: 60px;
+  position: relative;
+  background: #c2c2c2;
+  border-radius: 0.4em;
+  padding: 0.4em;
+}
+
+.speech-bubble-selena:before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  background-image: url(/images/selena_twitter_400_400.jpg);
+  background-size: 48px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  padding-left: 0px;
+}
+
+.speech-bubble-selena:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 60px;
+  width: 0;
+  height: 0;
+  border: 1em solid transparent;
+  border-bottom-color: #c2c2c2;
+  border-top: 0;
+  border-left: 0;
+  margin-left: -0.5em;
+  margin-top: -1em;
+}
+
+.speech-bubble-michael {
+  margin-top: 60px;
+  margin-left: 60px;
+  position: relative;
+  background: #e2e2e2;
+  border-radius: 0.4em;
+  padding: 0.4em;
+}
+
+.speech-bubble-michael:before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: 0px;
+  background-image: url(/images/michael_twitter_400_400.jpg);
+  background-size: 48px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.speech-bubble-michael:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 50px;
+  width: 0;
+  height: 0;
+  border: 1em solid transparent;
+  border-bottom-color: #e2e2e2;
+  border-top: 0;
+  border-right: 0;
+  margin-left: -0.5em;
+  margin-top: -1em;
+}
