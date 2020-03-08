@@ -3,51 +3,106 @@
     <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#coming-up">Coming up</a>
+                <a class="nav-link" href="#speaking">Speaking</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#featured">Featured</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#mailing-list">Mailing List</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#presentations">Presentations</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="#articles">Articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#mailing-list">Mailing List</a>
             </li>
         </ul>
     </div>
 </nav>
 
-<!-- begin coming up section -->
-<div class="row">
-    <a name="coming-up"></a>
-    <div class="col-md-8 offset-md-2">
-        <div class="mb3 pa4 overflow-hidden">
-            <h4 class="flex-none mt-5 w-80 mw8 center text-center">
-                coming up
-            </h4>
+<!-- begin presentations section -->
+{{ $section := where .Site.RegularPages "Section" "in" "presentations" }}
 
-            <h2 class="flex-none w-80 mw8 center text-center">
-                RailsConf 2019 Minneapolis
-            </h2>
-            <p>We're so excited to have been accepted to run a <a
-                    href="https://railsconf.com/program/workshops#session-782">workshop</a> at <b>RailsConf
-                2019</b> in Minneapolis!
-                We'll be running through the ins and outs of testing modern web apps with multi layer
-                Behavioural Driven Development (BDD) making use of the latest <a
-                        href="https://edgeguides.rubyonrails.org/6_0_release_notes.html">Rails 6</a> release.
-                <a href="https://railsconf.com/register">Register here</a>
-            </p>
-            <div style="position: relative; padding-bottom: 10px; overflow: hidden;">
-                <img src="/images/railsconf2019.png" alt="railsconf 2019"/>
+{{ $section_count := len $section }}
+{{ if ge $section_count 1 }}
+{{ $section_name := "presentations" }}
+<div class="row">
+    <a name="speaking"></a>
+    <div class="col-md-12 bg-white gray overflow-hidden">
+        {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
+        {{ with .Site.GetPage "section" $section_name }}
+        <h2 class="flex-none mt-5 w-80 mw8 center text-center">
+            Speaking
+        </h2>
+        {{ end }}
+
+        {{ $n_posts := $.Param "recent_posts_number" | default 2 }}
+
+        {{/* inline version of summary-with-image.html but taking 4 images and not feature image */}}
+        <section class="w-80 mw8 center">
+            <div class="row">
+                {{/* Range through the first $n_posts items of the section */}}
+                {{ range (first $n_posts $section) }}
+                {{ $event := .Params.event }}
+                {{ $url := .URL }}
+                <div class="col-md-12 mb5">
+                  <div class="font-italic">
+                    {{ .Params.event_date }}
+                    -
+                    {{ .Params.location }}
+                  </div>
+                  <h3 class="font-weight-bold text-dark">
+                    {{ .Params.event }}
+                  </h3>
+                  <a href="{{ $url }}">
+                  <h2 class="font-weight-bold text-primary">
+                    "{{ .Params.title }}"
+                  </h2>
+                  </a>
+                  <div class="row">
+                    {{ $first_four := slice (index .Params.images 3) (index .Params.images 4) }}
+                    {{ range $index, $image := (first 4 .Params.images) }}
+                      {{ if $image }}
+                      {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
+                      {{ $image := (trim $image "/") | absURL }}
+                      {{ if in (slice 0 1) $index }}
+                      <div class="col-sm-6 col-lg-3 mb4 mb0-ns">
+                      {{ else }}
+                      <div class="col-sm-6 col-lg-3 mb4 mb0-ns d-none d-sm-block">
+                      {{ end }}
+                        <a href="{{ $url }}" class="db grow">
+                          <img src="{{ $image }}" class="img w-100" alt="image from {{ $event }}">
+                        </a>
+                      </div>
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                  <div class="pt3">
+                    {{ .Params.excerpt }}
+                  </div>
+                  <div class="text-right">
+                    <a href="{{.URL}}">{{$.Param "read_more_copy" | default "watch now" }}</a>
+                  </div>
+                </div>
+                {{ end }}
             </div>
-        </div>
+        </section>
+
+        {{ if ge $section_count (add $n_posts 1) }}
+        <section class="w-80 mw8 center">
+            {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it
+            exists */}}
+            {{ with .Site.GetPage "section" $section_name }}
+            <!--
+            <button class="float-right f5">
+                <a href="{{ .URL }}">See all from {{ .Title }}</a>
+            </button>
+            -->
+            {{ end }}
+        </section>
+        {{ end }}
     </div>
 </div>
-<!-- end coming up section -->
+{{ end }}
+<!-- end presentations section -->
 
 <!-- begin rails-camp section -->
 {{ $section := where .Site.RegularPages "Section" "in" "rails-camp" }}
