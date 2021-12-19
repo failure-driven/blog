@@ -6,11 +6,30 @@ available at: https://failure-driven.com
 
 ## In progress
 
+```
+# add submodule for theme
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+
+# if themes/ananke is empty you may need to initialize the submodule
+git submodule update --init
+```
+
 To run during writing
 
 ```
-hugo --watch server --buildFuture --buildDrafts
+make run
+# hugo --watch server --buildFuture --buildDrafts
 ```
+
+Run with a new in progress theme
+
+```
+make run-new-theme
+# OR
+make run-new-theme-no-layout
+# hugo --watch server --buildFuture --buildDrafts --themesDir=../..
+```
+
 
 TODO:
 

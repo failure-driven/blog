@@ -1,2 +1,14 @@
 .idea
+
+node_modules
+
+# Hugo
+public
+.hugo_build.lock
+resources
+
+# system files
 .DS_Store
+
+# hack for new theme
+config.toml.old
