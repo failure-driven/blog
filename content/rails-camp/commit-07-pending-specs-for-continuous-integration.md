@@ -77,11 +77,11 @@ tests to pending and push to master, meaning you are continually integrating
 As Martin Fowler recently tweeted, Continuous Integration (CI) means you are
 pushing your code to master at least daily.
 
-  {{< tweet 1086642940653522944 >}}
+  {{< tweet user="martinfowler" id="1086642940653522944" >}}
 
 and pushing to master is CI by definition
 
-  {{< tweet 1086648144958492673 >}}
+  {{< tweet user="martinfowler" id="1086648144958492673" >}}
 
 {{< highlight ruby "hl_lines=5-6" >}}
 scenario 'Visiting the game' do

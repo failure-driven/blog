@@ -51,7 +51,7 @@ which meant finding a way to deal with those differences and ultimately create a
 safety. As a friend of ours recently tweeted
 
 > “The number one thing that is central to high performing teams is psychological safety"
-> {{< tweet 1070563864721293312 >}}
+> {{< tweet user="MelissaKaulfuss" id="1070563864721293312" >}}
 
 If you’ve read this far, you’re probably wondering if we even wrote any code with Isikyus. What we 
 wanted him to help us with was coming up with a straightforward way to use the [Foreman](https://github.com/ddollar/foreman) 

@@ -118,7 +118,7 @@ while True:
 * Hey I am using a programming language REPL (Read-Execute-Print Loop) or a DB
   console and I want VI bindings too!
 
-    {{< tweet 332354236996272129 >}}
+    {{< tweet user="saramic" id="332354236996272129" >}}
 
     {{< highlight bash >}}
 # ~/.editrc
