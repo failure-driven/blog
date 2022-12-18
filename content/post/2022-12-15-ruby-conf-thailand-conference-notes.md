@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "RubyConfTH conference notes"
 date: 2022-12-15T09:00:00+07:00
 excerpt: "some notes take during the conference"
